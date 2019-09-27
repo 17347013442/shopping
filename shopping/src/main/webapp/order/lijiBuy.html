@@ -1,0 +1,1325 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>享购网</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="../css/common/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common/base.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/member.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/index.css" rel="stylesheet" type="text/css">
+    <script src="../js/common/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/common/ajaxObject.js"></script>
+    <script type="text/javascript" src="../assets/js/common/jquery.form.js"></script>
+    <script type="text/javascript" src="../assets/js/common/pub.js"></script>
+    <script type="text/javascript" src="../assets/js/common/check.js"></script>
+    <script type="text/javascript" src="../assets/js/orderadd.js"></script>
+    <script type="text/javascript" src="../js/order2/order-shop.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=dcY7wR9CXFOZSqu7oOgMl7zWKDlNGEq7"></script>
+    <style>
+        input {
+            padding-left: 5px;
+        }
+        u{
+            display:block;
+        }
+        input[type=number]{
+            width:100px!important;
+        }
+        #presentcard{
+            width:115%;
+        }
+        #gift_start {
+            display: none;
+        }
+        input::-webkit-input-placeholder {
+            /* placeholder字体大小  */
+            font-size: 12px;
+        }
+        .cswX_inputBg {
+            font:12px/1.5 tahoma,arial,sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  on  09/22/19 20:31:32.<br>
+<b>Address:</b> <a class="info" href="http://www.isgo.com/order/lijiBuy.html?data=">http://www.isgo.com/order/lijiBuy.html?data=</a><br>
+<b>Title:</b> 享购网 &nbsp;&bull;&nbsp; <b>Size:</b> 68986 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 09 Sep 2019 11:21:35 GMT<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+<div class="header">
+    <div class="top">
+        <div class="top-left">
+            <a href="javascript:void(0)" style="cursor: default">您好，欢迎光临享购网！</a>
+        </div>
+        <div class="top-right fr">
+            <a href="javascript:void(0)" class="top-login">登录</a>
+            <a href="../login/register.html" class="top-register">注册</a>
+            <a href="../userInfo/user-info1.html" class="top-user"></a>
+            <a href="javascript:void(0)" class="top-exit" onclick="exit()">退出</a>
+            <a href="javascript:void(0)" class="top-order">我的订单</a>
+            <a href="javascript:void(0)" class="top-cart">购物车</a>
+            <div class="lipinka">
+                <a href="javascript:void(0)" class="top-card">我的礼品卡</a>
+            </div>
+            <div class="tuangou">
+                <a href="javascript:void(0)" class="top-together">团购
+                    <img class="together-top" src="../images/top.png">
+                    <img class="together-bottom" src="../images/bottom.png">
+                </a>
+                <div class="leibie">
+                    <a href="javascript:void(0)">享购团购</a>
+                    <a href="http://private.isgo.com/ISGOC1/Vender/Login.html">企业团购</a>
+                </div>
+            </div>
+            <a href="http://gallery.isgo.com/" target="_blank" class="top-art">艺术品</a>
+            <p>400-628-8666</p>
+        </div>
+    </div>
+</div>
+<div class="search-wrapper ofh">
+    <a href="../index.html"><img src="../images/logo-left.png" class="logo-left"></a>
+    <div class="search">
+        <input name="name" style="margin: 0" class="search-input" type="text" placeholder="请输入想要搜索的内容" onkeydown="searchKeyDown(event);">
+        <span class="search-btn fr"><img src="../images/search.jpg"></span>
+    </div>
+</div>
+<div class="navTop">
+    <div class="navTop-box">
+        <ul>
+
+        </ul>
+    </div>
+</div>
+<div class="shopping_box">
+    <!--头部-->
+    <div class="proce_main">
+        <h2>填写并核对订单信息</h2>
+        <div class="prove_main shopping_main">
+            <!--2支付方式开始-->
+            <div class="payWays" id="pay"><h3>配送方式</h3>
+                <input type="button" class="pay1 current" value="送货上门" onclick="setSendedPay('01')">
+                <!-- <input type="button" class="pay1 " value="到店自提" onclick="setSendedPay('02')"> -->
+            </div>
+            <div style="width: 1160px;height: 1px;margin: 0 auto;padding: 0;overflow: hidden; border-bottom: 1px #ccc solid; margin-top: -1px;"></div>
+            <div id="main_ziti" class="ziti">
+                <!--<span style="color: red">选择自提点并下单 > 收到提货短信  >  到自提点自提</span>-->
+                <div>
+                    <div class="ziti_div1">
+                        <select name="zProvinceName" id="zProvinceName" class="input100">
+                            <option value="">--请选择--</option>
+                        </select>&nbsp;
+                        <select name="zCityName" id="zCityName" class="input100">
+                            <option value="">--请选择--</option>
+                        </select>&nbsp;
+                        <select name="zCountyName" id="zCountyName" class="input100">
+                            <option value="">--请选择--</option>
+                        </select>&nbsp;
+                        <div class="ziti_div1_div">
+                            <div class="ziti_radio">
+                                <input type="radio" name="ziti_radio" WareId="">
+                                1 享购长沙友谊阿波罗店【开福区万达广场（一楼总服务台旁）】
+                            </div>
+                            <div class="ziti_radio">
+                                <input type="radio" name="ziti_radio" WareId="">
+                                2 享购长沙凯德店【岳麓区凯宾斯基大厦A座底商 （一楼总服务台旁）】
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ziti_div2" id="allmap"></div>
+                </div>
+            </div>
+            <div style="width: 1160px;height: 1px;margin: 0 auto;padding: 0;overflow: hidden; border-bottom: 1px #ccc solid; margin-top: -1px;"></div>
+            <!--2支付方式结束-->
+            <!--1收货开始-->
+            <div class="proce_main1">
+                <h3>收货人信息</h3>
+                <div class="proce_main1_left" id="address">
+                    <div class="proce_main1_1 defaultAdd" style="display: block;">
+                        <!--默认地址-->
+                    </div>
+                    <!--添加新地址-->
+                    <div id="addAddressBtn" style="clear:both;margin-left:47px;margin-top:10px;">
+                        <div class="radiochecked addAddress">
+                            <img src="../assets/images/order/join-png_07.png">
+
+                            <div class="wenzi">&nbsp;&nbsp;添加新地址</div>
+                        </div>
+                    </div>
+                    <!--添加新地址-->
+                    <div id="addAddress" style="display:none">
+                        <form id="addAddressForm" method="POST" action="/order/addressSave" style="display: block;">
+                            <div class="proce_table">
+                                <table cellpadding="0" cellspacing="1" border="0">
+                                    <tbody>
+                                    <input type="hidden" name="userInfoId" value="">
+                                    <tr>
+                                        <td width="13%" class="td_zi">收货人姓名<span>*</span></td>
+                                        <td width="87%" class="td_zhi">
+                                            <input type="text" name="PersonName" id="PersonName"
+                                                    style="width:150px;" class="cswX_inputBg"
+                                                                              maxlength="10" placeholder="请输入姓名">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_zi">所在地区<span>*</span></td>
+                                        <td class="td_zhi">
+                                            <div id="systemareadiv" style="float:left;margin-right:5px;">
+                                                <select name="ProvinceName" id="ProvinceName" class="input100">
+                                                    <option value="">--请选择--</option>
+                                                </select>&nbsp;
+                                                <select name="CityName" id="CityName" class="input100">
+                                                    <option value="">--请选择--</option>
+                                                </select>&nbsp;
+                                                <select name="CountyName" id="CountyName"
+                                                 class="input100">
+                                                    <option value="">--请选择--</option>
+                                                </select>&nbsp;
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_zi">街道地址<span>*</span></td>
+                                        <td class="td_zhi">
+                                        <textarea name="DetailAddress" id="DetailAddress" cols="65" rows="20" maxlength="60"
+                                                  style="height:80px;resize:none;height:73px;border:solid 1px #ddd;padding-left:5px;"
+                                                  placeholder="请输入街道地址"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_zi">邮政编码<span></span></td>
+                                        <td class="td_zhi"><input type="text" name="PostCode" id="PostCode" value="" maxlength="6"
+                                                                  style="width:150px;" class="cswX_inputBg" placeholder="请输入邮政编码"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_zi">手机号码<span>*</span></td>
+                                        <td class="td_zhi">
+                                            <input type="text" name="CellPhone" id="CellPhone" value="" maxlength="11"
+                                                   onblur="this.className='cswX_inputBg'"
+                                                   style="width:150px;ime-mode:disabled;" class="cswX_inputBg"placeholder="请输入手机号码">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_zi"></td>
+                                        <td class="td_zhi">
+                                            <input type="checkbox" style="cursor:auto;" id="IsDefault"
+                                                   checked="checked">
+                                            添加为默认收件地址
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_zi"></td>
+                                        <td class="td_zhi">
+                                            <input type="button"
+                                                   onclick="if(checkAddressForm()){addressBtn();}"
+                                                   class="input1" value="保存收货地址">
+                                            <input type="button" onclick="cancelAddress();" class="input3"
+                                                   value="取消">
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 1160px;height: 1px;margin: 0 auto;padding: 0;overflow: hidden; border-bottom: 1px #ccc solid; margin-top: -1px;"></div>
+            <!--1收货结束-->
+            <!-- 4.1配送时段 -->
+<!--             <div id="main3_transTime" class="proce_main3" style="margin-bottom: 20px;"><h3>配送时段</h3>
+                <span style="padding-left: 40px;">
+                    <select id="TransTime">
+                        <option value="0">仅工作日</option>
+                        <option value="1">仅周末</option>
+                        <option value="2">任何时候</option>
+                    </select>
+                </span>
+            </div>
+            <div style="width: 1160px;height: 1px;margin: 0 auto;padding: 0;overflow: hidden; border-bottom: 1px #ccc solid; margin-top: -1px;"></div> -->
+            <!--4发票开始-->
+            <div id="orderAddInvoiceView_new" class="proce_main3">
+                <h3>发票信息<span class="color_1"></span></h3>
+                <p class="myP" id="fpP">
+                    <a class="color_1" style="cursor:pointer;" id="proce_main3_x" onclick="invoiceBeforeEdit();">修改</a>
+                    <u style='float: left;'><em>是否开具发票：</em><strong id="IsAutoBill">否</strong></u>
+                    <u class='ClNone' style='float: left; display: none;'><em>发票类型：</em><strong id="fp1"></strong></u>
+                    <u class='ClNone' style='float: left; display: none;'><em>发票抬头：</em><strong id="fp2"></strong></u>
+                    <u class='ClNone' style='float: left; display: none;'><em>发票内容：</em><strong id="fp3"></strong></u>
+                </p>
+                <div id="invoiceEdit" style="display: none;">
+                    <form id="invoiceForm" id="fptable">
+                        <div class="fapiao-1" style="display: none;">
+                           <span id="myFirst">
+                                <input id="isneed" type="checkbox">开具发票
+                            </span>
+                            <div class='Disnone' style='display:none;'>
+                                <span><b>发票类型<i style="color: red">*</i>:</b>
+                                    <select id="InvoiceType">
+                                        <!--<option value="0">增值税发票</option>-->
+                                        <option value="1">普通发票</option>
+                                    </select>
+                                </span>
+                                <span style="width: auto;"><b>发票抬头<i style="color: red;">*</i></b>
+                                    <select id="InvTIN">
+                                        <!--<option value="0">增值税发票</option>-->
+                                        <option value="1">个人</option>
+                                        <option value="2">公司</option>
+                                    </select>
+                                </span>
+                                <span id='classValue' style='display: none;width: 40%;padding-left: 5px;'>
+                                    <input id='value1'/>&nbsp;&nbsp;税号：<input id='value2'/>
+                                </span>
+                                <span style='display: block'><b>发票内容
+                                    <select id="Comment">
+                                            <!--<option value="0">增值税发票</option>-->
+                                            <option value="1">明细</option>
+                                        </select>
+                                </span>
+                            </div>
+                            <br>
+                            <div style="text-align: center;display:none" id="remark">
+                                 <span id="optBtn" style="margin:10px 0; float: left;">
+                                    <input type="button"  onclick="invoiceSave()" class="fp_btn1" value="保存">
+                                    <input id="cancel" type="button" class="fp_btn2" value="取消 " onclick="invoiceCancel()">
+                                  </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div style="width: 1160px;height: 1px;margin: 0 auto;padding: 0;overflow: hidden; border-bottom: 1px #ccc solid; margin-top: -1px;"></div>
+            <div class="proce_main2" style="position: relative;overflow: hidden;">
+                    <h3>
+                        <!--<span>-->
+                        <!--<a href="cart.html" class="color_1">回购物车修改</a>-->
+                        <!--</span>-->
+                        配送信息
+                    </h3>
+                    <!--<h4>-->
+                    <!--阁下的订单中包含-->
+                    <!--享购网-->
+                    <!--的商品，您将会收到1个包裹，请注意查收。-->
+                    <!--</h4>-->
+
+                    <div style='position:absolute;z-index: 999;right:0;top:126px;background-color: #fff;;height:100%; width:420px; border-left:1px solid #ddd;'>
+                        <div class="del_right del_right_first" style='margin-top:0 !important; border-top: none;'>
+                            <h4>此商品：由享购网为您发货</h4>
+                            <span style='margin-right:30px;'>
+                            <b>配送方式：</b>
+                            <i>快递(收取运费 ￥10.00)</i>
+                            </span>
+                            <span>
+                            <b>配送时间：</b>
+                            <i><input name="sendTimeSelect" checked="" type="radio" style="cursor:auto;" value="0"> 只工作日送货</i>
+                            <i><input name="sendTimeSelect" type="radio" style="cursor:auto;" value="1">只双休日、假日送货</i>
+                            <i><input name="sendTimeSelect" type="radio" style="cursor:auto;" value="2">工作日、双休日与假日均可送货</i>
+                            </span>
+                        </div>
+                    </div>
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                        <tbody id="prodContainer" style="font-size: 12px;">
+                        <!--这个地方需要用到模板功能template模板遍历-->
+                        <tr class="ordertrLine">
+                            <td width="787">
+                                <div class="order_line">
+                                    <div class="del_left del_left_first" style="border-bottom: none; width: 1188px!important;">
+                                        <div class="del_left_l_first">
+                                            <div class="del_left1 s_td2 del_left_l_first_s2" style="width: 210px;">商品名称</div>
+                                            <strong class="del_left_l_first_s3"
+                                                    style="display: block;float: left;width: 100px;text-align: center;font-weight: normal;margin-top: 10px;">单价</strong>
+                                            <strong class="del_left_l_first_s4"
+                                                    style="display: block;float: left;width: 100px;text-align: center;font-weight: normal;margin-top: 10px;">数量</strong>
+                                            <strong class="del_left_l_first_s5"
+                                                    style="display: block;float: left;width: 100px;text-align: center;font-weight: normal;margin-top: 10px;">总价</strong>
+                                        </div>
+                                    </div>
+                                    <div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            <div style="width: 1160px;height: 1px;margin: 0 auto;padding: 0;overflow: hidden; border-bottom: 1px #ccc solid; margin-top: -1px;"></div>
+            <!--4发票结束-->
+            <!--4.5给卖家留言-->
+            <div class="proce_main3" id="info"><h3>给卖家留言</h3>
+                <!--<span style="padding: 20px;"><b>*是否自提:</b>-->
+                    <!--<select id="IsSelfFetch">-->
+                        <!--<option value="0">否</option>-->
+                        <!--<option value="1">是</option>-->
+                    <!--</select>-->
+                <!--</span>-->
+                <!--<span style="padding: 20px;"><b>*是否现场销售:</b>-->
+                    <!--<select id="IsSceneSale">-->
+                        <!--<option value="0">否</option>-->
+                        <!--<option value="1">是</option>-->
+                    <!--</select>-->
+                <!--</span>-->
+                <!--<span style="padding: 20px;"><b>*是否暂存:</b>-->
+                    <!--<select id="IsCached">-->
+                        <!--<option value="0">否</option>-->
+                        <!--<option value="1">是</option>-->
+                    <!--</select>-->
+                <!--</span><br>-->
+                <textarea  id="Message"  rows="3" style="width:96%;margin:20px;border: 1px solid #e5e5e5;" placeholder="请输入留言"></textarea>
+               </div>
+            <br>
+            <!--5结算信息开始-->
+            <div id="gift_start" style='display:block !important;'>
+                <div class="proce_main4">
+                    <h3>结算信息</h3>
+
+                    <div class="cart_box">
+                        <ul class="join-text">
+                            <!--优惠券-->
+                            <!--<li class="text-item">-->
+<!--<span class="job">-->
+<!--<a href="javascript:void(0)" id="giftCart_" onclick="showGiftAndpresentcard('giftCart_')">使用优惠券</a>-->
+<!--</span>-->
+
+                                <!--<div id="giftcard" class="usableDiscounts" style="display:none">-->
+                                    <!--<div class="discountsAll">-->
+                                        <!--<div class="discounts">-->
+                                            <!--<h3 style="color: #000000;font-weight: bold;font-size: 14px;padding-left:0;">可用优惠券</h3>-->
+<!--<span class="discountsNumber">&nbsp;(-->
+<!--1-->
+<!--)</span>-->
+                                        <!--</div>-->
+                                        <!--<div class="usableDiscount">-->
+                                            <!--<div class="cutdown">-->
+                                                <!--<input type="radio" onclick="$('#clearGiftCardForm').ajaxSubmit(giftCardClearOptions);" name="orderGifgcardNos">-->
+                                                <!--<i>取消使用优惠券</i><br>-->
+                                                <!--<input type="radio" name="orderGifgcardNos" value="LSJL3PKFHHJ6" onchange="selectGiftNo()">-->
+                                                <!--<i>满￥99.00减￥10优惠券-->
+                                                    <!--有效期至2018-08-19 &lt;!&ndash;适用产品（-->
+<!--全部-->
+<!--） &ndash;&gt;</i><br>-->
+                                                <!--<form id="hiddenGiftCardForm" method="POST" action="/order/giftcardsave">-->
+                                                    <!--<input type="hidden" id="hidden_gift_no" name="gift_no">-->
+                                                <!--</form>-->
+                                            <!--</div>-->
+                                            <!--<div style=" width: 951px;height: 1px;margin: 0 auto;padding: 0;background-color: #DDDDDD;overflow: hidden;margin-top: 8px;"></div>-->
+                                            <!--<div class="haveDiscounts">-->
+                                                <!--<form id="giftCardForm" method="POST" action="/order/giftcardsave">-->
+                                                    <!--<i>您有实物券？在这里输入优惠券号:</i>-->
+                                                    <!--<input type="text" id="gift_no" name="gift_no" class="text_cart">-->
+                                                    <!--<input class="addDiscount" type="button" value="添加优惠券" onclick="$('#giftCardForm').ajaxSubmit(giftCardOptions)">-->
+                                                <!--</form>-->
+                                            <!--</div>-->
+                                            <!--<div style=" width: 951px;height: 1px;margin: 0 auto;padding: 0;background-color: #DDDDDD;overflow: hidden;margin-top: 8px;"></div>-->
+                                            <!--<div class="haveUsedDiscounts">-->
+                                                <!--<i>共使用了 <i class="red" id="giftNum">-->
+                                                    <!--0-->
+                                                <!--</i>张优惠券 可以优惠 <i class="red" id="giftPrice">￥0.00</i>元</i>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</li>-->
+                            <!--礼品卡-->
+                            <li class="text-item" style="border-bottom: none">
+                                <span class="job">
+                                    <a href="javascript:void(0)" id="presentcard_" onclick="showGiftAndpresentcard('presentcard_')">使用礼品卡</a>
+                                </span>
+                                <div id="presentcard" class="usableDiscounts giftCards" style="display:none">
+                                    <div id="presentcardDiv">
+                                        <div class="discountsAll ">
+                                            <div class="giftCardstitle">
+                                                <h3 style="color: #000000;font-weight: bold;font-size: 14px;padding-left:0; display: inline-block;">欢迎使用享购礼品卡，请您选择要使用的礼品卡。</h3>
+                                                <a href="cardHelp.html" target="_blank">礼品卡说明</a>
+                                            </div>
+                                            <div class="usableDiscount">
+                                                    <div class="usableDiscount">
+                                                        <div class="haveDiscounts">
+                                                            <input type="hidden" name="actionType" value="binding">
+                                                            <input type="hidden" id="cardForDXProduct" value="">
+                                                            <table>
+                                                            <tbody><tr>
+                                                            <td class="td_zi"><span>*</span>卡号：</td>
+                                                            <td class="td_zhi">
+                                                            <input id="lipinkaforOrderCard" type="text" class="text_cart text_cart_width">
+                                                            </td>
+                                                            </tr>
+                                                            <tr>
+                                                            <td class="td_zi"><span>*</span>密码：</td>
+                                                            <td class="td_zhi">
+                                                            <input id="lipinkaforOrderPassword" type="text" class="text_cart text_cart_width">
+                                                            <input class="addDiscount" style='font-size:14px;' type="button" value="验证并绑定礼品卡" onclick="useCardDD()">
+                                                            </td>
+                                                            </tr>
+                                                            </tbody></table>
+                                                        </div>
+                                                        <div style="margin-top: 10px;"></div>
+                                                    </div>
+                                                <table cellpadding="0" cellspacing="0" border="0" class="cswX_wlgs_sz xg_topLine"
+                                                       style="width: 100%!important;">
+                                                    <tr class="">
+                                                        <th width="" style='text-align: center'>
+                                                                如您手中有未绑定的礼品卡，请您先将礼品卡绑定到您的账户再使用
+                                                        </th>
+                                                        <th width="" style='text-align: center'>
+                                                            面值(单位:元)
+                                                        </th>
+                                                        <th width="" style='text-align: center'>
+                                                            已消费金额(单位:元)
+                                                        </th>
+                                                        <th width="" style='text-align: center'>
+                                                            余额(单位:元)
+                                                        </th>
+                                                        <th width="" style='text-align: center'>
+                                                            开始时间
+                                                        </th>
+                                                        <th width="" style='text-align: center'>
+                                                            有效期至
+                                                        </th>
+                                                        <th width="" style='text-align: center'>
+                                                            使用金额(单位:元)
+                                                        </th>
+                                                    </tr>
+                                                    <tbody id="cardbody">
+                                                    <tr class="my_tr trBorder">
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div style="margin-top: 10px; margin-bottom: 10px;color:#000000;" id="warn"></div>
+                                                <input name="" type="button" class="input1 gift_card" onclick="useCard()" value="确认使用"
+                                                       style="width:123px;margin-left:5px; height:24px; margin-top:-1px; display:block; *margin-top:8px !important;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--<ul class="join-text">-->
+                            <!--<li class="text-item">-->
+<!--<span class="job">-->
+<!--<a href="javascript:void(0);" id="depoist" onclick="showGiftAndpresentcard('depoist')">使用金额</a>-->
+<!--</span>-->
+
+                                <!--<div class="balance" style="height:30px;">-->
+                                    <!--<form action="/order/virtualAccountSave" id="virtualForm">-->
+                                        <!--<i>帐户余额抵扣：<input type="text" id="vaccountAmount" name="payAmount"-->
+                                                         <!--onblur="checkVirtualAccount(this);" value="0">-->
+                                            <!--<span style="color:#666666;"></span></i>-->
+                                        <!--<i><strong>&nbsp;</strong>(可用余额0元，-->
+                                            <!--可以抵扣0.00元)</i>-->
+                                    <!--</form>-->
+                                <!--</div>-->
+                            <!--</li>-->
+                            <!--<li>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    </div>
+                </div>
+                <div style="width: 1160px;height: 1px;margin: 0 auto;padding: 0;overflow: hidden; border-bottom: 1px #ccc solid; margin-top: -1px;"></div>
+                <div style="clear:both;"></div>
+            </div>
+            <!--3信息开始-->
+            <div style="width: 1160px;height: 1px;margin: 0 auto;padding: 0;overflow: hidden; border-bottom: 1px #ccc solid; margin-top: -1px;"></div>
+            <!--3信息结束-->
+            <div id="stat_pay">
+                <div class="proce_main5">
+                    <!--<h3><span class="main5_right">总计<a class="color_2">1</a>件商品</span></h3>-->
+                    <div class="proce_main5_1 proce_main5_right">
+                        <p><strong>总商品金额：</strong><span id="prodMoney" data-money="0">￥0.00</span></p>
+                        <p><strong>运费：</strong><span id="transMoney" data-money="0">￥0.00</span></p>
+                        <p style="display: none;"><strong>减免：</strong><span id="cutMoney" data-money="0" >-￥0.00 </span></p>
+                        <p><strong>应付金额：</strong><span id="shouldMoney" data-money="0">￥0.00</span></p>
+                        <div class="willdPay"><b>应付金额：</b><b class="color_2" id="shouldMoney2">￥0.00</b></div>
+                        <p><input class="submitOrder" id="sub" type="button" value="提交订单" onclick="_orderSubmit();"></p>
+                        <p><input class="submitOrder" id="wait"  style="background-color: #cecece;display: none" type="button" value="处理中..."></p>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+            <!--5结算信息结束-->
+        </div>
+    </div>
+</div>
+<div class="box" style="display: none; "></div>
+<div class="ifooter">
+        <div class="pwm serivcelist clearfix">
+            <dl>
+                <dt>新手指南
+                </dt>
+                <dd><a href="question.html">常见问题</a></dd>
+                <dd><a href="../footer/aB001.html">用户注册</a></dd>
+                <dd><a href="../footer/aB002.html">用户登录</a></dd>
+            </dl>
+            <dl>
+                <dt>购物指南
+                </dt>
+                <dd><a href="../footer/aB008.html">购物流程</a></dd>
+                <dd class="top-order" ><a href="../footer/aB009.html">订单状态</a></dd>
+                <dd><a href="http://www.kuaidi100.com/?from=openv">快递查询</a></dd>
+            </dl>
+            <dl>
+                <dt>支付方式
+                </dt>
+                <dd><a href="../footer/aB019.html">在线支付</a></dd>
+                <dd class="top-card"><a href="../footer/aB020.html">礼品卡支付</a></dd>
+                <dd><a href="../footer/aB021.html">礼品卡说明</a></dd>
+                <!--<dd><a href="#">货到付款</a></dd>-->
+            </dl>
+            <dl>
+                <dt>配送方式
+                </dt>
+                <dd><a href="../footer/aB023.html">配送方式</a></dd>
+                <dd><a href="../footer/aB024.html">配送政策</a></dd>
+                <!--<dd><a href="footer/service.html">特殊说明</a></dd>-->
+            </dl>
+            <dl>
+                <dt>售后服务
+                </dt>
+                <dd><a href="../footer/aB026.html">退/换货政策</a></dd>
+                <dd><a href="../footer/aB027.html">退/换货流程</a></dd>
+                <!--<dd><a href="#">特殊说明</a></dd>-->
+            </dl>
+            <dl>
+                <dt>我的享购
+                    <span class="icon-hot"></span>
+                </dt>
+                <dd class="top-order"><a href="javascript:void(0)">我的订单</a></dd>
+                <dd class="top-card"><a href="javascript:void(0)">我的礼品卡</a></dd>
+                <!--<dd><a href="../con_tluw123.htm~viewPage=service&view=all">我的优惠券</a></dd>-->
+            </dl>
+            <div class="serivcenumber">
+                <a href="javascript:void(0)" target="_blank" style="display:block;">
+                    <img src="../assets/images/index/banner004.jpg" alt=""/>
+                </a>
+            </div>
+        </div>
+        <div class="pwm ifserivcelink clearfix">
+            <div class="if_list">
+                <a href="../footer/about.html">关于iSGO</a>
+                <span>|</span>
+                <a href="../footer/about1.html">企业文化</a>
+                <span>|</span>
+                <a href="../footer/about2.html">招商合作</a>
+                <span>|</span>
+                <a href="../footer/about3.html">联系方式</a>
+                <span>|</span>
+                <a href="../footer/about4.html">工作机会</a>
+                <span>|</span>
+                客服电话:400-628-8666
+            </div>
+            <p>&copy; 2012-2014 www.iSGO.com All Rights Reserved. 享购网 版权所有</p>
+            <p>京ICP证 090163号 | 食品流通许可证 SP1101081110103523 | <a
+                    href="../userfiles/amber/data/img/product/112/1404372966.jpg"
+                    target="_blank">营业执照</a></p>
+            <p class="paylogo" style="margin-top:0px;"></p>
+        </div>
+        <div style="width:300px;margin:0 auto; padding:0px 0 20px 0;">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020501" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="../assets/images/police.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备 11010802020501号</p></a>
+        </div>
+    </div>
+<script>
+    var yunsongType = 0;
+    $('#proce_main3_x').click(function () {
+        $('.myP').css({'display': 'none'});
+        $('.fapiao-1').css({'display': 'block'});
+    });
+    $('.fp_btn2').click(function () {
+        $('.myP').css({'display': 'block'});
+        $('.fapiao-1').css({'display': 'none'});
+        $("#remark").show();
+        $("#remark span").show();
+    });
+    //添加地址
+    $('.addAddress').click(function () {
+        $('.defaultAdd').css({'display': 'none'}); //默认地址 隐藏
+        $('#addAddress').css({'display': 'block'}); //添加地址 显示
+        $("#addAddressBtn").hide();
+        $("#addAddressForm").find(":input").each(function(){
+            if($(this).attr('type')!="button"){
+                $(this).val('');
+            }
+        });
+    });
+    //修改地址
+    $('.editAddress').click(function () {
+        $('.defaultAdd').css({'display': 'none'}); //默认地址 隐藏
+        $('#addAddress').css({'display': 'block'}); //添加地址 显示
+    });
+    //取消添加地址
+    function cancelAddress() {
+        $('.defaultAdd').css({'display': 'block'}); //默认地址 隐藏
+        $('#addAddress').css({'display': 'none'}); //添加地址 显示
+        $("#addAddressBtn").show();
+    }
+
+    function setSendedPay(tag) {
+        if (tag == "01") {
+            $(".payWays input").removeClass("current").eq(0).addClass("current")
+            $(".proce_main1").show().next().show();
+            $("#main3_transTime").show().next().show();
+            $("#main_ziti").hide().next().hide();
+        } else {
+            $(".payWays input").removeClass("current").eq(1).addClass("current")
+            $(".proce_main1").hide().next().hide();
+            $("#main3_transTime").hide().next().hide();
+            $("#main_ziti").show().next().show();
+            $("#Message").val("");
+            BaiDuMap();
+
+//            var cutMoney = $("#cutMoney").attr('data-money');
+            $("#transMoney").text("¥ " + 0.00)
+                    .attr("data-money",0);
+//            $("#prodMoney").attr('data-money',price);
+//            $("#shouldMoney").text("¥ " + (price-cutMoney).toFixed(2))
+//                    .attr('data-money',(data.TransMoney/100+price-cutMoney));
+//            $("#shouldMoney2").html("¥ " + (price-cutMoney).toFixed(2));
+        }
+    }
+</script>
+<script type="text/javascript" src="../assets/js/common/ajax.js"></script>
+<!-- 后引入的 -->
+<script src="../js/common/checkCookie.js"></script>
+<script src="../js/common/bootstrap.min.js"></script>
+<script src="../js/common/jquery-cookie.js"></script>
+<script src="../js/common/artTemplate.js"></script>
+<script src="../js/common/url.js"></script>
+<script src="../js/common/common.js"></script>
+<script src="../js/common/dialog.js"></script>
+<script src="../js/order2/order-all.js"></script>
+<script src="../js/order2/district.js"></script>
+<!-- 地址 -->
+<script id="address-cell" type="text/html">
+    {{each returnJson as value i}}
+    {{if value.IsDefault=="1"}}
+    <div class="defaultAddress" id="{{value.Id}}" data-user2id="{{value.CustomerId}}" data-name="{{value.PersonName}}" data-cellphone="{{value.Phone}}"
+         data-Country="{{value.Country}}" data-Province="{{value.Province}}" data-City="{{value.City}}" data-County="{{value.District}}"
+         data-Address="{{value.Address}}">
+        <div class="revise">
+            <a href="javascript:void(0);" onclick="delAddress('{{value.Id}}');"
+               class="my_span editAddress color_1">删除</a></div>
+        <div class="defaultAddressMessage"
+             onclick="chooseAddress('{{value.Id}}')">
+            <p>{{value.PersonName}}（收）</p>
+            <p>
+                {{value.Country}} {{value.Province}} {{value.City}} {{value.District}} {{value.Address}}
+            </p>
+            <p></p>
+            <p>{{value.Phone}}</p>
+        </div>
+        <div class="lowertriangular">
+            <img src="../assets/images/lowertriangular.png" alt="" style="display:block;">
+        </div>
+    </div>
+    {{else}}
+    <div class="otherAddress" id="{{value.Id}}" data-user2id="{{value.CustomerId}}" data-name="{{value.PersonName}}" data-cellphone="{{value.Phone}}"
+         data-Country="{{value.Country}}" data-Province="{{value.Province}}" data-City="{{value.City}}" data-County="{{value.District}}"
+         data-Address="{{value.Address}}">
+        <div class="revise">
+            <a href="javascript:void(0);" onclick="delAddress('{{value.Id}}');"
+               class="my_span editAddress color_1">删除</a></div>
+        <div class="defaultAddressMessage"
+             onclick="chooseAddress('{{value.Id}}')">
+            <p>{{value.PersonName}}（收）</p>
+            <p>
+                {{value.Country}} {{value.Province}} {{value.City}} {{value.District}} {{value.Address}}
+            </p>
+            <p></p>
+            <p>{{value.Phone}}</p>
+        </div>
+        <div class="lowertriangular">
+            <img src="../assets/images/lowertriangular.png" alt="" style="display:none;">
+        </div>
+    </div>
+    {{/if}}
+    {{/each}}
+</script>
+<!-- 商品 -->
+<script id="prod-cell" type="text/html">
+    {{each returnJson as value i}}
+    <tr class="ordertrLine" id="{{value.Id}}" data-cartId="{{value.cartId}}" data-prodPriceId="{{value.ProdPriceId}}">
+        <td width="787" style='position:relative'>
+            <div class="order_line">
+                <div class="del_left" style="width: 1188px;;">
+                    <div style='height:100%;'>
+                        <img align="absmiddle" src="{{value.PathLogo}}">
+                    </div>
+                    <div class="del_left_1" style='height:100%;'>
+                        <div class="del_left1 s_td2" style="width: 250px;">
+                                <p>{{value.Title}}</p>
+                            <br>
+                            <!--<b style="clear:both;">{{value.Id}}</b>-->
+                        </div>
+                        <strong style="width: 100px;" >
+                            ￥{{value.MarketPrice}}
+                        </strong>
+                        <strong style="width: 100px;">{{value.Num}}</strong>
+                        <strong style="width: 100px;">
+                            ￥{{value.TotalPrice}}
+                        </strong>
+                    </div>
+
+                    {{each value.PackContent as index i}}
+                    <div class="del_left_1" style="height:100%;">
+                            <div class="del_left1 s_td2" style="width: 250px;">
+                                    <p>{{index.ProdName}}</p>
+                                <br>
+                            </div>
+                            <strong style="width: 100px;">
+                                ￥{{index.VenderPrice / 100}}
+                            </strong>
+                            <strong style="width: 100px;">{{index.ProdNum}}</strong>
+                            <strong style="width: 100px;"></strong>
+                        </div>
+                        {{/each}}  
+                </div>
+            </div>
+        </td>
+    </tr>
+    {{/each}}
+</script>
+
+<!-- 礼品卡 -->
+<!--<script id="tbody-cell" type="text/html">-->
+    <!--{{each returnJson as value i}}-->
+    <!--<tr class="my_tr trBorder">-->
+        <!--<td><input type="checkbox" name="checkCard" data-pass="{{value.password}}"></td>-->
+        <!--<td>{{value.card_code}}</td>-->
+        <!--<td>-->
+            <!--{{value.batch_id}}-->
+        <!--</td>-->
+        <!--<td>{{value.card_type}}</td>-->
+        <!--<td>{{value.total_money}}</td>-->
+        <!--<td>{{value.end_time}}</td>-->
+        <!--<td><input type="number" name="optMoney" value="0" min="0" max="{{value.total_money}}"></td>-->
+        <!--<td><input type="text" name="Comment" style="border: 1px solid #e5e5e5;float: left;"></td>-->
+    <!--</tr>-->
+    <!--{{/each}}-->
+<!--</script> -->
+<script id="cardBody1" type="text/html">
+    {{each returnJson as value i}}
+    <tr class="my_tr trBorder">
+        <td>
+            {{if value.cookie !== 0 && value.status != 3 && value.effective == 1 && value.total_money > 0.00}}
+                <input type="checkbox" value="{{value.card_code}}" name="checkCard" data-pass="{{value.password}}">
+            {{/if}}
+            
+            {{value.card_code}}
+        </td>
+        <td>
+            {{value.face_value}}
+        </td>
+        <td>
+            {{value.rest_money}}
+        </td>
+        <td>{{value.total_money}}</td>
+        <td>{{value.start_time}}</td>
+        <td>{{value.end_time}}</td>
+        <td>
+            {{if value.cookie !== 0 && value.status != 3 && value.effective == 1 && value.total_money > 0.00}}
+            <input type="text" name="GiftCard" class="text" value="0" min="0" max="{{value.total_money}}" style="border: 1px solid #e5e5e5;margin: 5px 0;padding: 0 5px;height:30px" onblur="checkVirtualAccount2(this);"/>
+            {{else}}
+            <input type="text" disabled="disabled" name="GiftCard" class="text" value="0" min="0" max="{{value.total_money}}" style="background-color:#e5e5e5;border: 1px solid #e5e5e5;margin: 5px 0;padding: 0 5px;height:30px" onblur="checkVirtualAccount2(this);"/>
+            {{/if}}
+        </td>
+    </tr>
+    {{/each}}
+</script>
+</body>
+<script type="text/javascript">
+    hideFP(true)
+    // 获取地址栏参数
+    function getRequest() {
+        var url = window.location.search; //获取url中"?"符后的字串
+        var theRequest = new Object();
+        if (url.indexOf("?") != -1) {
+            var str = url.substr(1);
+            strs = str.split("&");
+            for (var i = 0; i < strs.length; i++) {
+                theRequest[strs[i].split("=")[0]] = decodeURI(strs[i].split("=")[1]);
+            }
+        }
+        return theRequest;
+    }
+    var productId = window.location.href.split("?productId=")[1];
+    var orderIds = getRequest()["data"];
+    var DisplayId = getRequest()["isSifangli"];
+    // var orderIds = window.location.href.split("?data=")[1];
+    var orderPerId = [];
+    var orderSubmitPrice=0;
+    var WareId;
+    var ProdPriceId
+    var SaleCartIds = [];
+    var Invoices=[];
+    var Pays=[];
+    var products = [];
+    orderPerId = orderIds.split(",");
+    getCountry();
+    getProvince2();
+    zgetProvince();
+    var mapData=[];
+    $(function(){
+        askNav();
+        userInfo();
+        checkLogin();
+        getAddresslist();
+        getCardLikst();
+        myCard();
+    });
+    //-----------------------------------------百度地图
+    function BaiDuMap(){
+        $.getJSON("../json/shop.json",function(data){
+            mapData=data.rows;
+            $(".ziti_div1_div").empty();
+            for(i=0;i<mapData.length;i++){
+                var p = $("#zProvinceName").val();
+                var c = $("#zCityName").val();
+                var d = $("#zCountyName").val();
+                var flag = 0;
+                if(!p){
+                    flag=1;
+                }else if(p==mapData[i].province){
+                    if(!c){
+                        flag=1;
+                    }else if(c==mapData[i].city){
+                        if(!d){
+                            flag=1;
+                        }else if(d==mapData[i].district){
+                            flag=1;
+                            WareId =  mapData[i].WareId;
+//                            console.log(mapData[i])
+                            // console.log(WareId)
+                        }else{
+                            flag=0;
+                        }
+                    }else{
+                        flag=0;
+                    }
+                }else{
+                    flag=0;
+                }
+                if(flag){
+                    $(".ziti_div1_div").append('<div class="ziti_radio">'+
+                            '    <input type="radio" name="ziti_radio" onclick= mapChange(this) WareId="'+mapData[i].WareId+'" value="'+mapData[i].Id+'">'+ mapData[i].name + ' 【'+mapData[i].address+
+                            '】</div>')
+                }
+            }
+            $("input[name='ziti_radio']:eq(0)").attr("checked",'checked');
+            // 百度地图API功能
+            var map = new BMap.Map("allmap");    // 创建Map实例
+            map.centerAndZoom(new BMap.Point(116.331398,39.897445), 12);  // 初始化地图,设置中心点坐标和地图级别
+//        map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+            map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+//        localSet(map);                      //定位
+            addPoint(map);
+        });
+    }
+
+    // 加载导航
+    function askNav() {
+        $.ajax({
+            type:"GET",
+            url: "../json/nav.json",
+            dataType:"json",
+            success: function (data) {
+                var askData;
+                var navHtml = '<li><a href="../index.html">首页</a></li>';
+                for (var i = 0; i < data.rows.length; i++) {
+                    if (data.rows[i].url) {
+                        navHtml += '<li>'+
+                            '<span class="jsClass" data-num="'+data.rows[i].Id+'">'+data.rows[i].name+'</span>'+
+                            '<div class="hover-box life-box">'+
+                                '<div class="hover-left-box">'+
+                                    '<h3><span data-num="'+data.rows[i].Id+'">'+data.rows[i].name+'</span></h3>'+
+
+                                '</div>'+
+                                '<a href="'+data.rows[i].url.aUrl+'" target="_blank"><img src="../'+data.rows[i].url.imgUrl+'"></a>'+
+                            '</div>'+
+                        '</li>';
+                    } else {
+                        navHtml += '<li><span class="jsClass" data-num="'+data.rows[i].Id+'">'+data.rows[i].name+'</span></li>'
+                    }
+                }
+                $('.navTop ul').html(navHtml);
+                for (var i = 0; i < data.rows.length; i++) {
+                    askData = data.rows[i].Id;
+                    $.ajax({
+                        type: "GET",
+                        url: $.url.webUrl + "doB2C/B2Ca_N_Display",
+                        dataType: "json",
+                        data: {
+                            "ParentId": askData,
+                            "VenderId": localStorage.getItem("VenderId")
+                        },
+                        success: function (dataa) {
+                            var spanHtml = '';
+                            if (dataa.total) {
+                                for (var i = 0; i < dataa.rows.length; i++) {
+                                    spanHtml += '<span data-num="'+dataa.rows[i].Id+'">'+dataa.rows[i].Name+'</span>';
+                                }
+                                $('.navTop li').each( function() {
+                                    if (dataa.rows[0].ParentId == ($(this).children('.jsClass').data('num'))) {
+                                        $(this).children('.hover-box').children('.hover-left-box').append(spanHtml);
+                                    }
+                                });
+                            }
+                        }
+                    });
+                }
+            }
+        });
+    }
+    function localSet(map){
+        function myFun(result){
+            var cityName = result.name;
+            map.setCenter(cityName);
+//            alert("当前定位城市:"+cityName);
+        }
+        var myCity = new BMap.LocalCity();
+        myCity.get(myFun);
+    }
+    function addPoint(map){
+        for(i=0;i<mapData.length;i++){
+            var point = new BMap.Point(mapData[i].x, mapData[i].y);
+            var marker = new BMap.Marker(point);  // 创建标注
+            map.addOverlay(marker);               // 将标注添加到地图中
+            map.panTo(point);
+            var sContent = '<div style="width: 250px;">'+
+                    '    <div style="background-color: red;color: white;padding: 5px">'+mapData[i].name+'</div>'+
+                    '    <div style="padding: 5px;">'+
+                    '        <span>详细地址：'+mapData[i].address+'</span><br>'+
+                    '    </div>'+
+                    '</div>';
+            var infoWindow = new BMap.InfoWindow(sContent); //创建信息窗口对象
+            clickLi(marker,infoWindow);
+        }
+        mapChange(0);
+        marker.openInfoWindow(infoWindow); //图片加载完后重绘infoWindow
+    }
+    function clickLi(marker,infoWindow){
+        marker.addEventListener("click", function(){
+            marker.openInfoWindow(infoWindow); //开启信息窗口
+        });
+    }
+    //-----------------------------------------百度地图结束
+    function getAddresslist(){
+        $.ajax({
+            type:"GET",
+            url: $.url.webUrl + "doB2C/B2Ca2_B_CustomerAddress",
+            headers: {"Authorization": "Bearer " + $.cookie("accessToken")},
+            dataType:"json",
+            data:{
+                page: 1,
+                pageSize: "100",
+                CustomerId:$(".top-user").attr("data-user-id")
+            },
+            success: function (data) {
+                if(data.rows.length>0){
+                    $(".proce_main1_1").empty().append(template("address-cell", {returnJson: data.rows}));
+                }else{
+                    $(".proce_main1_1").empty();
+                }
+                getOrderList();
+            }
+        });
+    }
+    var productPriceUrl = '';
+    if ($.cookie("accessToken")) {
+        productPriceUrl = $.url.webUrl + "doB2C/B2Ca2_B_ProdVenderPrice";
+    } else {
+        productPriceUrl = $.url.webUrl + "doB2C/B2Ca_N_ProdVenderPrice";
+    }
+    function getOrderList(flg){
+        var newData = new Array();
+        var totalPrices = 0;
+        var counts = 0;
+        for(var i=0;i<orderPerId.length;i++){
+            SaleCartIds.push(orderPerId[i].split("|")[2])
+            $.ajax({
+                async:false,
+                type:"GET",
+                url: productPriceUrl,
+                data:{
+                    ProdPriceId:orderPerId[i].split("|")[0],
+                    VenderId:localStorage.getItem("VenderId")
+                },
+                headers:{"Authorization": "Bearer " + $.cookie("accessToken")},
+                dataType:"json",
+                success: function (data) {
+
+                    data.PackContent = eval("(" + data.PackContent + ")");
+                    // var html = '';
+                    // Arrays.forEach(function (item, index) {
+                    //     html += '<>'
+                    //     console.log(item)
+                    // })DiscountSalePrice
+
+                    if(data.rows&&data.rows!=undefined){
+                        data=data.rows[0];
+                    }
+                    data.ProdPriceId=orderPerId[i].split("|")[0];
+                    data.MarketPrice = data.SalePrice
+                    if (data.DiscountSalePrice != null || data.DiscountSalePrice != undefined) {
+                        if (data.SalePrice > data.DiscountSalePrice) {
+                            data.MarketPrice = data.DiscountSalePrice
+                        }
+                    }
+                    data.Id = orderPerId[i].split("|")[0];
+                    data.Num = orderPerId[i].split("|")[1];
+                    data.Count = orderPerId[i].split("|")[1];
+//                    data.cartId = orderPerId[i].split("|")[2];
+                    totalPrices+=data.MarketPrice*data.Num;
+                    counts+=parseInt(data.Num);
+                    data.TotalPrice = (data.MarketPrice*data.Num/100).toFixed(2);
+                    data.MarketPrice = (data.MarketPrice/100).toFixed(2);
+//                    data.PathLogo = "http://p.i139.cn/nmpfs/media/p/picture/20180427/151/213/10279/23355957_320.jpg";
+                    if(!data.Logo){
+                        data.PathLogo =""
+                    }
+                    newData.push(data);
+                    
+                }
+            });
+        }
+        products=newData;
+        $("#prodContainer").find("tr").each(function(i){
+            if(i>0){
+                $(this).remove();
+            }
+        });
+        $("#prodContainer").append(template("prod-cell", {returnJson:newData}));
+        totalPrices/=100;
+        $("#prodMoney").text("¥ " + totalPrices.toFixed(2));
+        orderSubmitPrice=totalPrices;
+        $("#countProd").html(counts);
+        var paraTrans = {
+            TargetCountry:	$(".defaultAddress").attr("data-Country"),
+            TargetProvince:	$(".defaultAddress").attr("data-Province"),
+            TargetCity:	$(".defaultAddress").attr("data-City"),
+            TargetDistrict:	$(".defaultAddress").attr("data-County"),
+            Prods:products
+        };
+        if($(".defaultAddress").attr("data-Country")!=undefined){
+
+            isSaleOrderTrans(paraTrans,1,orderSubmitPrice, products.Title);
+        }else{
+            $("#shouldMoney").text("¥ " + (totalPrices).toFixed(2))
+                    .attr('data-money',(totalPrices));
+            $("#shouldMoney2").html("¥ " + (totalPrices).toFixed(2));
+        }
+    }
+    $('#isneed').click(function () {
+        if($("#isneed").prop("checked")){
+            $('.Disnone').show()
+        }else{
+            // console.log(2)
+            $('.Disnone').hide();
+        }
+    })
+    $("input[name='sendTimeSelect']").on('click',function() {
+        yunsongType = $(this).val();
+    });
+    function _orderSubmit(){
+        if($("#pay").find(".current").val()=="送货上门"&&$(".defaultAddress").attr("data-Country")==undefined){
+            dialogModule.iTips("请选择地址");
+            return;
+        }
+
+        $("#wait").show();
+        $("#sub").hide();
+
+        var para = {};
+        if($("#pay").find(".current").val()=="送货上门"){
+            for(var i=0;i<products.length;i++){
+//                console.log(SaleCartIds)
+                products[i].Count=products[i].Num;
+                products[i].SaleCartId=SaleCartIds[i];
+                products[i].WareId='';
+            }
+            para = {
+                VenderId:localStorage.getItem("VenderId"),
+                TransMoney:$("#transMoney").attr("data-money")*100,
+                TransType:$("#pay").find(".current").val()=="送货上门"?1:0,//发货方式（物流、自提）
+                TransTime:Number(yunsongType),
+                TargetUser:$(".defaultAddress").attr("data-name"),
+                TargetPhone:$(".defaultAddress").attr("data-cellphone"),
+                TargetCountry:	$(".defaultAddress").attr("data-Country"),
+                TargetProvince:	$(".defaultAddress").attr("data-Province"),
+                TargetCity:	$(".defaultAddress").attr("data-City"),
+                TargetDistrict:	$(".defaultAddress").attr("data-County"),
+                TargetAddress:$(".defaultAddress").attr("data-Address"),
+                Message:$("#Message").val(),// 给卖家留言
+                IsSceneSale:0,
+                IsCached:0,//是否暂存
+                Label: 2,
+                CallbackUrl: '',
+                IsSelfFetch: 0,
+                Prods:products,
+                Invoices:Invoices,
+                Pays:Pays
+            };
+        }else{
+            var flg=1;
+            var r = $("input[name='ziti_radio']").val();
+            var d = {};
+            WareId = $("input[name='ziti_radio']:checked").attr("WareId");
+            for(var i=0;i<products.length;i++){
+                products[i].Count=products[i].Num;
+                products[i].SaleCartId=$(".ordertrLine").eq(i).attr("data-cartId");
+                products[i].WareId=WareId;
+            }
+            for(l=0;l<mapData.length;l++){
+                if(mapData[l].Id==r){
+                    d=mapData[l];
+                }
+            }
+            para = {
+                VenderId:localStorage.getItem("VenderId"),
+                TransMoney:$("#transMoney").attr("data-money")*100,
+                TransType:0,//发货方式（物流、自提）
+                TransTime:Number(yunsongType),
+                TargetUser: $(".top-user").text(),
+                TargetPhone:$(".top-user").attr('data-user-phone'),
+                TargetCountry: d.country,
+                TargetProvince:	d.province,
+                TargetCity:	d.city,
+                TargetDistrict:	d.district,
+                TargetAddress:d.address,
+                Message:$("#Message").val(),// 给卖家留言
+                IsSceneSale:0,
+                IsCached:0,//是否暂存
+                Prods:products,
+                Invoices:Invoices,
+                Pays:Pays
+            };
+        }
+        isSaleOrderTrans(para,0,orderSubmitPrice,flg, products.Title);
+    }
+    //    搜索
+    $(".search-btn").on("click",function(){
+        searchKey();
+    });
+    function searchKey(){
+        sessionStorage.removeItem("typePath");
+        sessionStorage.removeItem("typeName");
+        var keyWord = $.trim($(".search-input").val());
+        if (keyWord==null || keyWord.length <=0) {
+            dialogModule.iTips("请输入搜索的关键字");
+            return false;
+        }else{
+            sessionStorage.keyWord = keyWord;
+            window.location.href = "../products/product-all.html";
+        }
+    }
+    function searchKeyDown(event){
+        if (event.keyCode == 13) {
+            event.returnValue = false;
+            event.cancel = true;
+            searchKey();
+        }
+    }
+
+    function mapChange(_this) {
+       if(_this == 0){
+           var i = 0
+       } else {
+           var i = _this.value - 1;
+       }
+        var map = new BMap.Map("allmap");    // 创建Map实例
+        map.centerAndZoom(new BMap.Point(116.331398,39.897445), 12);  // 初始化地图,设置中心点坐标和地图级别
+//        map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+        map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+//        localSet(map);
+
+        var point = new BMap.Point(mapData[i].x, mapData[i].y);
+        var marker = new BMap.Marker(point);  // 创建标注
+        map.addOverlay(marker);               // 将标注添加到地图中
+        map.panTo(point);
+        var sContent = '<div style="width: 250px;">'+
+                '    <div style="background-color: red;color: white;padding: 5px">'+mapData[i].name+'</div>'+
+                '    <div style="padding: 5px;">'+
+                '        <span>详细地址：'+mapData[i].address+'</span><br>'+
+                '    </div>'+
+                '</div>';
+        var infoWindow = new BMap.InfoWindow(sContent); //创建信息窗口对象
+        clickLi(marker,infoWindow);
+        marker.openInfoWindow(infoWindow); //图片加载完后重绘infoWindow
+    }
+
+    //获取礼品卡列表
+    function myCard() {
+        $.ajax({
+            type: "GET",
+            url: $.url.webUrl + "doB2C/B2Ca2_B_MyCard",
+//            url:"../json/myCard.json",
+            headers: {"Authorization": "Bearer " + $.cookie("accessToken")},
+            dataType: "json",
+            success: function (data) {
+                data.forEach(function (v) {
+                    if(v.create_time){
+                        v.create_time = v.create_time.split("T")[0];
+                    }
+                    if(v.start_time){
+                        v.start_time = v.start_time.split("T")[0];
+                    }
+                    if(v.end_time){
+                        v.end_time = v.end_time.split("T")[0];
+                    }
+                    if(v.total_money != null || v.total_money != undefined){
+                        v.total_money = (v.total_money/100).toFixed(2);
+                    }
+                    if(v.face_value != null || v.face_value != undefined){
+                        v.face_value = (v.face_value/100).toFixed(2);
+                    }
+                    v.rest_money = ((v.face_value - v.total_money)).toFixed(2);
+                });
+//                template.config("escape", false);
+                $("#cardbody").empty().append(template("cardBody1", {returnJson: data}));
+                // $("input[name='checkCard']").click(function(){
+                //     var status = $(this).attr('data-status');
+                //     var effective = $(this).attr('data-effective');
+                //     if (status=='3') {
+                //         dialogModule.iTips("此礼品卡已冻结，不可使用");
+                //         return false;
+                //     }
+                //     if(effective=="0"){
+                //         dialogModule.iTips("此礼品卡已失效，不可使用");
+                //         return false;
+                //     }
+                // })
+            }
+        });
+    }
+    $('.navTop').on('click', 'span', function(){
+        if ($(this).data('num')) {
+            window.location.href = "../products/product-list.html~DisplayId=.html" + $(this).data('num');
+        }
+    });
+    $('.tuangou').hover(function(){
+        $('.together-bottom').hide();
+        $('.together-top').show();
+        $('.leibie').show();
+    },function(){
+        $('.together-top').hide();
+        $('.together-bottom').show();
+        $('.leibie').hide();
+    });
+</script>
+</html>

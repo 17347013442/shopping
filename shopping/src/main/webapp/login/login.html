@@ -1,0 +1,156 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>享购网</title>
+    <link href="../assets/css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/login/login.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../assets/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../assets/js/common/jquery.validate.js"></script>
+    <script type="text/javascript" src="../assets/js/common/messages_cn.js" charset="utf-8"></script>
+    <script language="javascript" src="../assets/js/common/check.js"></script>
+</head>
+<body class="news_logo">
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  on  09/22/19 20:31:32.<br>
+<b>Address:</b> <a class="info" href="http://www.isgo.com/login/login.html">http://www.isgo.com/login/login.html</a><br>
+<b>Title:</b> 享购网 &nbsp;&bull;&nbsp; <b>Size:</b> 6033 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 09 Sep 2019 11:21:35 GMT<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+<div class="logo_sign">
+    <div class="logo_banner"><a href="../index.html"><img src="../assets/images/logo.png"/></a></div>
+    <div class="logo_main">
+        <div class="isgo-login-l">
+            <h3>欢迎登录</h3>
+            <form id="loginForm" method="post" action="/login">
+                <table class="isgo-login-table" cellpadding="0" cellspacing="0" border="0">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="span1">账号<span style="color: red;">*</span>：</div>
+                        </td>
+                        <td>
+                            <input  tabindex="0" type="text"
+                                   class="isgo-login-text isgo-login-inputText" name="email" id="email" placeholder="请输入账号">
+                            <div class="error-info">
+                                <span class="field-validation-valid email-error" style="color:red;"></span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="span1">密码<span style="color: red;">*</span>：</div>
+                        </td>
+                        <td>
+                            <input type="password" name="password" maxlength="20"  value=""
+                                   class="isgo-login-text isgo-login-inputText"
+                                    id="password" placeholder="请输入密码">
+                            <div class="error-info">
+                                <span class="field-validation-valid password-error" style="color:red;"></span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"></td>
+                        <td>
+                            <li class="fuwu">
+                                <!--<input tabindex="0" type="checkbox" id="rememberId" name="autoLogin" value=""-->
+                                       <!--class="r_checkbox" checked="checked"/>-->
+                                <!--<em onclick="isRemember('rememberId');" style="cursor:pointer;color:#666666">自动登录</em>-->
+                                <a tabindex="0" style="margin-left:8px" href="step1.html">忘记密码？</a>
+                            </li>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"></td>
+                        <td><input tabindex="0" type="button" style="cursor:pointer;" class="isgo-login-bt"
+                                   value="登&nbsp;&nbsp;&nbsp;&nbsp;录" onclick="submitLoginForm();"
+                                   id="loginFormSubmit"/></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <div class="isgo-login-r">
+            <div class="login-r-top">
+                <a href="#">
+                    <img src="../assets/images/er.jpg">
+                </a>
+                <h4>微信关注&nbsp;“ISGO生活家”</h4>
+                <p>查订单 查物流 乐享缤纷活动</p>
+                <p>还不是享购会员？</p>
+                <strong>
+                    <a href="register.html" class="loginButton">免费注册</a>
+                </strong>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/common/jquery-1.10.2.min.js"></script>
+<script src="../js/common/jquery-cookie.js"></script>
+<script src="../js/common/jQuery.md5.js"></script>
+<script src="../js/common/url.js"></script>
+<script src="../js/common/common.js"></script>
+<script src="../js/common/dialog.js"></script>
+<script type="text/javascript">
+    $(function(){
+//        var loginContentHeight = parseInt($(".login-content").css("height"));
+//        $(".login-content").css("margin-top",-loginContentHeight/2 + "px");
+        if($("#mask")){
+            $("#mask").hide();
+        }
+    });
+    $("#password").on("focus",function(){
+        $(this).attr("type","password");
+    });
+    //点击登录事件
+    var email,password,accessToken,flag;
+    function submitLoginForm(){
+        email = escape($.trim($("#email").val()));
+        password = $.trim($("#password").val());
+        if(!email){
+            $(".email-error").text("请输入账号").show();
+            return false;
+        }else{
+            $(".email-error").hide();
+        }
+        if(!password){
+            $(".password-error").text("请输入密码").show();
+            return false;
+        }else{
+            $(".password-error").hide();
+        }
+        $.ajax({
+            type:"GET",
+            url: $.url.webUrl + "do4A/a2/Token",
+            data:{
+                id:email,
+                pwd: $.md5(password)
+            },
+            success:function (data){
+                accessToken = data.accessToken;
+                $.cookie("accessToken",data.accessToken,{path: "/"});
+                window.location.href = "../index.html";
+            }
+        });
+    }
+    //回车事件调用登录方法
+    document.onkeydown=function(e){
+        var oEvent=e||event;
+        if(oEvent.keyCode==13){
+            $(".login-button").trigger("click");
+        }
+    };
+    </script>
+</body>
+</html>

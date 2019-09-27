@@ -1,0 +1,598 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>享购网</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="images/favicon.ico" type="image/x-icon" rel="icon">
+    <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/common/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="css/common/base.css" rel="stylesheet" type="text/css"/>
+    <link href="css/common/common.css~time=.css"+timestamp rel="stylesheet" type="text/css"/>
+    <link href="css/common/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/common/pagination.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/index.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/common/index_lunbo.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	
+    <script type="text/javascript" src="assets/js/bannerAutoSilder.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.jcarousel.js"></script>
+    <style>
+        .index-price-login{
+            margin-left: 65px;
+            /*margin-top: 28px;*/
+            line-height: 22px;
+            font-size: 14px;
+            border: 1px dashed #666;
+            text-align: center;
+            padding: 5px 20px;
+            cursor: pointer;
+            color: #666;
+            display: inline-block;
+            /*margin: 6px 0;*/
+            box-sizing: border-box;
+            font-family: tahoma, "Microsoft YaHei", arial, "Hiragino Sans GB", 宋体, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size-adjust: none;
+            font-stretch: normal;
+            font-feature-settings: normal;
+            font-language-override: normal;
+            font-kerning: auto;
+            font-variant-alternates: normal;
+            font-variant-caps: normal;
+            font-variant-east-asian: normal;
+            font-variant-ligatures: normal;
+            font-variant-numeric: normal;
+            font-variant-position: normal;
+        }
+        .bannerrightdetails {
+            position: relative;
+        }
+        i.bannerrightcost {
+            text-align: left!important;
+            margin-right: 0px;
+        }
+        i.sale {
+            position: absolute;
+            bottom: 0px;
+            right: 12px;
+        }
+        i.cost {
+            position: absolute;
+            left: 10px;
+            bottom: 18px;
+        }
+        .ft15{
+            font-size:14px;
+            position: absolute;
+            bottom: 18px;
+            right: 16px;
+        }
+        body{
+            background: #fff;
+            min-width:1200px;
+            margin:0 auto;
+        }
+        .scrollbanner {
+            position: relative;
+        }
+
+        .slidesjs-pagination {
+            position: absolute;
+            right: 10px;
+            z-index: 99999;
+            bottom: 1px;
+        }
+
+        .slidesjs-pagination li {
+            float: left;
+            display: block;
+        }
+
+        .slidesjs-pagination li a:hover {
+            color: #fff;
+            background-color: #fff;
+        }
+
+        .slidesjs-pagination li a.active:link {
+            color: #fff;
+            background-color: #fff;
+        }
+
+        .slidesjs-pagination li a {
+            text-align: center;
+            margin: 6px;
+            color: #ddd;
+            background-color: #ddd;
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            border-radius: 10px;
+            line-height: 300px;
+            overflow: hidden;
+        }
+
+        .lunbo .focus .fnum a {
+            width: 23px;
+            height: 5px;
+            color: #ddd;
+            background-color: #ddd;
+        }
+
+        .lunbo .focus .fnum a:hover {
+            color: #fff;
+            background-color: #fff;
+        }
+
+        .lunbo .focus .fnum a.on:link {
+            color: #fff;
+            background-color: #fff;
+        }
+        .en-markup-crop-options {
+            top: 18px !important;
+            left: 50% !important;
+            margin-left: -100px !important;
+            width: 200px !important;
+            border: 2px rgba(255, 255, 255, .38) solid !important;
+            border-radius: 4px !important;
+        }
+        .en-markup-crop-options div div:first-of-type {
+            margin-left: 0 !important;
+        }
+        div#news {
+            background-color: #FFEA74;
+            font-family: "微软雅黑";
+            width: 1200PX;
+            height: 50px;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 14px;
+            text-align: center;
+            color: black;
+        }
+
+        button#new-btn {
+            display: block;
+            float: right;
+            margin: -46px 9px;
+            text-decoration: none;
+            border: 0;
+            font-size: 17px;
+            background-color: #FFEA74;
+            outline: none;
+        }
+        .bannerrightdescribe{
+            font-size:14px;
+        }
+        .prod_down {
+            width: 210px;
+            margin: 0 auto;
+        }
+        .nav-box {
+            margin-top: 30px;
+            position: absolute;
+            z-index: 99;
+            left: 0;
+            top: 0;
+        }
+        .nav-icon {
+            display: none;
+            margin-top: -5px;
+        }
+		 
+ 
+  
+    </style>
+</head>
+<body>
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+
+
+
+<div class="header">
+    <div class="top">
+        <div class="top-left">
+            <!-- <a href="javascript:void(0)" class="top-logo">网站首页</a> -->
+            <a href="javascript:void(0)" style="cursor: default">您好，欢迎光临享购网！</a>
+        </div>
+        <div class="top-right fr">
+            <a href="login/login.html" class="top-login">登录</a>
+            <a href="login/register.html" class="top-register">注册</a>
+            <a href="userInfo/user-info1.html" class="top-user"></a>
+            <a href="javascript:void(0)" class="top-exit" onclick="exit()">退出</a>
+            <a href="javascript:void(0)" class="top-order">我的订单</a>
+            <a href="javascript:void(0)" class="top-cart">购物车</a>
+          
+            <div class="tuangou">
+                <a href="javascript:void(0)" class="top-together">团购
+                    <img class="together-top" src="images/top.png">
+                    <img class="together-bottom" src="images/bottom.png">
+                </a>
+                <div class="leibie">
+                    <a href="javascript:void(0)">享购团购</a>
+                  
+                </div>
+            </div>
+          
+            <p>400-628-8666</p>
+            <!-- <a href="https://www.kuaidi100.com/openapi/applyapi.shtml?free=free" class="top-cart">快递查询</a> -->
+        </div>
+    </div>
+</div>
+<div class="search-wrapper ofh">
+    <!--<div class="logo-left-wrapper fl">-->
+        <!--<a href="https://www.kuaidi100.com/openapi/applyapi.shtml?free=free" class="top-cart">快递100查询</a>-->
+        <img src="images/logo-left.png" class="logo-left">
+    <!--</div>-->
+    <div class="search">
+        <input name="name" class="search-input" type="text" placeholder="请输入想要搜索的内容" onkeydown="searchKeyDown(event);">
+        <span class="search-btn fr"><img src="images/search.jpg"></span>
+    </div>
+</div>
+<div class="navTop">
+    <div class="navTop-box">
+        <ul>
+ <!-- 导航栏 -->
+                   
+        </ul>
+    </div>
+</div>
+<!-- 轮播开始 -->
+<div id="focusbar" class="lunbo">
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+ 
+  <!-- 指示符 -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+	 <li data-target="#demo" data-slide-to="3"></li>
+	  <li data-target="#demo" data-slide-to="4"></li>
+	   <li data-target="#demo" data-slide-to="5"></li>
+	    
+  </ul>
+ 
+  <!-- 轮播图片 -->
+
+  <div class="carousel-inner">
+   
+   <div class="carousel-item active">
+      <img src="assets/images/eee.jpg">
+    </div>
+	<div class="carousel-item">
+      <img src="assets/images/fff.jpg">
+    </div>
+	<div class="carousel-item">
+      <img src="assets/images/ggg.jpg">
+    </div>
+	<div class="carousel-item">
+      <img src="assets/images/ccc.jpg">
+    </div>
+	<div class="carousel-item">
+      <img src="assets/images/ddd.jpg">
+    </div>
+  </div>
+ 
+  <!-- 左右切换按钮 -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+ 
+</div>
+
+
+</div>
+<!-- 轮播结束 -->
+<div class="pwm">
+    <!-- 展示区 -->
+    <div class="pwm floor" id="_area"></div>
+    <!-- 展示区结束 -->
+    <!--右侧购物车 开始-->
+    <div class="miniCart">
+        <div class="miniCartGoods">
+            <div class="miniCartGoodsN">0</div>
+            <a href="login/login.html" class="miniCartGoods">
+                <img src="assets/images/miniCartGoods.png" alt=""/></a>
+        </div>
+        <div class="giftCartBangding">
+            <a href="#" class="miniCartGifts">
+                <img src="assets/images/giftCardsBangding.png" alt=""/></a>
+        </div>
+        <div class="miniCart-top">
+            <a href="#" class="backToTop">
+                <img src="assets/images/backToTop.png" alt=""/></a>
+        </div>
+    </div>
+    <!--右侧购物车 结束-->
+</div>
+<!--展示区-->
+
+ <div class="pwm floor" id="showAll">
+    
+      
+    </div>
+<!-- 底部 -->
+<div class="ifooter">
+    <div class="pwm serivcelist clearfix">
+        <dl>
+            <dt>新手指南
+            </dt>
+            <dd><a href="footer/question.html">常见问题</a></dd>
+            <dd><a href="footer/aB001.html">用户注册</a></dd>
+            <dd><a href="login/login.html">用户登陆</a></dd>
+        </dl>
+        <dl>
+            <dt>购物指南
+            </dt>
+            <dd><a href="footer/aB008.html">购物流程</a></dd>
+            <dd class="top-order" ><a href="footer/aB009.html">订单状态</a></dd>
+            <dd><a href="http://www.kuaidi100.com/?from=openv">快递查询</a></dd>
+        </dl>
+        <dl>
+            <dt>支付方式
+            </dt>
+            <dd><a href="footer/aB019.html">在线支付</a></dd>
+            <dd class="top-card"><a href="footer/aB020.html">礼品卡支付</a></dd>
+            <dd><a href="footer/aB021.html">礼品卡说明</a></dd>
+            <!--<dd><a href="#">货到付款</a></dd>-->
+        </dl>
+        <dl>
+            <dt>配送方式
+            </dt>
+            <dd><a href="footer/aB023.html">配送方式</a></dd>
+            <dd><a href="footer/aB024.html">配送政策</a></dd>
+            <!--<dd><a href="footer/service.html">特殊说明</a></dd>-->
+        </dl>
+        <dl>
+            <dt>售后服务
+            </dt>
+            <dd><a href="footer/aB026.html">退/换货政策</a></dd>
+            <dd><a href="footer/aB027.html">退/换货流程</a></dd>
+            <!--<dd><a href="#">特殊说明</a></dd>-->
+        </dl>
+        <dl>
+            <dt>我的享购
+                <span class="icon-hot"></span>
+            </dt>
+            <dd class="top-order"><a href="javascript:void(0)">我的订单</a></dd>
+            <dd class="top-card"><a href="javascript:void(0)">我的购物卡</a></dd>
+            <!--<dd><a href="con_tluw123.htm~viewPage=service&view=all">我的优惠券</a></dd>-->
+        </dl>
+        <div class="serivcenumber">
+            <a href="javascript:void(0)" target="_blank" style="display:block;">
+                <img src="assets/images/index/banner004.jpg" alt=""/>
+            </a>
+        </div>
+    </div>
+    <div class="pwm ifserivcelink clearfix">
+        <div class="if_list">
+            <a href="footer/about.html">关于iSGO</a>
+            <span>|</span>
+            <a href="footer/about1.html">企业文化</a>
+            <span>|</span>
+            <a href="footer/about2.html">招商合作</a>
+            <span>|</span>
+            <a href="footer/about3.html">联系方式</a>
+            <span>|</span>
+            <a href="footer/about4.html">工作机会</a>
+            <span>|</span>
+            客服电话:400-628-8666
+        </div>
+        <p>&copy; 2012-2014 www.iSGO.com All Rights Reserved. 享购网 版权所有</p>
+        <p>京ICP证 090163号 | 食品流通许可证 SP1101081110103523 | <a
+                href="userfiles/amber/data/img/product/112/1404372966.jpg"
+                target="_blank">营业执照</a></p>
+        <p class="paylogo" style="margin-top:0px;"></p>
+    </div>
+    <div style="width:300px;margin:0 auto; padding:0px 0 20px 0;">
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020501" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="assets/images/police.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备 11010802020501号</p></a>
+    </div>
+</div>
+<script src="js/common/jquery.min.js"></script>
+<script src="js/common/jquery-cookie.js"></script>
+<script src="assets/js/jquery.jcarousel.js"></script>
+<script src="js/common/artTemplate.js"></script>
+ <script src="js/common/url.js"></script>
+<script src="js/common/swiper.js"></script>
+
+<!-- <script src="js/common/url.js"></script> 
+<script src="js/common/common.js"></script>
+ <script src="js/common/dialog.js"></script>-->
+
+
+
+
+
+
+<script>
+
+
+	
+		//自动播放
+		//$("#demo").carousel({
+		//	interval :1000,
+		//});
+
+   
+    //首页
+    $(".top-logo").on('click',function(){
+        location.href = "index.html";
+    });
+	
+	//根据类型id查看所有该类型的商品
+    function moreclick(a){
+        window.location.href = "products/product-list.html?tino="+$(a).attr("Id");
+        //localStorage.setItem("ProdPriceId",$(a).attr("data-ProdPriceId"));
+    }
+	//点击商品
+    function araeclick(a){
+        var cangkuID = $(a).parents(".bannermainlist").data("id");
+        productId = $(a).parents(".layoubannerprice").attr("id");
+   
+    }
+    //function bannerClick(obj){
+       // productId = $(obj).attr("id");
+        //window.location.href = "products/product-detail.html~productId=.html" + productId;
+        
+    //}
+    var VenderId;
+    $(function(){
+        askNav();
+      $.post("good/findByTno",function(data){
+    	  console.log(data);
+    	  var str='';
+    	  var size=8;
+    		 for(var i=0;i<data.length;i++){
+    			 str+='<div class="pwm-publictitle publictitle-day">'
+    			 +' <span class="color-y">'+data[i].tname+'</span>'
+    			 +' <div class="more" >'
+    			 +' <a href="products/product-list.html?tno='+data[i].tno+'">More&gt;</a></div>  </div>'
+    			 +' <div class="bgc-y" style="width: 1200px;height: 4px;padding: 0;overflow: hidden;">'
+    			 +' </div> <div class="newbuylist clearfix"><div class="bannerleftlist">'
+    			 +'<div class="side-inner"> <div class="banner"> '
+    			 +'<img src="images/b'+i+'.jpg" width="240" height="682" alt="">'
+    			 +' <ul class="nav-box" style="margin-top: 30px;">';
+    			 
+    			if(data[i].glist.length<8){
+    				size=data[i].glist.length;
+    			}
+    	  for(var j=0;j<data[i].typeItem.length;j++){
+    		  str+=' <li onclick="moreclick(this)" id="'+data[i].typeItem[j].tino+'" style="width: 100px;float:left;text-align: center'
+    		  +'margin:20px 0 0 10px;cursor: pointer" align="center"> <img class="nav-icon" src="images/cj.png">'
+    		  +' <span class="color-y" style="font-size: 15px;">'+data[i].typeItem[j].tname+'</span></li> ';
+    	  }
+    	  //<!-- 右侧块 start -->
+    	  str+='</ul> </div> </div></div> '
+    	  +' <div class="bannermainlist clearfix focusbar" data-id="">';
+    	  
+    	  for(var n=0;n<size;n++){
+    		
+    	  str+='<div class="layoubannerprice" id="" >'
+    	  +' <div class="bannerrightimg "><div class="bannerrightimg-img">'
+    	  +' <a href="products/product-detail.html?gno='+data[i].glist[n].gno+'">'
+    	  +' <img src="'+data[i].glist[n].pics+'" onclick="araeclick(this)">'
+    	  +'</a></div> <div class="bannerrightdetails">'
+    	  +' <i class="bannerrightdescribe" onclick="araeclick(this)">'+data[i].glist[n].gname+'</i>'
+    	  +' <div style="clear:both"></div> </div><div class="prod_down"><div style="float: left">'
+    	  +'<i class="bannerrightcost">￥'+data[i].glist[n].price+'</i></div> <i class="bannerrightNum">库存:'+data[i].glist[n].balance+'</i>'
+    	  +'  </div></div> </div>';
+          
+         
+    	  }
+    	  str+=' </div> </div>';
+    	  
+    	 
+       // <!-- 右侧块 end -->
+    
+    		 }
+    		 
+    		 $('#showAll').html(str);
+      },'json')
+    });
+
+    // 加载导航
+    function askNav() {
+        $.ajax({
+            type:"GET",
+            url: "type/findAll",
+            dataType:"json",
+            success: function (data) {
+            	console.log(data);
+                var askData;
+                var navHtml = '<li><a href="index.html">首页</a></li>';
+                for (var i = 0; i < data.length; i++) {
+                    
+                        navHtml += '<li>'+
+                            '<span id="tno" class="jsClass" data-num="'+data[i].tno+'">'+data[i].tname+'</span>'+
+                            '<div class="hover-box life-box"> <div class="hover-left-box">  <h3><span data-num="'+data[i].tino+'">'+data[i].tname+'</span></h3>';
+                               
+                                for (var j = 0; j < data[i].typeItem.length; j++) {
+                                	//console.log(data[i].typeItem[j].tname);
+                                	 //navHtml+= '<a href="products/product-list.html?tino='+data[i].typeItem[j].tino+'" target="_blank"><span>'+data[i].typeItem[j].tname+'</span></a>';
+                                	navHtml+= '<span id="tino" data-num='+data[i].typeItem[j].tino+'>'+data[i].typeItem[j].tname+'</span>';
+                                	
+                                }
+                               // console.log(navHtml);
+                                navHtml+='</div> <img src="assets/images/'+(i+1)+'.jpg"></a> </div> </li>' ;
+                               
+                                //'<a href="'+data.rows[i].url.aUrl+'" target="_blank"><img src="./'+data.rows[i].url.imgUrl+'"></a>'+
+                            
+                       
+                    
+                        //<!--navHtml += '<li><span class="jsClass" data-num="'+data.typeItem[i].tino+'">'+data.typeItem[i].tname+'</span></li>'--!>
+                                
+                }
+                $('.navTop ul').html(navHtml);
+             
+            }
+        });
+    }
+  
+
+
+
+    //    搜索
+    $(".search-btn").on("click",function(){
+        searchKey();
+    });
+    function searchKey(){
+        sessionStorage.removeItem("typePath");
+        sessionStorage.removeItem("typeName");
+        var keyWord = $.trim($(".search-input").val());
+        if (keyWord==null || keyWord.length <=0) {
+            dialogModule.iTips("请输入搜索的关键字");
+            return false;
+        }else{
+            sessionStorage.keyWord = keyWord;
+            window.location.href = "products/product-all.html";
+        }
+    }
+    function searchKeyDown(event){
+        if (event.keyCode == 13) {
+            event.returnValue = false;
+            event.cancel = true;
+            searchKey();
+        }
+    }
+   
+    $('.navTop').on('click', '#tno', function(){
+        if ($(this).data('num')) {
+            window.location.href = $.url.locationUrl+"products/product-list.html?tno=" + $(this).data('num');
+            //alert( $.url.locationUrl+"products/product-list.html?tino=" + $(this).data('num'));
+        }
+    });
+        $('.navTop').on('click', '#tino', function(){
+            if ($(this).data('num')) {
+                window.location.href = $.url.locationUrl+"products/product-list.html?tino=" + $(this).data('num');
+                //alert( $.url.locationUrl+"products/product-list.html?tino=" + $(this).data('num'));
+            }
+        });
+    $('.tuangou').hover(function(){
+        $('.together-bottom').hide();
+        $('.together-top').show();
+        $('.leibie').show();
+    },function(){
+        $('.together-top').hide();
+        $('.together-bottom').show();
+        $('.leibie').hide();
+    });
+</script>
+</body>
+</html>

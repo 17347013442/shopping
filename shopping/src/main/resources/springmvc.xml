@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--开启注解扫描，只扫描Controller注解-->
+    <context:component-scan base-package="com.yc.controller">
+       
+	
+    </context:component-scan>
+
+ <!-- html视图解析器 必须先配置freemarkerConfig,注意html是没有prefix前缀属性的-->
+    <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">  
+        <property name="templateLoaderPath">  
+            <value>/back</value>  
+        </property>  
+    </bean>  
+     <bean id="htmlviewResolver"  
+        class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">  
+        <property name="suffix" value=".html" /> 
+        <property name="order" value="0"></property> 
+        <property name="contentType" value="text/html;charset=UTF-8"></property>         
+    </bean>  
+
+    <!--配置的视图解析器对象-->
+    <bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/manager/"/>
+        <property name="suffix" value=".jsp"/>   
+          <property name="order" value="0"></property>    
+    </bean>
+    
+     
+   
+     <!--配置文件解析器对象-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="10485760" />
+    </bean>
+    
+
+<!-- 配置servlet静态资源 -->
+<mvc:default-servlet-handler/>
+
+    <!--过滤静态资源-->
+    <mvc:resources location="/css/" mapping="/css/**" />
+    
+    <mvc:resources location="/js/" mapping="/js/**" />
+  	<mvc:resources location="/" mapping="/**/*.html"/>
+  	<mvc:resources location="/" mapping="/**/*.css" />
+  	<mvc:resources location="/" mapping="/**/*.js" />
+
+    <!--开启SpringMVC注解的支持  会自动注册RequestMappingHandlerMapping,RequestMappingHandlerAdapter 和exceptionhandelExceptionresolver-->
+    <mvc:annotation-driven/>
+<!-- 开启拦截器 -->
+<mvc:interceptors>
+<mvc:interceptor>
+<mvc:mapping path="/back/page/**"/>
+<bean class="com.yc.interceptor.BackForwardInterceptor"></bean>
+</mvc:interceptor>
+</mvc:interceptors>
+</beans>

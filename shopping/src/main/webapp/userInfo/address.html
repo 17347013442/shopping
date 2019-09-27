@@ -1,0 +1,745 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>享购网</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="../css/common/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common/base.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/member.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/AboutUs.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/orderShow.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common/pagination.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/index.css" rel="stylesheet" type="text/css"/>
+    <style>
+        .cswX_hyzl{
+            width:auto;
+        }
+        .cswX_hyzl input[type=text],.cswX_hyzl select{
+            border:1px solid #ccc;
+            padding:6px;
+        }
+        .cswX_hyzl select{
+            width:110px;
+            margin-right:10px;
+        }
+        .cswX_wlgs_sz th{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  on  09/22/19 20:31:32.<br>
+<b>Address:</b> <a class="info" href="http://www.isgo.com/userInfo/address.html">http://www.isgo.com/userInfo/address.html</a><br>
+<b>Title:</b> 享购网 &nbsp;&bull;&nbsp; <b>Size:</b> 31368 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 09 Sep 2019 11:21:35 GMT<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+<div class="header">
+    <div class="top">
+        <div class="top-left">
+            <a href="javascript:void(0)" style="cursor: default">您好，欢迎光临享购网！</a>
+        </div>
+        <div class="top-right fr">
+            <a href="javascript:void(0)" class="top-login">登录</a>
+            <a href="../login/register.html" class="top-register">注册</a>
+            <a href="../userInfo/user-info1.html" class="top-user"></a>
+            <a href="javascript:void(0)" class="top-exit" onclick="exit()">退出</a>
+            <a href="javascript:void(0)" class="top-order">我的订单</a>
+            <a href="javascript:void(0)" class="top-cart">购物车</a>
+            <div class="lipinka">
+                <a href="javascript:void(0)" class="top-card">我的礼品卡</a>
+            </div>
+            <div class="tuangou">
+                <a href="javascript:void(0)" class="top-together">团购
+                    <img class="together-top" src="../images/top.png">
+                    <img class="together-bottom" src="../images/bottom.png">
+                </a>
+                <div class="leibie">
+                    <a href="javascript:void(0)">享购团购</a>
+                    <a href="http://private.isgo.com/ISGOC1/Vender/Login.html">企业团购</a>
+                </div>
+            </div>
+            <a href="http://gallery.isgo.com/" target="_blank" class="top-art">艺术品</a>
+            <p>400-628-8666</p>
+        </div>
+    </div>
+</div>
+<div class="search-wrapper ofh">
+    <a href="../index.html"><img src="../images/logo-left.png" class="logo-left"></a>
+    <div class="search">
+        <input name="name" style="margin: 0" class="search-input" type="text" placeholder="请输入想要搜索的内容" onkeydown="searchKeyDown(event);">
+        <span class="search-btn fr"><img src="../images/search.jpg"></span>
+    </div>
+</div>
+<div class="navTop">
+    <div class="navTop-box">
+        <ul>
+
+        </ul>
+    </div>
+</div>
+<div class="body">
+    <div class="csw_BoxH csw_width">
+        <div class="cswX_hyL csw_left">
+            <div class="personalDetails">
+                <img src="../assets/images/def_icon1.jpg" alt="" height="83px" width="83px"/>
+                <p>177****9296</p>
+            </div>
+            <div style="width: 168px;height: 1px;margin: 0 auto;padding: 0;background-color: #f5f5f5;overflow: hidden;"></div>
+            <div class="cswX_htMbt">
+                <h5>
+                    <input type="button" id="jygl1" class="csw_tb43" onclick="javascript:closeMenu('jygl')">
+                    <input type="button" id="jygl2" class="csw_tb42" onclick="javascript:openMenu('jygl')"
+                           style="display:none;">
+                    <img src="../assets/images/order/myGiftCard-little.png" alt=""/>
+                    <span>订单和购买</span>
+                </h5>
+            </div>
+            <div class="cswX_htMList" id="jygl3">
+                <ul>
+                    <li>
+                        <a href="../order/order-list.html">查看订单</a>
+                    </li>
+                    <li class="current">
+                        <a href="#">收货地址簿</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cswX_htMbt">
+                <h5>
+                    <input type="button" id="hyfk1" class="csw_tb43" onclick="javascript:closeMenu('hyfk')">
+                    <input type="button" id="hyfk2" class="csw_tb42" onclick="javascript:openMenu('hyfk')"
+                           style="display:none;">
+                    <img src="../assets/images/order/myGiftCard-little.png" alt=""/>
+                    <span>我的账户</span>
+                </h5>
+            </div>
+            <div class="cswX_htMList" id="hyfk3">
+                <ul>
+                    <li>
+                        <a href="account-safe.html">账号安全</a>
+                    </li>
+                    <li>
+                        <a href="user-info1.html">修改个人资料</a>
+                    </li>
+                    <li>
+                        <a href="../order/cardList.html">我的礼品卡</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cswX_hyR csw_right">
+            <!--添加数据-->
+            <form name="userInfoForm" method="post">
+                <div class="cswX_wlxxBox">
+                    <div id="myAddress" style="display:none;">
+                        <h3>
+                            <span id="tag">添加新地址</span>
+                            <a href="#">带&nbsp;<span class="td_zhi">*</span>&nbsp;均为必填项</a>
+                        </h3>
+                        <table class="cswX_hyzl">
+                            <tr>
+                                <td class="title">
+                                    收货人<span class="req">*</span>：
+                                </td>
+                                <td class="field">
+                                    <input id="ReceiverName" name="PersonName" type="text" placeholder="请输入收货人" />
+                                    <span class="field-validation-valid"></span>
+                                </td>
+                            </tr>
+                            <tr id="AddressChengqu">
+                                <td class="title">
+                                    所在地区<span class="req">*</span>：
+                                </td>
+                                <td class="field">
+                                    <select id="ProvinceName" name="Province">
+                                        <option value="请选择">请选择</option>
+                                    </select>
+                                    <select id="CityName" name="City">
+                                        <option value="请选择">请选择</option>
+                                    </select>
+                                    <select id="CountyName" name="District">
+                                        <option value="请选择">请选择</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="title">
+                                   手机号码<span class="req">*</span> ：
+                                </td>
+                                <td class="field">
+                                    <input id="CellPhone" name="Phone" type="text" placeholder="请输入手机号码"/>
+                                </td>
+                            </tr>
+                            <tr id="addressdetail">
+                                <td class="title">
+                                    详细地址<span class="req">*</span> ：
+                                </td>
+                                <td class="field">
+                                    <input id="DetailAddress" name="Address" type="text" style="width:341px;" placeholder="请输入详细地址" />
+                                    <span class="field-validation-valid"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="field td_zhi">
+                                    <div>
+                                        <input type="button" class="input1 address-btn" value="保存收货地址">
+                                        <input type="button" onclick="cancel()" class="input3" value="取消">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="infoline">
+                        <div class="cswX_wlgs_ts" style="margin:0;"><span><a style="font-size: 12px;color: #3ec3be;;"
+                                                                             onclick="add()">添加 >></a></span>用来保存自己的发货、取货地址
+                        </div>
+                    </div>
+                    <div class="xg_lbBt xg_lbBt_zs">
+                        <ul>
+                            <li class="cur_xz"><span style=" padding:0 15px ;">已保存地址</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+
+            <!--列表数据-->
+            <div class="cswXBorder">
+                <table cellpadding="0" cellspacing="0" border="0" class="cswX_wlgs_sz">
+                    <thead>
+                    <tr class="trBorder">
+                        <th width="10%">收货人</th>
+                        <th>所在地区</th>
+                        <th>收货地址</th>
+                        <th width="13%">手机号码</th>
+                        <th width="20%">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody class="addressList-tbody">
+                    </tbody>
+                </table>
+                <div class="tac data-null" style="padding:5px 0;display:none">暂无地址记录</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ifooter">
+    <div class="pwm serivcelist clearfix">
+        <dl>
+            <dt>新手指南
+            </dt>
+            <dd><a href="../footer/question.html">常见问题</a></dd>
+            <dd><a href="../login/register.html">用户注册</a></dd>
+            <dd><a href="../login/login.html">用户登录</a></dd>
+        </dl>
+        <dl>
+            <dt>购物指南
+            </dt>
+            <dd><a href="../footer/guide.html">购物流程</a></dd>
+            <dd class="top-order" ><a href="javascript:void(0)">订单状态</a></dd>
+            <dd><a href="http://www.kuaidi100.com/?from=openv">快递查询</a></dd>
+        </dl>
+        <dl>
+            <dt>支付方式
+            </dt>
+            <dd><a href="../footer/payment.html">在线支付</a></dd>
+            <dd class="top-card"><a href="javascript:void(0)">购物卡支付</a></dd>
+            <dd><a href="../order/cardHelp.html">购物卡说明</a></dd>
+            <!--<dd><a href="../con_x0rm43.htm~viewPage=service&view=all">货到付款</a></dd>-->
+        </dl>
+        <dl>
+            <dt>配送方式
+            </dt>
+            <dd><a href="../footer/service.html">配送方式</a></dd>
+            <dd><a href="../footer/service.html">配送政策</a></dd>
+            <!--<dd><a href="../footer/service.html">特殊说明</a></dd>-->
+        </dl>
+        <dl>
+            <dt>售后服务
+            </dt>
+            <dd><a href="../footer/aftersell.html">退/换货政策</a></dd>
+            <dd><a href="../footer/aftersell.html">退/换货流程</a></dd>
+            <!--<dd><a href="../con_18uw129.htm~viewPage=service&view=all">特殊说明</a></dd>-->
+        </dl>
+        <dl>
+            <dt>我的享购
+                <span class="icon-hot"></span>
+            </dt>
+            <dd class="top-order"><a href="javascript:void(0)">我的订单</a></dd>
+            <dd class="top-card"><a href="javascript:void(0)">我的购物卡</a></dd>
+            <!--<dd><a href="../con_tluw123.htm~viewPage=service&view=all">我的优惠券</a></dd>-->
+        </dl>
+        <div class="serivcenumber">
+            <a href="javascript:void(0)" target="_blank" style="display:block; height:27px;">
+                <img src="../assets/images/index/banner004.jpg" alt=""/>
+            </a>
+        </div>
+    </div>
+    <div class="pwm ifserivcelink clearfix">
+        <div class="if_list">
+            <a href="../footer/about.html">关于iSGO</a>
+            <span>|</span>
+            <a href="../footer/about1.html">企业文化</a>
+            <span>|</span>
+            <a href="../footer/about2.html">招商合作</a>
+            <span>|</span>
+            <a href="../footer/about3.html">联系方式</a>
+            <span>|</span>
+            <a href="../footer/about4.html">工作机会</a>
+            <span>|</span>
+            客服电话:400-628-8666
+        </div>
+        <p>&copy; 2012-2014 www.iSGO.com All Rights Reserved. 享购网 版权所有</p>
+
+        <p>京ICP证 090163号 | 食品流通许可证 SP1101081110103523 | <a
+                href="../userfiles/amber/data/img/product/112/1404372966.jpg"
+                target="_blank">营业执照</a></p>
+
+        <p class="paylogo" style="margin-top:0px;"></p>
+    </div>
+    <div style="width:300px;margin:0 auto; padding:0px 0 20px 0;">
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020501"
+           style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img
+                src="../assets/images/police.png" style="float:left;"/>
+
+            <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备
+                11010802020501号</p></a>
+    </div>
+</div>
+<script src="../js/common/jquery-1.10.2.min.js"></script>
+<script src="../js/common/jquery-cookie.js"></script>
+<script src="../js/common/artTemplate.js"></script>
+<script src="../js/common/bootstrap.min.js"></script>
+<script src="../js/common/dialog.js"></script>
+<script src="../js/common/url.js"></script>
+<script src="../js/common/common.js"></script>
+<script id="addressList-cell" type="text/html">
+    {{each returnJson as value i}}
+    <tr id="{{value.Id}}">
+        <td>{{value.PersonName}}</td>
+        <td>{{value.Country}}{{value.Province}}省{{value.City}}市{{value.District}}区</td>
+        <td>{{value.Address}}</td>
+        <td>{{value.Phone}}</td>
+        <td>
+            <a href="javascript:void(0)" class="table-address-edit red-deep">编辑</a>
+            |
+            <a href="javascript:void(0)" class="table-address-del red-deep">删除</a>
+            |
+            {{if value.IsDefault == 0}}
+            <a href="javascript:void(0)" class="table-address-default red-deep">设为默认</a>
+            {{else}}
+            <a href="javascript:void(0)" style="color:#000;">默认</a>
+            {{/if}}
+        </td>
+    </tr>
+    {{/each}}
+</script>
+<script type="text/javascript">
+    $(function(){
+        askNav();
+        getAddresslist();
+        getProvince();
+        checkLogin();
+        userInfo();
+    });
+    // 加载导航
+    function askNav() {
+        $.ajax({
+            type:"GET",
+            url: "../json/nav.json",
+            dataType:"json",
+            success: function (data) {
+                var askData;
+                var navHtml = '<li><a href="../index.html">首页</a></li>';
+                for (var i = 0; i < data.rows.length; i++) {
+                    if (data.rows[i].url) {
+                        navHtml += '<li>'+
+                            '<span class="jsClass" data-num="'+data.rows[i].Id+'">'+data.rows[i].name+'</span>'+
+                            '<div class="hover-box life-box">'+
+                                '<div class="hover-left-box">'+
+                                    '<h3><span data-num="'+data.rows[i].Id+'">'+data.rows[i].name+'</span></h3>'+
+
+                                '</div>'+
+                                '<a href="'+data.rows[i].url.aUrl+'" target="_blank"><img src="../'+data.rows[i].url.imgUrl+'"></a>'+
+                            '</div>'+
+                        '</li>';
+                    } else {
+                        navHtml += '<li><span class="jsClass" data-num="'+data.rows[i].Id+'">'+data.rows[i].name+'</span></li>'
+                    }
+                }
+                $('.navTop ul').html(navHtml);
+                for (var i = 0; i < data.rows.length; i++) {
+                    askData = data.rows[i].Id;
+                    $.ajax({
+                        type: "GET",
+                        url: $.url.webUrl + "doB2C/B2Ca_N_Display",
+                        dataType: "json",
+                        data: {
+                            "ParentId": askData,
+                            "VenderId": localStorage.getItem("VenderId")
+                        },
+                        success: function (dataa) {
+                            var spanHtml = '';
+                            if (dataa.total) {
+                                for (var i = 0; i < dataa.rows.length; i++) {
+                                    spanHtml += '<span data-num="'+dataa.rows[i].Id+'">'+dataa.rows[i].Name+'</span>';
+                                }
+                                $('.navTop li').each( function() {
+                                    if (dataa.rows[0].ParentId == ($(this).children('.jsClass').data('num'))) {
+                                        $(this).children('.hover-box').children('.hover-left-box').append(spanHtml);
+                                    }
+                                });
+                            }
+                        }
+                    });
+                }
+            }
+        });
+    }
+    //添加地址 点击取消
+    function cancel() {
+        $("#myAddress").hide();
+        $("#infoline").show();
+    }
+    //修改地址
+    function edit() {
+        $("#myAddress").show();
+        $("#infoline").hide();
+        $("#tag").html("修改地址")
+    }
+
+    function getAddresslist(){
+        $.ajax({
+            type:"GET",
+            url: $.url.webUrl + "doB2C/B2Ca2_B_CustomerAddress",
+            headers: {"Authorization": "Bearer " + $.cookie("accessToken")},
+            dataType:"json",
+            data:{
+                page: 1,
+                pageSize: "100"
+            },
+            success: function (data) {
+                $(".addressList-tbody").empty().append(template("addressList-cell", {returnJson: data.rows}));
+                if(data.total == 0){
+                    $(".data-null").show();
+                }else{
+                    $(".data-null").hide();
+                }
+                if(data == ""){
+                    $(".table-address").hide();
+                }
+            }
+        });
+    }
+
+    var addReceiverName,addCellPhone,addDetailAddress,addressFlag,provinceName,cityName,countyName;
+    function checkAddressForm(){
+        addReceiverName = $.trim($("#ReceiverName").val());
+        addCellPhone = $.trim($("#CellPhone").val());
+        addDetailAddress = $.trim($("#DetailAddress").val());
+        provinceName = $.trim($("#ProvinceName").val());
+        cityName = $.trim($("#CityName").val());
+        countyName = $.trim($("#CountyName").val());
+        if(!addReceiverName){
+            dialogModule.iTips("请输入收货人姓名");
+            return false;
+        }else if(addReceiverName.length > 10){
+            dialogModule.iTips("收货人姓名长度不能超过10");
+            return false;
+        }
+        if(!provinceName){
+            dialogModule.iTips("请选择所在省份");
+            return false;
+        }else if(provinceName == "请选择"){
+            dialogModule.iTips("请选择所在省份");
+            return false;
+        }
+        if(!cityName){
+            dialogModule.iTips("请选择所在城市");
+            return false;
+        }else if(cityName == "请选择"){
+            dialogModule.iTips("请选择所在城市");
+            return false;
+        }
+        if(!countyName){
+            dialogModule.iTips("请选择所在区");
+            return false;
+        }else if(countyName == "请选择"){
+            dialogModule.iTips("请选择所在区");
+            return false;
+        }
+        if(!addCellPhone){
+            dialogModule.iTips("请输入手机号码");
+            return false;
+        }else if(!/^(1[35784]\d{9})$/.test(addCellPhone)){
+            dialogModule.iTips("请输入格式正确的手机号码");
+            return false;
+        }
+        if(!addDetailAddress){
+            dialogModule.iTips("请输入详细地址");
+            return false;
+        }
+        return true;
+    }
+    function add(){
+        $("#ReceiverName").val("");
+        $("#CellPhone").val("");
+        $("#DetailAddress").val("");
+        $("#myAddress").show();
+        $("#infoline").hide();
+        $("#tag").html("添加地址");
+        $("#ProvinceName").empty().append("<option value=" + "请选择" + ">" + "请选择" + "</option>");
+        $("#ProvinceName").val("请选择");
+        $("#CityName").empty().append("<option value=" + "请选择" + ">" + "请选择" + "</option>");
+        $("#CityName").val("请选择");
+        $("#CountyName").empty().append("<option value=" + "请选择" + ">" + "请选择" + "</option>");
+        $("#CountyName").val("请选择");
+        getProvince();
+        addressFlag = "address-add";
+    }
+    function getProvince(){
+        $.ajax({
+            type:"GET",
+            url: $.url.webUrl + "do4A/a/Area/GetProvince",
+            dataType:"json",
+            async:false,
+            data:{"CountyName":"中国"},
+            success: function (data) {
+                $.each(data, function (i, v) {
+                    $("#ProvinceName").append("<option value=" + v.ProvinceName + ">" + v.ProvinceName + "</option>");
+                });
+                $("#CountyName").empty().append("<option value=" + "请选择" + ">" + "请选择" + "</option>");
+            }
+        });
+    }
+    $("#ProvinceName").change(function () {
+        $("#CityName").empty().append("<option value=" + "请选择" + ">" + "请选择" + "</option>");
+        if($("#ProvinceName").val() != "" && $("#ProvinceName").val() != "请选择"){
+            getCityName();
+        }
+        $("#CountyName").empty().append("<option value=" + "请选择" + ">" + "请选择" + "</option>");
+    });
+    function getCityName(){
+        $.ajax({
+            type: "GET",
+            url: $.url.webUrl + "do4A/a/Area/GetCitys",
+            dataType: "json",
+            async: false,
+            data: {
+                ProvinceName: $("#ProvinceName").val()
+            },
+            success: function (data) {
+                $("#CityName").empty().append("<option value=" + "请选择" + ">" + "请选择" + "</option>");
+                $.each(data, function (i, v) {
+                    $("#CityName").append("<option value=" + v.CityName + ">" + v.CityName + "</option>");
+                });
+                if($("#CityName").val() != "" && $("#CityName").val() != "请选择" && $("#ProvinceName").val() != "" && $("#ProvinceName").val() != "请选择"){
+                    getCountyName();
+                }
+            }
+        });
+    }
+    $("#CityName").change(function () {
+        if($("#CityName").val() != "" && $("#CityName").val() != "请选择" && $("#ProvinceName").val() != "" && $("#ProvinceName").val() != "请选择"){
+            getCountyName();
+        }
+    });
+    function getCountyName(){
+        $.ajax({
+            type: "GET",
+            url: $.url.webUrl + "do4A/a/Area/GetAreas",
+            dataType: "json",
+            async: false,
+            data: {
+                CityName: $("#CityName").val()
+            },
+            success: function (data) {
+                $("#CountyName").empty().append("<option value=" + "请选择" + ">" + "请选择" + "</option>");
+                $.each(data, function (i, v) {
+                    $("#CountyName").append("<option value=" + v.AreaName + ">" + v.AreaName + "</option>");
+                });
+                if($("#CityName").val() != "" && $("#CityName").val() != "请选择" && $("#ProvinceName").val() != "" && $("#ProvinceName").val() != "请选择" && $("#CountyName").val() != "" && $("#CountyName").val() != "请选择"){
+
+                }
+            }
+        });
+    }
+    //    点击确认
+    var isDefault;
+    $(".address-btn").on("click",function(){
+        var flag = checkAddressForm();
+        if(flag == false){
+            return false;
+        }
+        var type,para,alertTip;
+        if(addressFlag == "address-add"){
+            isDefault = 0;
+            type = "POST";
+            para = {
+                PersonName:$.trim($("#ReceiverName").val()),
+                Province:$("#ProvinceName option:selected").attr("value"),
+                City:$("#CityName option:selected").attr("value"),
+                District:$("#CountyName option:selected").attr("value"),
+                Phone:$.trim($("#CellPhone").val()),
+                Address:$.trim($("#DetailAddress").val()),
+                IsDefault:isDefault,
+                Country:"中国"
+            };
+            alertTip = "添加成功";
+            $.ajax({
+                type:type,
+                url: $.url.webUrl + "doB2C/B2Ca2_B_CustomerAddress",
+                headers: {"Authorization": "Bearer " + $.cookie("accessToken")},
+                data:para,
+                success:function (data){
+                    dialogModule.iTips(alertTip);
+                    debugger;
+                    $("#myAddress").hide();
+                    $("#infoline").show();
+                    getAddresslist();
+                }
+            });
+        }else{
+            type = "PUT";
+            para = {
+                Id:addressId,
+                PersonName:$.trim($("#ReceiverName").val()),
+                Province:$("#ProvinceName option:selected").attr("value"),
+                City:$("#CityName option:selected").attr("value"),
+                District:$("#CountyName option:selected").attr("value"),
+                Phone:$.trim($("#CellPhone").val()),
+                Address:$.trim($("#DetailAddress").val()),
+                IsDefault:isDefault,
+                Country:"中国"
+            };
+            alertTip = "修改成功";
+            $.ajax({
+                type:type,
+                url: $.url.webUrl + "doB2C/B2Ca2_B_CustomerAddress",
+                headers: {"Authorization": "Bearer " + $.cookie("accessToken")},
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader("Content-Type",'application/json');
+                },
+                data:JSON.stringify(para),
+                success:function (data){
+                    dialogModule.iTips(alertTip);
+                    $("#myAddress").hide();
+                    $("#infoline").show();
+                    getAddresslist();
+                }
+            });
+        }
+    });
+    //    删除
+    $(".addressList-tbody").on("click",".table-address-del",function(){
+        var addressId = $(this).parents("tr").attr("id");
+        var result = confirm('确定要删除吗！');
+        if(result){
+            $.ajax({
+                type:"DELETE",
+                url: $.url.webUrl + "doB2C/B2Ca2_B_CustomerAddress/" + addressId,
+                headers: {"Authorization": "Bearer " + $.cookie("accessToken")},
+                success: function (data) {
+                    dialogModule.iTips("删除成功");
+                    getAddresslist();
+                }
+            });
+        }
+    });
+    //    编辑
+    var addressId;
+    $(".addressList-tbody").on("click",".table-address-edit",function(){
+        addressId = $(this).parents("tr").attr("id");
+        $.ajax({
+            type:"GET",
+            url: $.url.webUrl + "doB2C/B2Ca2_B_CustomerAddress/" + addressId,
+            headers: {"Authorization": "Bearer " + $.cookie("accessToken")},
+            async:false,
+            success: function (data) {
+                $("#myAddress").show();
+                $("#infoline").hide();
+                $("#tag").html("修改地址");
+                $("#ReceiverName").val(data.PersonName);
+                $("#ProvinceName").val(data.Province);
+                if($("#ProvinceName").val() != ""){
+                    getCityName();
+                }
+                $("#CityName").val(data.City);
+                if($("#CityName").val() != ""){
+                    getCountyName();
+                }
+                $("#CountyName").val(data.District);
+                $("#CellPhone").val(data.Phone);
+                $("#DetailAddress").val(data.Address);
+                isDefault = data.IsDefault;
+                addressFlag = "address-edit";
+            }
+        });
+    });
+//    设为默认
+    $(".addressList-tbody").on("click",".table-address-default",function(){
+        addressId = $(this).parents("tr").attr("id");
+        $.ajax({
+            type:"GET",
+            url: $.url.webUrl + "doB2C/B2Ca2_B_CustomerAddress/" + addressId,
+            headers: {"Authorization": "Bearer " + $.cookie("accessToken")},
+            async:false,
+            success: function (data) {
+                para = {
+                    Id:addressId,
+                    PersonName:data.PersonName,
+                    Province:data.Province,
+                    City:data.City,
+                    District:data.District,
+                    Phone:data.Phone,
+                    Address:data.Address,
+                    IsDefault:data.IsDefault == 0 ? 1 : 0,
+                    Country:"中国"
+                };
+                $.ajax({
+                    type:"PUT",
+                    url: $.url.webUrl + "doB2C/B2Ca2_B_CustomerAddress",
+                    headers: {"Authorization": "Bearer " + $.cookie("accessToken")},
+                    beforeSend: function(xhr) {
+                        xhr.setRequestHeader("Content-Type",'application/json');
+                    },
+                    data:JSON.stringify(para),
+                    success:function (data){
+                        dialogModule.iTips("修改成功");
+                        getAddresslist();
+                    }
+                });
+
+            }
+        });
+    });
+    $('.navTop').on('click', 'span', function(){
+        if ($(this).data('num')) {
+            window.location.href = "../products/product-list.html~DisplayId=.html" + $(this).data('num');
+        }
+    });
+    $('.tuangou').hover(function(){
+        $('.together-bottom').hide();
+        $('.together-top').show();
+        $('.leibie').show();
+    },function(){
+        $('.together-top').hide();
+        $('.together-bottom').show();
+        $('.leibie').hide();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+@charset "utf-8";
+#phoneMsg{
+    background-color:#444f69 \9!important;
+    *background-color:#444f69 !important;
+}
+
+/*模态框*/
+.modal-dialog{
+    *width:600px;
+    width:600px \0;
+    padding-top:100px;
+}
+.modal .title{
+    width: 90px;
+    text-align: left;
+    font-size: 14px;
+}
+.modal .field{
+    padding-left:0;
+}
+.modal table tr{
+    height:45px;
+}
+.modal table input{
+    padding:4px 10px;
+    width:180px;
+    border:1px solid #a2a2a2;
+    *height:28px;
+    *line-height:28px;
+    *width:170px;
+    *padding:1px 10px;
+}
+.modal table select{
+    height: 29px;
+    margin-right: 10px;
+    width: 111px;
+    border:1px solid #a2a2a2;
+    *padding-bottom:2px;
+    *line-height:29px;
+    line-height:29px \0;
+}
+.modal table select#TypeAddress,.modal table select#DetailsAddress{
+    width: 361px;
+}
+.modal .btn-save{
+    margin-right:50px;
+}
+.req{
+    color: #da1524;
+    font-weight: bold;
+}

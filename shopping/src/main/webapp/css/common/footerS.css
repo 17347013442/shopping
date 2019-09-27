@@ -1,0 +1,208 @@
+@charset "utf-8";/* CSS Document */
+.mubu {position: fixed;top: 0;left: 0;z-index: 10001;width: 100%;height: 100%;background: #000;filter: alpha(opacity=75);-moz-opacity: 0.75;opacity: 0.75;border: 0;}
+.w_100 {width: 100%;position: absolute;z-index: 10002;top: 0;left: 0;}
+.lay_career_box{ background:#Fff;}
+.banner {background-repeat:repeat-x;background-position:center top;text-align:center;height:97px;width:100%;min-width:1250px;}
+#container .main_aboutus {width:890px;margin-right:auto;margin-left:auto;margin-top:40px;margin-bottom:40px;font-family:"微软雅黑";font-size:14px;}
+.main_aboutus .menu {float:left;width:110px;font-weight:bold;font-size:14px;color:#a7a9ac;}
+.main_aboutus .about_right {float:left;width:750px;margin-left:20px;line-height:25px;color:#6d6e71;padding:2px;}
+.main_aboutus .about_right p {border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#c7c7c7;padding-bottom:10px;margin-bottom:10px;}
+.blue{color:#3eb7b4;;font-weight:bold;font-size:16px;}
+.blue14{color:#3eb7b4;;font-weight:bold;font-size:14px;}
+.hui{color:#6d6e71;font-weight:bold;font-size:14px;}
+.red{color:#c9252b;font-weight:bold;font-size:14px;}
+.yellow{color:#faa61a;font-weight:bold;font-size:14px;}
+.green{color:#39b54a;font-weight:bold;font-size:14px;}
+.zi{color:#8b3f98;font-weight:bold;font-size:14px;}
+.lan{color:#80C8C2;font-weight:bold;font-size:14px;}
+.main_aboutus .menu li .on {color:#3eb7b4;}
+.menu li a{color:#a7a9ac}
+.menu li a:hover{color:#3eb7b4;}
+.main_aboutus .menu li { line-height:40px;border-bottom-width:1px;border-bottom-style:dotted;border-bottom-color:#CCCCCC;}
+.about_right br {text-indent:2em;}
+#container .help {width:1190px;margin-right:auto;margin-left:auto;margin-top:20px;margin-bottom:40px;font-family:"微软雅黑";font-size:14px;line-height:25px;}
+#container .help .help_left {float:left;width:120px;color:#818181; margin-left:0px;}
+#container .help .help_right {float:right;width:1060px;}
+#crmb {line-height:30px;color:#525252;background-repeat:no-repeat;background-position:left 8px;clear:both;height:30px;padding-left:0px;margin-bottom:20px;}
+#crmb a{color:#707070;text-decoration:underline;}
+#crmb a:hover{color:#525252;text-decoration:none;}
+.help .help_left h2 {color:#3eb7b4;;font-size:14px;padding-bottom:10px;font-family:"微软雅黑";}
+.qa_list {color:#818181; margin-bottom:30px;}
+.qa_list a{color:#818181;}
+.qa_list a:hover{color:#818181; text-decoration:underline}
+.help .help_right .help_map {line-height:28px;font-weight:bold;background-image:url(../images/AboutUs/help_title.jpg);background-repeat:no-repeat;background-position:left top;padding-left:38px;border-top-width:1px;border-right-width:1px;border-left-width:1px;border-top-style:solid;border-right-style:solid;border-left-style:solid;border-top-color:#e9e9e9;border-right-color:#e9e9e9;border-left-color:#e9e9e9;}
+.help .help_right .map_list {border:1px solid #e9e9e9;padding:10px;margin-bottom:20px;}
+.map_list h3 {font-family:"微软雅黑";font-size:14px;color:#3eb7b4;;float:left;width:70px;line-height:26px;}
+.map_list .map_list_pro {float:right;width:600px;color:#CCCCCC;line-height:26px;}
+.map_list_pro a{color:#666666;}
+.map_list_pro a:hover{color:#666666; text-decoration:underline}
+.help_left .tel,.help_left .email,.help_left .time{background-repeat:no-repeat;background-position:left 8px;padding-left:0px;margin-bottom:5px;}
+.help_left ul {margin-bottom:30px;margin-left:0px;;}
+.help .help_left li a{color:#818181;}
+.help .help_left li a:hover{color:#818181;text-decoration:underline}
+.help .help_left .on{color:#818181;text-decoration:underline}
+.help .help_right .title {font-family:"微软雅黑";font-size:16px;color:#3eb7b4;;font-weight:bold;margin-bottom:10px;}
+.help .help_left h3 {color:#3eb7b4;;font-size:14px;font-family:"微软雅黑";margin-bottom:5px;}
+.help .help_right .text {line-height:22px;color:#6d6e71;}
+.help .help_right .text p {margin-bottom:10px;}
+#container .main_aboutus .about_right .culture_pro {float:left;width:330px;margin-right:42px;}
+.culture_pro img {border:1px solid #EEEEEE;margin-top:10px;}
+/*选项卡*/
+.main_aboutus #Tabbox{margin-bottom:5px;padding:0px;font-family:"宋体";}
+.main_aboutus  #Tabbox .Content{clear:both;margin-top:0px;border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-top-style:none;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-top-color:#ebebeb;border-right-color:#ebebeb;border-bottom-color:#ebebeb;border-left-color:#ebebeb;text-align:left;padding:20px;background-color:#FFFFFF;color:#333333;font-size:12px;}
+.main_aboutus  #Tabbox .Menu {position:static;line-height:30px;height:31px;background-image:url(../../images/AboutUs/bg_tab12_menubox.gif);background-repeat:repeat-x;background-position:left 1px;}
+.main_aboutus #Tabbox .Menu li {
+    float: left;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    color: #979797;
+    min-width: 100px;
+    margin-right: 3px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    margin-left: 0px;
+    padding: 0px;
+    background-image: url(../../images/AboutUs/bg_carerr.gif);
+    background-repeat: repeat-x;
+    background-position: 0px 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-color: #ebebeb;
+    border-right-color: #ebebeb;
+    border-left-color: #ebebeb;}
+.main_aboutus  #Tabbox .Menu li.hover {color:#000000;font-weight:bold;margin-right:3px;border:1px solid #ebebeb;border-bottom:none;background-color:#FFFFFF;padding:0px;background-image:none;}
+.main_aboutus  #Tabbox .Content table tr{border-bottom:1px solid #e5ecf6;line-height:30px;}
+.main_aboutus  #Tabbox .Content table .title{color:#000000;text-align:left;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#e5ecf6;}
+.main_aboutus  #Tabbox .Content a{color:#336699;}
+.main_aboutus  #Tabbox .Content a:hover{color:#336699;text-decoration:underline;}
+/*弹出职位信息*/
+#career_content{display:block;}
+.w_100{width:100%; position:absolute; z-index:10002; top:0; left:0;}
+.lay_career_box{border:1px solid #000;width:570px;background:url(../images/AboutUs/lay_bg.gif);overflow:hidden;margin-top:140px;margin-right:auto;margin-bottom:0;margin-left:auto;padding-top:5px;padding-right:5px;padding-bottom:5px;padding-left:25px;}
+.lay_career_box h2 {color:#000;font-size:18px;font-family:"微软雅黑";font-weight:bold;text-align:left;padding-left:10px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#000000;line-height:35px;margin-right:20px; margin:0px;}
+.lay_career_box i{display:block; width:100%; height:14px; text-align:right;}
+.lay_career_box .content{padding-right:20px;padding-top:5px;font-size:12px;font-family:"宋体";padding-left:10px;line-height:22px;}
+.lay_career_box .content .lei{font-size:14px;line-height:30px;font-weight:bold;clear:both;margin-top:15px;}
+.lay_career_box .content table {margin-right:auto;margin-left:auto;width:99%;color:#666666;}
+
+/*工作机会页面分页*/
+.main_aboutus  #Tabbox .page {text-align:right;padding:3px;COLOR:#bdbdbd;font-family:Arial;font-size:14px;margin:0px;}
+.main_aboutus  #Tabbox .page A {PADDING-RIGHT:3px;PADDING-LEFT:3px;PADDING-BOTTOM:2px;MARGIN:2px;COLOR:#bdbdbd;PADDING-TOP:2px;TEXT-DECORATION:none}
+.main_aboutus  #Tabbox .page A:hover {COLOR:#666}
+.main_aboutus  #Tabbox .page A:active {COLOR:#666;}
+.main_aboutus  #Tabbox .page .current {FONT-WEIGHT:bold;MARGIN:2px;padding:2px;color:#333333;}
+.main_aboutus  #Tabbox .page .disabled_up {PADDING-RIGHT:5px;PADDING-LEFT:10px;PADDING-BOTTOM:0px;MARGIN:0px;COLOR:#ddd;PADDING-TOP:0px;COLOR:#666}
+.main_aboutus  #Tabbox .page .disabled_next {PADDING-RIGHT:10px;PADDING-LEFT:5px;PADDING-BOTTOM:0px;MARGIN:0px;COLOR:#ddd;PADDING-TOP:0px;}
+.main_aboutus  #Tabbox .page .uppage {padding-left:10px;}
+.main_aboutus  #Tabbox .page .toppage {border:0px;width:40px;}
+.career_zs {padding-top:5px;background-image:url(../images/AboutUs/ddx.gif);background-repeat:repeat-x;background-position:left top;margin-top:10px;}
+.career_zs a{color:#FF0000;font-size:14px;text-decoration:underline;}
+.career_zs a:hover{color:#FF0000; text-decoration:none; }
+.about_right a{ color:#6D6E71;}
+
+/*index top_right*/
+#container .top_right ul{ overflow:hidden; display:block;background:none;}
+#container .top_right li a{ color:#fff;}
+#container .top_right li{ position:relative; float:right; cursor:pointer; width:50px; line-height:36px; text-align:center; overflow:hidden;background: none; height:36px;}
+
+
+/*店铺信息*/
+.store_main{ overflow:hidden; padding:12px 0; width:1190px; margin:0 auto;}
+.store_right{ width:1190px;}
+.store_right h2{ font-size:24px; overflow:hidden; margin-bottom:10px; color:#3FB7B5;}
+.map_tishi{ height:20px; line-height:20px; color:#666;}
+.nav_bar { height:60px; font-size:10px; line-height:60px; overflow:hidden;color:#B5B5B5;font-size:14px;}
+.nav_bar a{ color:#B5B5B5; height:27px; text-decoration:underline;}
+.city_box{ overflow:hidden; margin-top:30px;}
+.china_map{ float:left; width:848px; height:718px;}
+.china_map img{ width:848px; height:718px;}
+#Map{ cursor:pointer;}
+.map_right{ float:right; width:318px;}
+.map_right h2{ height:40px; line-height:40px; color:#FFF; font-size:18px; background:url(../images/map/map_bj.jpg) no-repeat; padding:0 15px; margin-bottom:0px; font-weight:700;}
+.map_right ul{ width:290px; margin:0 auto;line-height:29px; margin-bottom:30px;}
+.map_right li{ line-height:33px; height:33px; border-bottom:solid 1px #DDD;}
+.map_right li a { color:#000;}
+.map_right li a:hover{ font-weight:700; color:#3FB7B5; text-decoration:underline;}
+
+
+.loction_box{ width:1250px; padding-top:20px; overflow:hidden;}
+.loction_box h2{font-family:"微软雅黑";width:1140px; margin:0 auto; height:50px; line-height:50px; font-size:18px;}
+.loction_box h2 a{ float:right; color:#015eae; font-size:12px;font-family:"宋体"; font-weight:100; text-decoration:underline;}
+.location_top{ width:1132px; padding-left:8px; margin:0 auto; background:url(../images/general/location_big.gif); height:410px;}
+.location_top u { float:left; margin-top:8px; width:567px; height:394px; margin-right:60px;}
+.location_top i{ width:400px; float:left; margin-top:60px; display:block;}
+area{ cursor:pointer;}
+/*店铺详情 弹出窗口*/
+.dis_none{ display:none;}
+.store_box{font-family:"微软雅黑"; height:370px; border:1px solid #000;width:660px;background:#fff; padding:20px; color:#FFF;overflow:hidden; position:relative;left:30%; margin-top:15%;}
+.store_box h2{ font-weight:100; padding-left:20px;height:40px;line-height:40px; font-size:24px; background:url(../images/map/map_bj1.jpg) no-repeat;overflow:hidden; margin-bottom:20px;}
+.store_box i{ display:block; height:14px; float:right;padding-right:19px;}
+.store_view{ overflow:hidden;}
+.store_view u img{ float:left; margin-right:25px;width:360px;}
+.store_view p{ display:block; width:240px; color:#000;font-family:"宋体"; margin-bottom:60px; float:left;}
+.store_view p strong{ display:block; margin-bottom:10px; font-size:14px;height:30px; line-height:30px;}
+.store_view p span{ display:block; line-height:18px; margin-bottom:10px; overflow:hidden;}
+.store_view p span b{ float:left; font-size:14px; color:#666; margin-bottom:5px;}
+.store_view p span em{ display:block; float:left; color:#666; width:100%;font-weight:100;}
+.store_view a img{ width:140px;}
+/*新加的样式春节通知样式开始*/
+.Spring-box{
+	font-size: 13px;
+    color: #333333;
+}
+.spring-title{
+	font-size:16px;
+	font-weight: 700;
+	margin-left:42px;
+}
+.spring-word{
+	margin-top: 10px;
+}
+.word-title{
+    text-align: left;
+	margin-left: 60px;
+	font-weight:400;
+	color: black;
+}
+.word-notice{
+	width:612px;
+    text-align: left;
+	margin-left: 90px;
+	line-height:30px;
+	font-size: 13px;
+}
+.spring-word table{
+	border:1px solid #333333;
+	margin-left: 90px;
+	margin-top: 10px;
+}
+.spring-word table tr{
+	border:1px solid #333333;
+}
+.spring-word table tr td{
+	border:1px solid #333333;
+	width:209px;
+	height:29px;
+	text-align:center;
+	line-height:29px;
+}
+.footer-notice{
+	margin-left: 90px;
+	font-weight: 400;
+	font-size: 13px;
+}
+.spring-footer{
+	margin-top:12px;
+	font-size: 13px;
+}
+.footer-bless{
+	margin-top:6px;
+	margin-left: 90px;
+}
+/*新加的样式春节通知样式结束*/

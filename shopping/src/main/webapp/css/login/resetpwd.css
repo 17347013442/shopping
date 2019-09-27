@@ -1,0 +1,86 @@
+@charset "utf-8";
+body{
+    font-size:14px;
+    font-family: Microsoft YaHei;
+}
+input{
+    font: 14px/1.14 "Microsoft YaHei",arial,\5b8b\4f53;
+    color: #323232;
+    outline: 0;
+}
+.login-row {
+    clear: both;
+    margin: 50px 0 0 302px;
+    min-height: 40px;
+}
+.login-row2{
+    clear: both;
+    margin: 50px auto 0;
+    min-height: 40px;
+    text-align: center;
+}
+.mt25{
+    margin-top:25px;
+}
+.add-on {
+    height: 40px;
+    width: 40px;
+    float: left;
+    border: 1px solid #BEBEC0;
+    padding: 9px;
+    *padding:0;
+    *text-align: center;
+    *line-height:38px;
+    *vertical-align:top;
+}
+.login-text {
+    border: 1px solid #BEBEC0;
+    height: 40px;
+    width: 310px;
+    line-height: 35px;
+    padding-left: 10px;
+    *margin-top:-1px;
+}
+.borderleft-none{
+    border-left:0;
+    width: 266px;
+}
+.submit{
+    margin:50px auto;
+}
+.reset-success{
+    margin:200px auto 0;
+    font-size:36px;
+}
+a.login-btn{
+    color:#C41A25;
+}
+a.login-btn:hover{
+    text-decoration: underline;
+}
+.field-validation-valid {
+    color: red;
+    visibility: visible;
+}
+.getCode{
+    width:124px;
+    text-align: center;
+}
+.select-checktype{
+    width: 124px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font: 14px/1.14 "Microsoft YaHei",arial,\5b8b\4f53;
+}
+.select-checktype-key{
+    display:inline-block;
+    width:472px;
+    padding-right:10px;
+}
+.mobile-getpwd-key,.email-getpwd-key{
+    display:inline-block;
+    width:472px;
+    padding-right:10px;
+    position:relative;top:3px;
+}

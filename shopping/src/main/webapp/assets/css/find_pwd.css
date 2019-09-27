@@ -1,0 +1,66 @@
+.find_body{ background: #D2E8E6;}
+/*鎵惧洖瀵嗙爜*/
+.isgo-login-table-pwd{margin-top:50px; font-size:12px;height:125px;margin-left: 220px;color:#525252;}
+.isgo-pwd-bt{width:90px;height:25px;line-height:25px; background:#F86B3E; border:none;color:#fff;}
+.isgo-login-table-pwd tr{margin-bottom:20px;}
+.find_box{width:1000px;margin: 0 auto;}
+.new_bj1{width: 1000px;height: 34px;background: url("../images/new_bj1.png") no-repeat;}
+.new_bj2{width: 1000px;height:100%;background: url("../images/new_bj2.png") repeat-y;}
+.new_bj3{width: 1000px;height: 44px;background: url("../images/new_bj3.png") no-repeat;padding-bottom: 10px;}
+.new_bj2 h3{margin-left:50px;font-size: 18px;font-weight: normal; padding-top: 25px;clear: both;}
+.new_bj2 h4 img{width:900px;height:75px;margin-top: 53px;margin-left: 50px;}
+.new_bj2 p{text-align: center; color: #979797; font-size: 14px; margin-bottom: 17px;margin-top:70px;}
+.new_bj2 #new_bj2_div{margin:0 auto;width:220px;}
+.new_bj2 #new_bj2_div a{padding-right:10px;width:210px;height:50px; display:block; float: left;}
+.tt {float: left;width: 100%;text-align: left;line-height:19px;}
+label.error {float: left;padding-left: 17px;height: 17px;padding-top: 2px;font-size: 12px;color: #EC4D47; background:url(../images/warn.jpg) no-repeat left center; margin-right:5px;}
+.text_padding{padding-right:10px;}
+
+/*鐧诲綍椤甸潰*/
+.isgo-login-logo{ width:927px; margin:0 auto;}
+.isgo-login{ width:927px;height:415px; border:1px solid #66BFAD; border-top:4px solid #66BFAD; margin:0 auto; overflow:hidden; margin-bottom:50px;}
+.isgo-login-l{ float:left; width:559px;border-right:1px solid #66BFAD;height:100%;}
+.isgo-login-p1{ width:100%; color:#000; font-size:14px; line-height:23px;margin-top:15px;margin-left:20px; height:30px; font-family:"寰蒋闆呴粦"; border-bottom:solid 1px #DDDDDD;width:520px;}
+.isgo-login-table{ width:460px;margin:0 auto;margin-top:42px;}
+.isgo-login-text{ width:233px; height:32px; padding-left:5px;line-height:30px; border:1px solid #e8e8e8; vertical-align:middle; font-size:12px;}
+.isgo-login-text-onclick{ width:220px; height:30px; line-height:30px; border:1px solid #FFB334;outline:2px solid #ffdc97; vertical-align:middle}
+.isgo-login-table td{ font-size:14px; color:#000; font-family:"寰蒋闆呴粦";  height:60px;line-height:34px; vertical-align:top;}
+.isgo-login-table td span{ font-size:12px; color:#999999; font-family:Arial, Helvetica, sans-serif;}
+.isgo-login-bt{width:120px;height:34px; background:#E84A3E; border:none;color:#FEFFFA;font-size:14px; font-weight:bold;}
+.isgo-login-table td a{ color:#000;font-size:12px}
+.isgo-login-table td img{ vertical-align:middle}
+.isgo-login-r{ float:left; overflow:hidden;margin-left:19px;}
+.login-r-top{width: 324px;padding: 14px 0;text-align: center; border-bottom:solid 1px #DDDDDD;margin-bottom:14px;}
+.login-r-top .isgo-r-1{width:170px;height:30px; background:#FF6600;}
+.login-r-top p{ font-size:14px; color:#000; text-align:left;font-family:"寰蒋闆呴粦"; margin-bottom:14px;}
+.login-r-bottom{ width:268px; margin:0 auto; padding:20px 0; text-align:center;}
+.login-r-bottom p{ text-align:left; font-size:12px; color:#5f5f5f; margin-bottom:20px}
+.isgo-login-bz{ width:100%; background:#f5f5f5; padding:20px 0; text-align:center}
+.ul-bz{ overflow:hidden; list-style:none; margin-left:120px}
+.ul-bz li{ float:left; padding-left:15px; display:inline}
+.ul-bz-li span{ width:25px; height:25px; line-height:25px; color:#FFF; background-image:url(../images/new-login/isgo-icon-h.png); display:block; text-align:center; float:left; font-size:20px; font-family:Verdana, Geneva, sans-serif; font-weight:bold}
+.ul-li-on span{ width:25px; height:25px; line-height:25px; color:#FFF; background-image:url(../images/new-login/isgo-icon-o.png); display:block; text-align:center; float:left; font-size:20px; font-family:Verdana, Geneva, sans-serif; font-weight:bold}
+.ul-bz-li font{ color:#888888; float:left; padding:3px 6px}
+.ul-li-on font{ color:#ff5a00; float:left; padding:3px 6px}
+.isgo-login-ps dl{width:220px;margin:0 auto;margin-top:80px;height:100px;}
+.isgo-login-ps dl dt{ float:left;}
+.isgo-login-ps dl dd{ float:left;padding-left:15px;line-height:25px;}
+.isgo-login-ps dl dd p{padding:0;margin:0;}
+.isgo-login-ps dl dd a{color:#3CB7B2; text-decoration:underline;}
+.isgo-login-ps dl dd b{ font-weight:normal;color:#3CB7B2;font-size:16px;}
+.isgo-login-ps a img{padding-right:31px;}
+.isgo-login-ps p{ font-size:12px; color:#999; margin:20px 0}
+.isgo-ok{ width:540px; margin:0 auto; padding-top:40px; text-align:left}
+.isgo-ok p{font-size:24px; font-family:"寰蒋闆呴粦"; text-align:center}
+.isgo-chess{text-align:center}
+.isgo-chess p{ font-size:14px; padding-bottom:25px; color:#666;}
+.input-buy{ width:210px; height:45px; text-align:center; background:#FF6600; color:#FFF; font-size:20px; font-family:"寰蒋闆呴粦"; margin:30px auto; display:block; border:0 none}
+.isgo-sendmes-btn{padding:6px; border:1px solid #ccc; background-color:#F3F3F3; margin-left: 5px; }
+.isgo-btn5{padding:5px; color:#000; border:1px solid #dddddd; background-color:#f4f4f4;text-decoration: none;}
+label.successclass {float: left;padding-left: 17px;height: 17px;padding-top: 3px;font-size: 12px;color: #3FB8B3;background: url(../images/xxx.jpg) no-repeat left center;}
+.span1{ padding-top:5px}
+.success_bg {line-height: 1.2px;
+    margin: 60px 0px 0px 5px;
+    padding-left: 55px;color:#ff5a00;font-size:14px
+}
+.success_bg a{ color:blue}

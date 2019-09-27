@@ -1,0 +1,159 @@
+@charset "UTF-8";
+body {
+  min-width: auto;
+  overflow-x: hidden;
+  height: auto; }
+
+.section {
+  width: 1187px;
+  margin: 0 auto; }
+
+.section-wrap {
+  width: 100%;
+  position: relative; }
+
+/*轮播图*/
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 445px; }
+  .swiper-wrapper .swiper {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .swiper-wrapper .swiper:hover .btn {
+      display: block;
+      cursor: pointer; }
+    .swiper-wrapper .swiper .img {
+      text-align: center; }
+      .swiper-wrapper .swiper .img li {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        width: 100%; }
+        .swiper-wrapper .swiper .img li a {
+          display: inline-block;
+          width: 100%; }
+        .swiper-wrapper .swiper .img li img {
+          width: 100%;
+          height: 445px; }
+    .swiper-wrapper .swiper .num {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      font-size: 0;
+      width: 100%;
+      text-align: center; }
+      .swiper-wrapper .swiper .num li {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        font-size: 16px;
+        background-color: #666;
+        color: #fff;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 50%;
+        margin: 0 3px;
+        cursor: pointer; }
+        .swiper-wrapper .swiper .num li.active {
+          background-color: #00a1e9; }
+      .swiper-wrapper .swiper .num .btn {
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 60px;
+        margin-top: -30px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        text-align: center;
+        line-height: 60px;
+        font-size: 40px;
+        display: none;
+        padding: 0; }
+  .swiper-wrapper .loading {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    top: 80px; }
+
+/*商品组*/
+.group-top-title {
+  width: 220px;
+  background: #b589fc;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  padding: 4px 0;
+  float: left; }
+
+.group-more-wrapper {
+  display: inline-block;
+  width: 967px;
+  position: relative;
+  height: 41px;
+  float: left;
+  background: #eff0f8; }
+
+.group-more-wrapper .more {
+  position: absolute;
+  right: 14px;
+  top: 11px;
+  padding-right: 15px;
+  background: url(../images/more-icon.png) no-repeat right 6px; }
+
+.group {
+  width: 1187px;
+  position: relative;
+  border-top: 2px solid #b589fc; }
+  .group .group-title {
+    cursor: pointer; }
+    .group .group-title img {
+      width: 100%; }
+  .group .group-item {
+    border: 1px solid #ccc;
+    border-top: 1px solid #fff;
+    padding: 10px 0 5px;
+    clear: both; }
+    .group .group-item .group-item-list {
+      background: #fff;
+      float: left;
+      width: 20%;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #fff; }
+      .group .group-item .group-item-list:hover {
+        border: 1px solid #f9f9f9; }
+      .group .group-item .group-item-list img {
+        width: 134px;
+        height: 134px;
+        padding: 5px;
+        cursor: pointer;
+        border: none; }
+      .group .group-item .group-item-list .group-title {
+        height: 42px;
+        overflow: hidden;
+        margin: 0 0 8px; }
+      .group .group-item .group-item-list .group-origin-price {
+        color: #808080; }
+      .group .group-item .group-item-list .group-current-price {
+        color: #C40001;
+        margin: 0 0 12px; }
+        .group .group-item .group-item-list .group-current-price span {
+          font-weight: bold; }
+.goods-current-price-login {
+  border: 1px dashed #666;
+  text-align: center;
+  padding: 5px 0;
+  cursor: pointer;
+  color: #666;
+}
+.top-logo-index {
+  padding-left: 20px;
+  background: url(../images/index-icon.png) no-repeat 0 12px;
+  background-size: 15px 13px; }
+
+/*# sourceMappingURL=index.css.map */

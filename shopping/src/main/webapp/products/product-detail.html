@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>享购网</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="Cache" content="no-cache">
+    
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="../assets/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/common/base.css" rel="stylesheet" type="text/css" />
+    <link href="../css/common/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/common/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../css/common/common.css~time=.css" +timestamp rel="stylesheet" type="text/css" />
+    <link href="../css/common/easyzoom.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/index.css" rel="stylesheet" type="text/css">
+    <link href="../css/products/product-detail.css" rel="stylesheet" type="text/css" />
+    <style>
+        .choosecolor {
+            margin: 5px 0;
+            height: 41px;
+        }
+
+        dt {
+            font-weight: normal
+        }
+
+        .lujing {
+            position: absolute;
+            left: 0;
+            top: 8px;
+            z-index: 999;
+        }
+
+        .lujing a,
+        .lujing span {
+            color: #adadad;
+        }
+    </style>
+</head>
+
+<body>
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+
+
+
+    <div class="container-fluid header">
+        <div class="top">
+            <div class="top-left">
+                <!-- <a href="javascript:void(0)" class="top-logo">网站首页</a> -->
+                <a href="javascript:void(0)" style="cursor: default">您好，欢迎光临享购网！</a>
+            </div>
+            <div class="top-right fr">
+                <a href="javascript:void(0)" class="top-login">登录</a>
+                <a href="../login/register.html" class="top-register">注册</a>
+                <a href="../userInfo/user-info1.html" class="top-user"></a>
+                <a href="javascript:void(0)" class="top-exit" onclick="exit()">退出</a>
+                <a href="javascript:void(0)" class="top-order">我的订单</a>
+                <a href="javascript:void(0)" class="top-cart">购物车</a>
+                <div class="lipinka">
+                    <a href="javascript:void(0)" class="top-card">我的礼品卡</a>
+                </div>
+                <div class="tuangou">
+                    <a href="javascript:void(0)" class="top-together">团购
+                        <img class="together-top" src="../images/top.png">
+                        <img class="together-bottom" src="../images/bottom.png">
+                    </a>
+                    <div class="leibie">
+                        <a href="javascript:void(0)">享购团购</a>
+                        <a href="http://private.isgo.com/ISGOC1/Vender/Login.html">企业团购</a>
+                    </div>
+                </div>
+                <a href="http://gallery.isgo.com/" target="_blank" class="top-art">艺术品</a>
+                <p>400-628-8666</p>
+                <!-- <a href="https://www.kuaidi100.com/openapi/applyapi.shtml?free=free" class="top-cart">快递查询</a> -->
+            </div>
+        </div>
+    </div>
+    <div class="search-wrapper ofh">
+        <!--<div class="logo-left-wrapper fl">-->
+        <!--<a href="https://www.kuaidi100.com/openapi/applyapi.shtml?free=free" class="top-cart">快递100查询</a>-->
+        <a href="../index.html"><img src="../images/logo-left.png" class="logo-left"></a>
+        <!--</div>-->
+        <div class="search">
+            <input name="name" style="margin: 0" class="search-input" type="text" placeholder="请输入想要搜索的内容"
+                onkeydown="searchKeyDown(event);">
+            <span class="search-btn fr"><img src="../images/search.jpg"></span>
+        </div>
+    </div>
+    <div class="navTop">
+        <div class="navTop-box">
+            <ul>
+
+            </ul>
+        </div>
+    </div>
+  
+    <!-- <hr class="nav-line"/> -->
+    <div class="container-fluid section">
+        <div class="section-wrapper" style="position: relative;">
+            <!-- <div class="lujing">
+            <a href="../index.html">首页</a>
+            <span>></span>
+        </div> -->
+            <div class="goods-detail main cb">
+                <div class="goods-detail-left fl">
+                    <div class="easyzoom easyzoom--adjacent bigimg-wrapper">
+                        <a href="" target=_blank>
+                            <img id="product-image" class="big-img" src="" />
+                        </a>
+                    </div>
+                    <div class="smallimg-wrapper">
+                        <div class="small-img-wrap">
+                            <img id="Img1_Small" class="small-img" src="" />
+                        </div>
+                        <div class="small-img-wrap">
+                            <img id="Img2_Small" class="small-img" src="" />
+                        </div>
+                        <div class="small-img-wrap">
+                            <img id="Img3_Small" class="small-img" src="" />
+                        </div>
+                        <div class="small-img-wrap">
+                            <img id="Img4_Small" class="small-img" src="" />
+                        </div>
+                        <div class="small-img-wrap">
+                            <img id="Img5_Small" class="small-img" src="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="goods-detail-right fl">
+                    <div class="goods-detail-desc"></div>
+                    <div class="goods-detail-desc-second"></div>
+                    <div class="price-wrap" style="margin: 0;">
+                        <!--<p class="txt-through"><span class="price-key">市场价</span><span class="price-origin">&#165;0.00</span></p>-->
+                        <p class="price-current-wrapper">
+                            <!-- <span class="price-key current-price-text">销售价</span> -->
+                            <span class="red-deep price-current">&#165;0.00</span>
+                            <span class="price-current1" id="PriceCurrent" style="display: none;text-decoration:line-through;">&#165;0.00</span>
+                        </p>
+                        <!--<p class="price-login price-login-btn">登录后查看折扣价</p>-->
+                    </div>
+                    <div class="price-current1" style="display: none;color:red;">您已享受优惠</div>
+                    <div id="chooseType">
+
+                    </div>
+                    <div class="choosecount">
+                        <span>数量：</span>
+                        <span class="count-wrapper">
+                            <input type="text" id="count" value="1" onkeydown="onlyNum();" />
+                            <a onclick="plus()" class="btn-plus btn-plus-add">+</a>
+                            <a onclick="minus()" class="btn-plus btn-plus-reduce">-</a>
+                        </span>
+                        <!--                     <span class="count-reserve">
+                        已售 <span class="count-reserve-num"></span> 件
+                    </span> -->
+                    </div>
+                    <div class="buy overflow-h">
+                        <a class="btn-buy" id="btn-buy">立即购买</a>
+                        <a class="btn-shopcart" id="btn-shopcart">加入购物车</a>
+                        <a class="btn-offshelf" id="btn-offshelf" style="display:none;">此商品已下架</a>
+                        <a class="btn-offshelf" id="btn-offsale" style="display:none;">此商品未上架</a>
+                    </div>
+                    <div class="group-buy cb active-buy" style="display:none">
+                        <div class="group-buy-top active-buy-top">
+                            <span class="group-buy-title active-buy-title">已参加“帮砍价”活动</span>
+                            <span class="group-buy-num fr active-buy-num">您已成功推荐1人注册</span>
+                        </div>
+                        <div class="group-buy-detail active-buy-detail">
+                            <div class="group-buy-row active-buy-row">
+                                <span class="group-buy-key active-buy-key">帮砍价格</span>
+                                <span class="group-buy-value group-buy-price active-buy-value"></span>
+                            </div>
+                            <div class="group-buy-row active-buy-row">
+                                <span
+                                    class="group-buy-key active-buy-key">库&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;存</span>
+                                <span class="group-buy-value group-buy-store active-buy-value">0件</span>
+                            </div>
+                            <p class="group-price-login price-login-btn active-buy-login">登录后查看帮砍价</p>
+                            <div class="group-buy-btn-wrapper active-buy-btn-wrapper">
+                                <a class="group-buy-btn active-buy-btn">立即购买</a>
+                                <a class="group-buy-detail-btn active-buy-detail-btn">点击参与活动</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pre-sale cb active-buy" style="display:none">
+                        <div class="pre-sale-top active-buy-top">
+                            <span class="pre-sale-title active-buy-title">该商品可提前预售</span>
+                            <span class="pre-sale-num fr active-buy-num"></span>
+                        </div>
+                        <div class="pre-sale-detail active-buy-detail">
+                            <div class="pre-sale-row active-buy-row">
+                                <span class="pre-sale-key active-buy-key">预售价格</span>
+                                <span class="pre-sale-value pre-sale-price-lave active-buy-value"></span>
+                            </div>
+                            <div class="pre-sale-row active-buy-row">
+                                <span class="pre-sale-key active-buy-key">预售定金</span>
+                                <span class="pre-sale-value pre-sale-price-part active-buy-value"></span>
+                            </div>
+                            <div class="pre-sale-row pre-sale-store-wrapper active-buy-row">
+                                <span class="pre-sale-key active-buy-key">库存</span>
+                                <span class="pre-sale-value pre-sale-store active-buy-value"
+                                    style="padding:0;">0件</span>
+                            </div>
+                            <a class="pre-sale-detail-btn">详情</a>
+                            <p class="pre-sale-login active-buy-login price-login-btn">登录后查看预售价</p>
+                            <div class="pre-sale-btn-wrapper active-buy-btn-wrapper">
+                                <a class="pre-sale-btn active-buy-btn">立即支付</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="together-buy cb active-buy" style="display:none;">
+                        <div class="together-buy-top active-buy-top">
+                            <span class="together-buy-title active-buy-title">已参加“团购”活动</span>
+                            <span class="together-buy-num fr active-buy-num">还剩5天2小时30分钟20秒开团</span>
+                        </div>
+                        <div class="together-buy-detail active-buy-detail">
+                            <div class="together-buy-row active-buy-row">
+                                <span class="together-buy-key active-buy-key">团购价格</span>
+                                <span class="together-buy-value together-buy-price active-buy-value">￥0.01</span>
+                            </div>
+                            <div class="together-buy-row active-buy-row">
+                                <span
+                                    class="together-buy-key active-buy-key">库&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;存</span>
+                                <span class="together-buy-value together-buy-store active-buy-value">0件</span>
+                            </div>
+                            <p class="together-price-login price-login-btn active-buy-login">登录后查看团购价</p>
+                            <div class="together-buy-btn-wrapper active-buy-btn-wrapper">
+                                <a class="together-buy-btn active-buy-btn">立即购买</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="goods-top-title">
+                <span>商品详情</span>
+            </div>
+            <div class="goods-intro tac">
+            
+            </div>
+        </div>
+    </div>
+    
+    <div class="ifooter">
+        <div class="pwm serivcelist clearfix">
+            <dl>
+                <dt>新手指南
+                </dt>
+                <dd><a href="../footer/question.html">常见问题</a></dd>
+                <dd><a href="../login/register.html">用户注册</a></dd>
+                <dd><a href="../login/login.html">用户登录</a></dd>
+            </dl>
+            <dl>
+                <dt>购物指南
+                </dt>
+                <dd><a href="../footer/guide.html">购物流程</a></dd>
+                <dd class="top-order"><a href="javascript:void(0)">订单状态</a></dd>
+                <dd><a href="http://www.kuaidi100.com/?from=openv">快递查询</a></dd>
+            </dl>
+            <dl>
+                <dt>支付方式
+                </dt>
+                <dd><a href="../footer/payment.html">在线支付</a></dd>
+                <dd class="top-card"><a href="javascript:void(0)">礼品卡支付</a></dd>
+                <dd><a href="../order/cardHelp.html">礼品卡说明</a></dd>
+                <!--<dd><a href="#">货到付款</a></dd>-->
+            </dl>
+            <dl>
+                <dt>配送方式
+                </dt>
+                <dd><a href="../footer/service.html">配送方式</a></dd>
+                <dd><a href="../footer/service.html">配送政策</a></dd>
+                <!--<dd><a href="footer/service.html">特殊说明</a></dd>-->
+            </dl>
+            <dl>
+                <dt>售后服务
+                </dt>
+                <dd><a href="../footer/aftersell.html">退/换货政策</a></dd>
+                <dd><a href="../footer/aftersell.html">退/换货流程</a></dd>
+                <!--<dd><a href="#">特殊说明</a></dd>-->
+            </dl>
+            <dl>
+                <dt>我的享购
+                    <span class="icon-hot"></span>
+                </dt>
+                <dd class="top-order"><a href="javascript:void(0)">我的订单</a></dd>
+                <dd class="top-card"><a href="javascript:void(0)">我的礼品卡</a></dd>
+                <!--<dd><a href="#">我的优惠券</a></dd>-->
+            </dl>
+            <div class="serivcenumber">
+                <a href="javascript:void(0)" target="_blank" style="display:block;">
+                    <img src="../assets/images/index/banner004.jpg" alt="" />
+                </a>
+            </div>
+        </div>
+        <div class="pwm ifserivcelink clearfix">
+            <div class="if_list">
+                <a href="../footer/about.html">关于iSGO</a>
+                <span>|</span>
+                <a href="../footer/about1.html">企业文化</a>
+                <span>|</span>
+                <a href="../footer/about2.html">招商合作</a>
+                <span>|</span>
+                <a href="../footer/about3.html">联系方式</a>
+                <span>|</span>
+                <a href="../footer/about4.html">工作机会</a>
+                <span>|</span>
+                客服电话:400-628-8666
+            </div>
+            <p>&copy; 2012-2014 www.iSGO.com All Rights Reserved. 享购网 版权所有</p>
+            <p>京ICP证 090163号 | 食品流通许可证 SP1101081110103523 | <a
+                    href="../userfiles/amber/data/img/product/112/1404372966.jpg"
+                    target="_blank">营业执照</a></p>
+            <p class="paylogo" style="margin-top:0px;"></p>
+        </div>
+        <div style="width:300px;margin:0 auto; padding:0px 0 20px 0;">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020501"
+                style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img
+                    src="../assets/images/police.png" style="float:left;" />
+                <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备
+                    11010802020501号</p>
+            </a>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <span class="modal-title" id="myModalLabel">“帮砍价”详情</span>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-group-intro">
+                        请复制此链接分享给您的同事，只需推荐<span class="modal-group-intro-TargetNum"
+                            style="font-weight: bold;">3</span>位DCEPP新用户并成功注册，即可享受“帮砍价”优惠价格。
+                    </div>
+                    <div class="modal-group-url">
+                        <a class="linkurl-show"
+                            href="http://www.dcepp.com/login/register.html?productId=49d0458a62224027a222f86a0be5127a"
+                            target="_blank">
+                            http://www.dcepp.com/login/register.html?productId=49d0458a62224027a222f86a0be5127a
+                        </a>
+                        <textarea id="linkurl"
+                            style="width:1px;height:1px;overflow:hidden;">http://www.dcepp.com/login/register.html?productId=49d0458a62224027a222f86a0be5127a</textarea>
+                    </div>
+                    <div class="modal-group-btn-wrapper tac">
+                        <span class="modal-group-btn">复制推广链接</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--预售商品详情-->
+    <div class="modal fade" id="pre-modal" tabindex="-1" role="dialog" aria-labelledby="pre-modalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <span class="modal-title" id="pre-modalLabel">“预售商品”详情</span>
+                </div>
+                <div class="modal-body" style="padding-left:20px;">
+                    <div id="PreBuyDescription"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/common/jquery.min.js"></script>
+    <script src="../js/common/bootstrap.min.js"></script>
+    <script src="../js/common/jquery-cookie.js"></script>
+    <script src="../js/common/artTemplate.js"></script>   
+    <script src="../js/common/dialog.js"></script>
+    <script src="../js/common/easyzoom.js"></script>
+    <script src="../js/common/url.js"></script>
+    <script id="nav-cell" type="text/html"></script>
+    
+
+    
+    <script type="text/javascript">
+    var href=window.location.href;
+	 var gno=href.split('=')[1];
+     $(function(){
+    	 
+    	 //alert(gno);
+    	 //显示导航
+    	 askNav();
+    	 //查询商品
+    	 productDetail();
+     });
+
+        // 加载导航
+        function askNav() {
+            $.ajax({
+                type:"GET",
+                url: "../type/findAll",
+                dataType:"json",
+                success: function (data) {
+                	//console.log(data);
+                    var askData;
+                    var navHtml = '<li><a href="../index.html">首页</a></li>';
+                    for (var i = 0; i < data.length; i++) {
+                        
+                            navHtml += '<li>'+
+                                '<span id="tno" class="jsClass" data-num="'+data[i].tno+'">'+data[i].tname+'</span>'+
+                                '<div class="hover-box life-box"> <div class="hover-left-box">  <h3><span data-num="'+data[i].tino+'">'+data[i].tname+'</span></h3>';
+                                   
+                                    for (var j = 0; j < data[i].typeItem.length; j++) {
+                                    	//console.log(data[i].typeItem[j].tname);
+                                    	 //navHtml+= '<a href="products/product-list.html?tino='+data[i].typeItem[j].tino+'" target="_blank"><span>'+data[i].typeItem[j].tname+'</span></a>';
+                                    	navHtml+= '<span id="tino" data-num='+data[i].typeItem[j].tino+'>'+data[i].typeItem[j].tname+'</span>';
+                                    	
+                                    }
+                                   // console.log(navHtml);
+                                    navHtml+='</div> <img src="../assets/images/'+(i+1)+'.jpg"></a> </div> </li>' ;
+                                   
+                                    //'<a href="'+data.rows[i].url.aUrl+'" target="_blank"><img src="./'+data.rows[i].url.imgUrl+'"></a>'+
+                                
+                           
+                        
+                            //<!--navHtml += '<li><span class="jsClass" data-num="'+data.typeItem[i].tino+'">'+data.typeItem[i].tname+'</span></li>'--!>
+                                    
+                    }
+                  //  console.log(navHtml);
+                    $('.navTop ul').html(navHtml);
+                 
+                }
+            });
+        }
+
+        function GetQueryString(Param) {
+            var BreakString = new RegExp("(^|&)" + Param + "=([^&]*)(&|$)")
+            var GetUrl = window.location.search.substr(1).match(BreakString)
+            if (GetUrl != null) {
+                return unescape(GetUrl[2])
+            } else {
+                return null
+            }
+        }
+
+        function productDetailPrice() {
+            $.ajax({
+                type: "GET",
+                url: productPriceUrl,
+                headers: headers,
+                dataType: "json",
+                data: {
+                    "ProdPriceId": localStorage.getItem("ProdPriceId"),
+                    "VenderId": localStorage.getItem('VenderId')
+                },
+                success: function (data) {
+                    //商品选择属性
+                    var a;
+                    if (data.PropPlanOptions) {
+                        var option = JSON.parse(data.PropPlanOptions.Options);
+                        var Props1 = JSON.parse(data.Props1);
+                        for (i = 0; i < option.length; i++) {
+                            option[i].PropertyOptions = option[i].PropertyOptions.split(",");
+                        }
+
+                    } else {
+                        var option = [];
+                    }
+                    var dict = {};
+                    dict["list"] = option;
+                    a = template("order-cell", dict);
+                    $("#chooseType").append(a);
+
+                    if (data.rows && data.rows != undefined) {
+                        data = data.rows[0];
+                    }
+                    
+                    var DiscountSalePrice = ''
+                    if (data.DiscountSalePrice != null || data.DiscountSalePrice != undefined) {
+                        DiscountSalePrice = (data.DiscountSalePrice / 100).toFixed(2);
+                    }
+                    if (data.SalePrice != null || data.SalePrice != undefined) {
+                        //$(".price-origin").text("¥"+(data.MarketPrice/100).toFixed(2));
+                        var SalePrice = (data.SalePrice / 100).toFixed(2);
+                        if (data.SalePrice > data.DiscountSalePrice && data.DiscountSalePrice!=='') {
+                            $(".price-current1").show();
+                            $(".price-current").text("¥"+DiscountSalePrice);
+                            $("#PriceCurrent").text("¥"+SalePrice);
+                        } else {
+                            $(".price-current").text("¥"+SalePrice);
+                        }
+                        $(".count-reserve-num").text(Math.floor(Math.random() * 1000));
+                    }
+
+                    if (data.ProdStatus == 0) {
+                        $("#btn-buy").css("display", "none");
+                        $("#btn-shopcart").css("display", "none");
+                        $('.choosecount').hide();
+                        $("#btn-offsale").css("display", "block");
+                    } else if (data.ProdStatus == 2) {
+                        $("#btn-buy").css("display", "none");
+                        $("#btn-shopcart").css("display", "none");
+                        $('.choosecount').hide();
+                        $("#btn-offshelf").css("display", "block");
+                    }
+
+                }
+            });
+        }
+       // console.log("gno:"+gno);
+        //商品展示
+        function productDetail() {
+        	
+            $.ajax({
+                type: "GET",               
+                url: '../good/findByItem',
+                data: {gno:gno},
+                //headers: headers,
+                dataType: "json",
+                success: function (data) {
+                	console.log(data);
+                    
+                    $(".goods-detail-desc").text(data[0].gname);
+                   
+                    var pics = data[0].pics;
+                    var images=pics.split(',');
+                    //console.log(images);
+                    if (images!=null) {
+                       
+                        if (images[1]) {
+                            $("#Img2_Small").attr("src", '../'+images[0]).parent().attr({ "data-src": '../'+images[0], "data-small": '../'+images[0] });
+                        } else {
+                            $("#Img2_Small").parent().hide();
+                        }
+                        if (images[2]) {
+                            $("#Img3_Small").attr("src", '../'+images[1]).parent().attr({ "data-src": '../'+images[1], "data-small": '../'+images[1] });
+                        } else {
+                            $("#Img3_Small").parent().hide();
+                        }
+                        if (images[3]) {
+                            $("#Img4_Small").attr("src", '../'+images[2]).parent().attr({ "data-src": '../'+images[2], "data-small": '../'+images[2] });
+                        } else {
+                            $("#Img4_Small").parent().hide();
+                        }
+                        if (images[4]) {
+                            $("#Img5_Small").attr("src", '../'+images[3]).parent().attr({ "data-src": '../'+images[3], "data-small": '../'+images[3] });
+                        } else {
+                            $("#Img5_Small").parent().hide();
+                        }
+                    } else {
+                        $("#Img2_Small").parent().hide();
+                        $("#Img3_Small").parent().hide();
+                        $("#Img4_Small").parent().hide();
+                        $("#Img5_Small").parent().hide();
+                    }
+                    if (data[0].price != null && data[0].price != undefined) {
+                       // $(".price-origin").text("¥" + (data[0].price / 100).toFixed(2));
+                       console.log(data[0].price);
+                        $(".price-current").text("¥"+(data[0].price).toFixed(2));
+                    }
+                    $(".small-img-wrap").eq(0).css("border", "2px solid #e53e41");
+                    $("#product-image").attr("src", '../'+data[0].pics).parent().attr("href", '../'+data[0].pics);
+                    $("#Img1_Small").attr("src", '../'+data[0].pics)
+                        .parent().attr({ "data-src": '../'+data[0].pics, "data-small": '../'+data[0].pics });
+                    $(".goods-intro").html(data[0].descr);
+                   
+                    numStore = $(".count-reserve-num").text();
+                    var detailRightHeight = parseInt($(".goods-detail-right").css("height")) + 75;
+                    var detailLeftHeight = parseInt($(".goods-detail-left").css("height")) + 75;
+                    if (detailRightHeight - detailLeftHeight > 0) {
+                        $(".goods-detail").css("height", detailRightHeight + "px");
+                    } else {
+                        $(".goods-detail").css("height", detailLeftHeight + "px");
+                    }
+                }
+            });
+        }
+        $(".small-img-wrap").mouseenter(function () {
+            var linkSrc = $(this).data("src");
+            var imgSrc = $(this).data("small");
+            $("#product-image").attr("src", linkSrc).parent().attr("href", imgSrc);
+            $(this).css("border", "2px solid #e53e41");
+            $(this).siblings().css("border", "2px solid #fff");
+        });
+        $(".btn-buy").on("click", function () {
+            productDetail();
+            
+        });
+        //加入购物车
+        function addToCart() {
+            var val = parseInt($("#count").val());
+            
+            
+        }
+        $(".btn-shopcart").on("click", function () {
+            addToCart();
+        });
+        function plus() {
+            var val = parseInt($("#count").val());
+            var max = parseInt(numStore);
+            $("#count").val(val + 1);
+            val = val + 1;
+        }
+        function minus() {
+            var val = parseInt($("#count").val());
+            var max = parseInt(numStore);
+            if (val > 1) {
+                $("#count").val(val - 1);
+                val = val - 1;
+            }
+        }
+        $(".count-wrapper").on("keyup", "#count", function () {
+            if ($(this).val() == "" || $(this).val() == 0) {
+                $(this).val(1);
+            }
+        });
+    
+        //    鼠标滑到品类标题上
+        $(".menu-wrapper").on("mouseenter", ".menu-list", function () {
+            var index = $(this).index();
+            $(".menu-list:nth-child(" + (index + 1) + ") a").css({ "color": "#fff", "background": "#44bdf3 url(../images/brand-icon" + (index + 1) + "-select.png) no-repeat 23px 15px" });
+            $(".ad .ad-img").css("background", "url(../images/ad-img.png) no-repeat " + (-index * 170) + "px");
+        });
+        $(".menu-wrapper").on("mouseleave", ".menu-list", function () {
+            var index = $(this).index();
+            $(".menu-list:nth-child(" + (index + 1) + ") a").css({ "color": "#000", "background": "url(../images/brand-icon" + (index + 1) + ".png) no-repeat 23px 15px" });
+            $(".ad .ad-img").css("background", "url(../images/ad-img.png) no-repeat");
+        });
+        var typePath, typeName;
+        $(".nav-wrapper").on("click", ".nav-list:not(.service)", function () {
+            typePath = $(this).attr("data-path");
+            typeName = $(this).text();
+            if ($(this).text() == "首页") {
+                window.location.href = "../index.html";
+            } else {
+                sessionStorage.typePath = typePath;
+                sessionStorage.typeName = typeName;
+                window.location.href = "product-list2.html";
+            }
+        });
+        $(".menu-wrapper").on("click", ".menu-list", function () {
+            typePath = $(this).attr("data-path");
+            typeName = $(this).text();
+            sessionStorage.typePath = typePath;
+            sessionStorage.typeName = typeName;
+            window.location.href = "product-list2.html";
+        });
+        //    搜索
+        $(".search-btn").on("click", function () {
+            searchKey();
+        });
+        function searchKey() {
+            sessionStorage.removeItem("typePath");
+            sessionStorage.removeItem("typeName");
+            var keyWord = $.trim($(".search-input").val());
+            if (keyWord == null || keyWord.length <= 0) {
+                dialogModule.iTips("请输入搜索的关键字");
+                return false;
+            } else {
+                sessionStorage.keyWord = keyWord;
+                window.location.href = "product-all.html";
+            }
+        }
+        function searchKeyDown(event) {
+            if (event.keyCode == 13) {
+                event.returnValue = false;
+                event.cancel = true;
+                searchKey();
+            }
+        }
+        //    帮购
+        $(".group-buy-detail-btn").on("click", function () {
+            $("#myModal").modal("show");
+        });
+        $(".modal-group-btn").on("click", function () {
+            $("#linkurl").select();
+            document.execCommand("Copy");
+            dialogModule.iTips("复制成功");
+        });
+        //预售商品 详情
+        $(".pre-sale-detail-btn").on("click", function () {
+            $("#pre-modal").modal("show");
+        });
+
+       
+
+        function Choose(_this) {
+            $(_this).siblings(".color-selected").removeClass("color-selected");
+            $(_this).addClass("color-selected");
+        }
+
+
+
+        
+        $('.navTop').on('click', '#tno', function(){
+            if ($(this).data('num')) {
+                window.location.href = $.url.locationUrl+"products/product-list.html?tno=" + $(this).data('num');
+                //alert( $.url.locationUrl+"products/product-list.html?tino=" + $(this).data('num'));
+            }
+        });
+            $('.navTop').on('click', '#tino', function(){
+                if ($(this).data('num')) {
+                    window.location.href = $.url.locationUrl+"products/product-list.html?tino=" + $(this).data('num');
+                    //alert( $.url.locationUrl+"products/product-list.html?tino=" + $(this).data('num'));
+                }
+            });
+        $('.tuangou').hover(function () {
+            $('.together-bottom').hide();
+            $('.together-top').show();
+            $('.leibie').show();
+        }, function () {
+            $('.together-top').hide();
+            $('.together-bottom').show();
+            $('.leibie').hide();
+        });
+    </script>
+</body>
+
+</html>

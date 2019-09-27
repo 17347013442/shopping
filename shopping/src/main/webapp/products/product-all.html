@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>享购网</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="Cache" content="no-cache">
+    <script>var timestamp = Date.parse(new Date());</script>
+    <link href="../css/common/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common/base.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common/common.css~time=.css"+timestamp rel="stylesheet" type="text/css"/>
+    <link href="../css/common/pagination.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/index.css" rel="stylesheet" type="text/css" />
+    <link href="../css/products/product-list.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  on  09/22/19 20:31:32.<br>
+<b>Address:</b> <a class="info" href="http://www.isgo.com/products/product-all.html">http://www.isgo.com/products/product-all.html</a><br>
+<b>Title:</b> 享购网 &nbsp;&bull;&nbsp; <b>Size:</b> 27119 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 09 Sep 2019 11:21:35 GMT<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+<div class="container-fluid header">
+    <div class="top">
+        <div class="top-left">
+            <a href="javascript:void(0)" style="cursor: default">您好，欢迎光临享购网！</a>
+        </div>
+        <div class="top-right fr">
+            <a href="javascript:void(0)" class="top-login">登录</a>
+            <a href="../login/register.html" class="top-register">注册</a>
+            <a href="../userInfo/user-info1.html" class="top-user"></a>
+            <a href="javascript:void(0)" class="top-exit" onclick="exit()">退出</a>
+            <a href="javascript:void(0)" class="top-order">我的订单</a>
+            <a href="javascript:void(0)" class="top-cart">购物车</a>
+            <div class="lipinka">
+                <a href="javascript:void(0)" class="top-card">我的礼品卡</a>
+            </div>
+            <div class="tuangou">
+                <a href="javascript:void(0)" class="top-together">团购
+                    <img class="together-top" src="../images/top.png">
+                    <img class="together-bottom" src="../images/bottom.png">
+                </a>
+                <div class="leibie">
+                    <a href="javascript:void(0)">享购团购</a>
+                    <a href="http://private.isgo.com/ISGOC1/Vender/Login.html">企业团购</a>
+                </div>
+            </div>
+            <a href="http://gallery.isgo.com/" target="_blank" class="top-art">艺术品</a>
+            <p>400-628-8666</p>
+        </div>
+    </div>
+</div>
+<div class="search-wrapper ofh">
+    <a href="../index.html"><img src="../images/logo-left.png" class="logo-left"></a>
+    <div class="search">
+        <input name="name" style="margin: 0" class="search-input" type="text" placeholder="请输入想要搜索的内容" onkeydown="searchKeyDown(event);">
+        <span class="search-btn fr"><img src="../images/search.jpg"></span>
+    </div>
+</div>
+<div class="navTop">
+    <div class="navTop-box">
+        <ul>
+
+        </ul>
+    </div>
+</div>
+<!--<div class="nav">-->
+    <!--<ul class="overflow-h nav-wrapper">-->
+        <!--<li class="first-list">-->
+            <!--<a href="javascript:void(0)" class="nav-first">全部品类</a>-->
+            <!--<div class="brand-nav">-->
+                <!--<ul class="menu-wrapper">-->
+                    <!--<li><a href="javascript:void(0)">电脑整机</a></li>-->
+                    <!--<li><a href="javascript:void(0)">健康生活</a></li>-->
+                    <!--<li><a href="javascript:void(0)">家用电器</a></li>-->
+                    <!--<li><a href="javascript:void(0)">智能设备</a></li>-->
+                <!--</ul>-->
+                <!--<div class="ad">-->
+                    <!--<div class="ad-img"></div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</li>-->
+        <!--<li class="nav-list"><a href="javascript:void(0)">首页</a></li>-->
+        <!--<li class="nav-list prev-buy"><a href="javascript:void(0)">预售商品</a></li>-->
+        <!--<li class="nav-list group-buy"><a href="javascript:void(0)">团购商品</a></li>-->
+        <!--<li class="nav-list banggou-buy"><a href="javascript:void(0)">帮砍价商品</a></li>-->
+        <!--<li class="nav-list service solution"><a href="javascript:void(0)">解决方案</a></li>-->
+        <!--<li class="nav-list service recycle"><a href="javascript:void(0)">回收</a></li>-->
+        <!--<li class="nav-list service rent"><a href="javascript:void(0)">租赁</a></li>-->
+        <!--<li class="nav-list service repair"><a href="javascript:void(0)">维修</a></li>-->
+        <!--<li class="nav-list service replace"><a href="javascript:void(0)">置换</a></li>-->
+    <!--</ul>-->
+<!--</div>-->
+<hr class="nav-line"/>
+<div class="container-fluid section">
+    <div class="section-wrapper">
+        <div class="goods">
+            <div class="goods-item container-fluid overflow-h">
+                <div class="goods-none tac" style="display:none;color: #EB362F">
+                    <img src="../images/empty_error.jpg" alt="">
+                    抱歉，没有找到符合条件的商品，请从新搜索！
+                </div>
+                <div class="goods-item-wrapper overflow-h">
+                    <!--<div class="goods-item-list">-->
+                    <!--<img src="../images/hotsell-img1.png" alt=""/>-->
+                    <!--<p class="goods-title">戴尔（DELL） XPS 9350 13.3英寸轻薄笔记本电脑</p>-->
+                    <!--<div class="goods-price">-->
+                    <!--<p class="goods-origin-price txt-through">京东价: 8999.00</p>-->
+                    <!--<p class="goods-current-price red-deep" style="display:none;">现 价: <span>5999.00</span></p>-->
+                    <!--<p class="goods-current-price-login">登录后查看折扣</p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <div class="pagination-wrapper"></div>
+        </div>
+    </div>
+</div>
+<div class="ifooter">
+    <div class="pwm serivcelist clearfix">
+        <dl>
+            <dt>新手指南
+            </dt>
+            <dd><a href="../footer/question.html">常见问题</a></dd>
+            <dd><a href="../login/register.html">用户注册</a></dd>
+            <dd><a href="../login/login.html">用户登录</a></dd>
+        </dl>
+        <dl>
+            <dt>购物指南
+            </dt>
+            <dd><a href="../footer/guide.html">购物流程</a></dd>
+            <dd class="top-order" ><a href="javascript:void(0)">订单状态</a></dd>
+            <dd><a href="http://www.kuaidi100.com/?from=openv">快递查询</a></dd>
+        </dl>
+        <dl>
+            <dt>支付方式
+            </dt>
+            <dd><a href="../footer/payment.html">在线支付</a></dd>
+            <dd class="top-card"><a href="javascript:void(0)">礼品卡支付</a></dd>
+            <dd><a href="../order/cardHelp.html">礼品卡说明</a></dd>
+            <!--<dd><a href="../con_x0rm43.htm~viewPage=service&view=all">货到付款</a></dd>-->
+        </dl>
+        <dl>
+            <dt>配送方式
+            </dt>
+            <dd><a href="../footer/service.html">配送方式</a></dd>
+            <dd><a href="../footer/service.html">配送政策</a></dd>
+            <!--<dd><a href="../footer/service.html">特殊说明</a></dd>-->
+        </dl>
+        <dl>
+            <dt>售后服务
+            </dt>
+            <dd><a href="../footer/aftersell.html">退/换货政策</a></dd>
+            <dd><a href="../footer/aftersell.html">退/换货流程</a></dd>
+            <!--<dd><a href="../con_18uw129.htm~viewPage=service&view=all">特殊说明</a></dd>-->
+        </dl>
+        <dl>
+            <dt>我的享购
+                <span class="icon-hot"></span>
+            </dt>
+            <dd class="top-order"><a href="javascript:void(0)">我的订单</a></dd>
+            <dd class="top-card"><a href="javascript:void(0)">我的礼品卡</a></dd>
+            <!--<dd><a href="../con_tluw123.htm~viewPage=service&view=all">我的优惠券</a></dd>-->
+        </dl>
+        <div class="serivcenumber">
+            <a href="javascript:void(0w)" target="_blank" style="display:block;">
+                <img src="../assets/images/index/banner004.jpg" alt=""/>
+            </a>
+        </div>
+    </div>
+    <div class="pwm ifserivcelink clearfix">
+        <div class="if_list">
+            <a href="../footer/about.html">关于iSGO</a>
+            <span>|</span>
+            <a href="../footer/about1.html">企业文化</a>
+            <span>|</span>
+            <a href="../footer/about2.html">招商合作</a>
+            <span>|</span>
+            <a href="../footer/about3.html">联系方式</a>
+            <span>|</span>
+            <a href="../footer/about4.html">工作机会</a>
+            <span>|</span>
+            客服电话:400-628-8666
+        </div>
+        <p>&copy; 2012-2014 www.iSGO.com All Rights Reserved. 享购网 版权所有</p>
+
+        <p>京ICP证 090163号 | 食品流通许可证 SP1101081110103523 | <a
+                href="../userfiles/amber/data/img/product/112/1404372966.jpg"
+                target="_blank">营业执照</a></p>
+
+        <p class="paylogo" style="margin-top:0px;"></p>
+    </div>
+    <div style="width:300px;margin:0 auto; padding:0px 0 20px 0;">
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020501"
+           style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img
+                src="../assets/images/police.png" style="float:left;"/>
+
+            <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备
+                11010802020501号</p></a>
+    </div>
+</div>
+<script src="../js/common/jquery.min.js"></script>
+<script src="../js/common/jquery-cookie.js"></script>
+<script src="../js/common/artTemplate.js"></script>
+<script src="../js/common/url.js"></script>
+<script src="../js/common/common.js"></script>
+<script src="../js/common/dialog.js"></script>
+<script src="../js/common/jquery.pagination.js"></script>
+<script id="nav-cell" type="text/html">
+    {{each returnJson as value i}}
+    <li class="menu-list" data-path="{{value.Path}}"><a href="javascript:void(0)">{{value.Name}}</a></li>
+    {{/each}}
+</script>
+<script id="product-cell" type="text/html">
+    {{each rows as value i}}
+    <div class="goods-item-list" id="{{value.Id}}" data-id='{{value.ProdPriceId}}'>
+        <img src="{{value.LongLogo}}" alt="" class="goods-img"/>
+        <p class="goods-title" title="{{value.Title}}">{{value.Title}}</p>
+        <div class="goods-price">
+            <!--<p class="goods-origin-price txt-through">市场价: {{value.MarketPrice}}</p>-->
+            <p class="goods-current-price-list ">销售价: <span>{{value.SalePrice}}</span>
+            <!--<p class="goods-current-price-login price-login-btn">登录后查看折扣</p>-->
+        </div>
+    </div>
+    {{/each}}
+</script>
+<script type="text/javascript">
+    if(sessionStorage.typePath != undefined){
+        var typeName = sessionStorage.typeName;
+        var typePath = sessionStorage.typePath;
+        typeName = decodeURI(typeName);
+    }
+    if(sessionStorage.keyWord != undefined){
+        var keyWord = sessionStorage.keyWord;
+        keyWord = decodeURI(keyWord);
+        $(".search-input").val(keyWord);
+    }
+    if(!typePath){
+        typePath = "";
+    }
+    if(!keyWord){
+        keyWord = "";
+    }else{
+        $(".nav-wrapper .nav-list").children().removeClass("selected");
+    }
+    var productUrl,headers;
+    $(function(){
+        askNav();
+        if($.cookie("accessToken")){
+            userInfo();
+            headers = {
+                "Authorization": "Bearer " + $.cookie("accessToken")
+            };
+        }else{
+            headers = {};
+        }
+        checkLogin();
+//        getNavList();
+        $(".pagination-wrapper").empty();
+        productList(page_index);
+    });
+
+    // 加载导航
+    function askNav() {
+        $.ajax({
+            type:"GET",
+            url: "../json/nav.json",
+            dataType:"json",
+            success: function (data) {
+                var askData;
+                var navHtml = '<li><a href="../index.html">首页</a></li>';
+                for (var i = 0; i < data.rows.length; i++) {
+                    if (data.rows[i].url) {
+                        navHtml += '<li>'+
+                            '<span class="jsClass" data-num="'+data.rows[i].Id+'">'+data.rows[i].name+'</span>'+
+                            '<div class="hover-box life-box">'+
+                                '<div class="hover-left-box">'+
+                                    '<h3><span data-num="'+data.rows[i].Id+'">'+data.rows[i].name+'</span></h3>'+
+
+                                '</div>'+
+                                '<a href="'+data.rows[i].url.aUrl+'" target="_blank"><img src="../'+data.rows[i].url.imgUrl+'"></a>'+
+                            '</div>'+
+                        '</li>';
+                    } else {
+                        navHtml += '<li><span class="jsClass" data-num="'+data.rows[i].Id+'">'+data.rows[i].name+'</span></li>'
+                    }
+                }
+                $('.navTop ul').html(navHtml);
+                for (var i = 0; i < data.rows.length; i++) {
+                    askData = data.rows[i].Id;
+                    $.ajax({
+                        type: "GET",
+                        url: $.url.webUrl + "doB2C/B2Ca_N_Display",
+                        dataType: "json",
+                        data: {
+                            "ParentId": askData,
+                            "VenderId": localStorage.getItem("VenderId")
+                        },
+                        success: function (dataa) {
+                            var spanHtml = '';
+                            if (dataa.total) {
+                                for (var i = 0; i < dataa.rows.length; i++) {
+                                    spanHtml += '<span data-num="'+dataa.rows[i].Id+'">'+dataa.rows[i].Name+'</span>';
+                                }
+                                $('.navTop li').each( function() {
+                                    if (dataa.rows[0].ParentId == ($(this).children('.jsClass').data('num'))) {
+                                        $(this).children('.hover-box').children('.hover-left-box').append(spanHtml);
+                                    }
+                                });
+                            }
+                        }
+                    });
+                }
+            }
+        });
+    }
+    var page_index = 0;
+    function productList(index){
+        var paginationWidth = parseInt($(".pagination").css("width"));
+        $(".pagination").css("margin-left",-paginationWidth/2 + "px");
+        var pageIndex = index + 1;
+        var body;
+//        if(typeName == "预售商品" && keyWord == ""){
+//            if($.cookie("accessToken")){
+//                productUrl = $.url.webUrl + "doB2C/B2Ca_N_ProdInfo";
+//            }else{
+//                productUrl = $.url.webUrl + "doB2C/B2Ca_N_ProdInfo";
+//            }
+//            body = {
+//                page: pageIndex,
+//                pageSize: "15"
+//            };
+//        }else if((typeName == "团购商品" || typeName == "帮砍价商品") && keyWord == ""){
+//            if($.cookie("accessToken")){
+//                productUrl = $.url.webUrl + "doB2C/B2Ca_N_ProdInfo";
+//            }else{
+//                productUrl = $.url.webUrl + "doB2C/B2Ca_N_ProdInfo";
+//            }
+//            if(typeName == "团购商品"){
+//                body = {
+//                    page: pageIndex,
+//                    pageSize: "15",
+//                    TypeId:"tuanGou"
+//                };
+//            }else{
+//                body = {
+//                    page: pageIndex,
+//                    pageSize: "15",
+//                    TypeId:"Recommend2"
+//                };
+//            }
+//        }else{
+//            if($.cookie("accessToken")){
+//                productUrl = $.url.webUrl + "doB2C/B2Ca_N_ProdInfo";
+//            }else{
+//                productUrl = $.url.webUrl + "doB2C/B2Ca_N_ProdInfo";
+//            }
+//            body = {
+//                page: pageIndex,
+//                pageSize: "15",
+//                ProdTypePath:typePath,
+//                KeyWork:keyWord
+//            };
+//        }
+        body = {
+                page: pageIndex,
+                pageSize: "16",
+                ProdTypePath:typePath,
+                Title:keyWord,
+                VenderId:localStorage.getItem("VenderId")
+            };
+        $.ajax({
+            type:"GET",
+            url: $.url.webUrl + "doB2C/B2Ca_N_ProdInfo",
+            headers:headers,
+            data:body,
+            dataType:"json",
+            success: function (data) {
+                var total = data.total;
+
+                if(data.total == 0){
+                    $(".goods-none").show();
+                    $(".goods-item").css("text-align","center");
+                    $(".pagination-wrapper").hide();
+                    $(".goods-item-wrapper").hide();
+                }else{
+
+                    for(var i=0;i<data.rows.length;i++){
+                        if(data.rows[i].SalePrice != null || data.rows[i].SalePrice != undefined){
+                            data.rows[i].SalePrice = (data.rows[i].SalePrice/100).toFixed(2);
+                        }
+                    }
+                    $(".goods-none").hide();
+                    $(".pagination-wrapper").show();
+                    $(".goods-item-wrapper").show();
+                    $(".goods-item-wrapper").empty().append(template("product-cell", data));
+                    var navigatorUserAgent = navigator.userAgent.toLowerCase();
+                    if((navigatorUserAgent.indexOf('se 2.x')!=-1 && navigatorUserAgent.indexOf('nt 10.0')!=-1) || (navigatorUserAgent.indexOf('se 2.x')!=-1 && navigatorUserAgent.indexOf('nt 6.3')!=-1)){
+                        $(".goods .goods-item .goods-item-list").css("width","229px");
+                    }
+                    if($.cookie("accessToken")){
+                        $(".goods-item-wrapper .goods-current-price").show();
+                        $(".goods-item-wrapper .price-login-btn").hide();
+                    }else{
+                        $(".goods-item-wrapper .goods-current-price").hide();
+                        $(".goods-item-wrapper .price-login-btn").show();
+                    }
+                }
+                if ($(".pagination-wrapper").html().length == '') {
+                    $(".pagination-wrapper").pagination(total, {
+                        'items_per_page': 16,
+                        'num_display_entries': 12,
+                        'num_edge_entries': 12,
+                        'prev_text': "上一页",
+                        'next_text': "下一页",
+                        'callback': pageselectCallback
+                    });
+                }
+                var paginationWidth = parseInt($(".pagination").css("width"));
+                $(".pagination").css("margin-left",-paginationWidth/2 + "px");
+                if(keyWord != "" && $(".goods-item-wrapper").children().length == 0){
+                    $(".goods-none").show();
+                    $(".goods-item").css("text-align","center");
+                    $(".goods-item-wrapper").parent().css("padding-bottom","20px");
+                    $(".pagination-wrapper").hide();
+                }
+                if($.cookie("accessToken")){
+                    $(".goods-item-wrapper .goods-current-price-list").show();
+                    $(".goods-item-wrapper .price-login-btn").hide();
+                }else{
+//                    $(".goods-item-wrapper .goods-current-price-list").hide();
+                    $(".goods-item-wrapper .price-login-btn").show();
+                }
+            }
+        });
+    }
+    function pageselectCallback(page_index) {
+        productList(page_index);
+    }
+
+    $(".nav-wrapper .first-list").hover(function(){
+        $(".brand-nav").stop(false,true).slideDown();
+    },function(){
+        $(".brand-nav").stop(false,true).slideUp();
+    });
+
+    $(".goods-item-wrapper").on("click",".goods-img,.goods-title",function(){
+        var productId = $(this).parents(".goods-item-list").attr("id");
+        var ProdPriceId = $(this).parents(".goods-item-list").attr("data-id");
+        localStorage.setItem("ProdPriceId",ProdPriceId);
+        window.location.href = "product-detail.html?productId=" + productId + '&pordId=' + ProdPriceId;
+    });
+
+//    导航
+    function getNavList(){
+        $.ajax({
+            type:"GET",
+            url: $.url.webUrl + "doErp1/Erp1a_N_ProdType",
+            dataType:"json",
+            data:{
+                Level:0
+            },
+            async:false,
+            success: function (data) {
+                $(".menu-wrapper").empty().append(template("nav-cell", {returnJson: data}));
+                $(".menu-list:nth-child(4n+1) a").css("background","url(../images/brand-icon1.png) no-repeat 23px 15px");
+                $(".menu-list:nth-child(4n+2) a").css("background","url(../images/brand-icon2.png) no-repeat 23px 15px");
+                $(".menu-list:nth-child(4n+3) a").css("background","url(../images/brand-icon3.png) no-repeat 23px 15px");
+                $(".menu-list:nth-child(4n+4) a").css("background","url(../images/brand-icon4.png) no-repeat 23px 15px");
+                for(var i=1;i<$(".nav-wrapper .nav-list").length;i++){
+                    if(typeName == $(".nav-wrapper .nav-list").eq(i).text()){
+                        $(".nav-wrapper .nav-list").children().removeClass("selected");
+                        $(".nav-wrapper .nav-list").eq(i).children().addClass("selected");
+                        break;
+                    }
+                }
+                for(var j=0;j<$(".menu-wrapper .menu-list").length;j++){
+                    if(typeName == $(".menu-wrapper .menu-list").eq(j).text()){
+                        $(".menu-wrapper .menu-list").removeClass("menu-select");
+                        $(".menu-wrapper .menu-list").eq(j).addClass("menu-select");
+                        currentIndex = j;
+                        break;
+                    }
+                }
+                $(".ad .ad-img").css("background","url(../images/ad-img1.png) no-repeat "+(-currentIndex*170)+"px");
+            }
+        });
+    }
+
+//    鼠标滑到品类标题上
+    var currentIndex=0;
+    $(".menu-wrapper").on("mouseenter",".menu-list",function(){
+        var index = $(this).index();
+        if($(this).hasClass("menu-select")){
+            currentIndex = index;
+        }
+        if(!$(this).hasClass("menu-select")){
+            $(".menu-list:nth-child(" + (index+1) + ") a").css({"color":"#fff","background":"#44bdf3 url(../images/brand-icon" + (index+1) + "-select.png) no-repeat 23px 15px"});
+        }
+        $(".ad .ad-img").css("background","url(../images/ad-img1.png) no-repeat "+(-index*170)+"px");
+    });
+    $(".menu-wrapper").on("mouseleave",".menu-list:not(.menu-select)",function(){
+        var index = $(this).index();
+        $(".menu-list:nth-child(" + (index+1) + ") a").css({"color":"#000","background":"url(../images/brand-icon" + (index+1) + ".png) no-repeat 23px 15px"});
+        $(".ad .ad-img").css("background","url(../images/ad-img1.png) no-repeat "+(-currentIndex*170)+"px");
+    });
+
+//    点击导航
+    $(".nav-wrapper").on("click",".nav-list:not(.service)",function(){
+        $(".search-input").val("");
+        keyWord = "";
+        sessionStorage.removeItem("keyWord");
+        $(".nav-wrapper .nav-list").children().removeClass("selected");
+        $(".menu-wrapper .menu-list").removeClass("menu-select");
+        $(".menu-wrapper .menu-list a").css({"color":"#000"});
+        $(this).children().addClass("selected");
+        if($(this).text() == "首页"){
+            window.location.href = "../index.html";
+        }else{
+            if($(this).attr("data-path") == undefined){
+                typePath = "";
+            }else{
+                typePath = $(this).attr("data-path");
+            }
+            typeName = $(this).text();
+            sessionStorage.typeName = typeName;
+            sessionStorage.typePath = typePath;
+            $(".pagination-wrapper").empty();
+            productList(page_index);
+        }
+    });
+//    点击品类
+    $(".menu-wrapper").on("click",".menu-list",function(){
+        for(var i=0;i<$(".menu-list").length;i++){
+            $(".menu-list:nth-child(" + (i+1) + ") a").css({"color":"#000","background":"url(../images/brand-icon" + (i+1) + ".png) no-repeat 23px 15px"});
+        }
+        var index = $(this).index();
+        $(".menu-list:nth-child(" + (index+1) + ") a").css({"color":"#00a1e9"});
+        $(".search-input").val("");
+        keyWord = "";
+        sessionStorage.removeItem("keyWord");
+        $(".nav-wrapper .nav-list").children().removeClass("selected");
+        $(".menu-wrapper .menu-list").removeClass("menu-select");
+        $(this).addClass("menu-select");
+        typePath = $(this).attr("data-path");
+        typeName = $(this).text();
+        sessionStorage.typeName = typeName;
+        sessionStorage.typePath = typePath;
+        $(".pagination-wrapper").empty();
+        productList(page_index);
+    });
+
+    //    搜索
+    $(".search-btn").on("click",function(){
+        searchKey();
+    });
+    function searchKey(){
+        sessionStorage.removeItem("typePath");
+        sessionStorage.removeItem("typeName");
+        keyWord = $.trim($(".search-input").val());
+        if (keyWord==null || keyWord.length <=0) {
+            dialogModule.iTips("请输入搜索的关键字");
+            return false;
+        }else{
+            $(".nav-wrapper .nav-list").children().removeClass("selected");
+            $(".menu-wrapper .menu-list").children().removeClass("menu-select");
+            typeName = "";
+            typePath = "";
+            sessionStorage.removeItem("typePath");
+            sessionStorage.removeItem("typeName");
+            sessionStorage.keyWord = keyWord;
+            $(".pagination-wrapper").empty();
+            productList(page_index);
+        }
+    }
+    function searchKeyDown(event){
+        if (event.keyCode == 13) {
+            event.returnValue = false;
+            event.cancel = true;
+            searchKey();
+        }
+    }
+    $('.navTop').on('click', 'span', function(){
+        if ($(this).data('num')) {
+            window.location.href = "product-list.html~DisplayId=.html" + $(this).data('num');
+        }
+    });
+    $('.tuangou').hover(function(){
+        $('.together-bottom').hide();
+        $('.together-top').show();
+        $('.leibie').show();
+    },function(){
+        $('.together-top').hide();
+        $('.together-bottom').show();
+        $('.leibie').hide();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+@charset "utf-8";
+.logo{
+    padding:20px 0 30px 95px;
+}
+.section{
+    position:relative;
+    min-width: 1187px;
+}
+.login-bg{
+    width: 100%;
+    height: auto;
+}
+.login-content {
+    width: 349px;
+    border-top: 2px solid #00a1e9;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    margin-top: -150px;
+    background-color: #F1EBF5;
+    padding: 28px 21px 0;
+}
+/*.login-content.register-content{*/
+    /*top:50%;*/
+/*}*/
+.login-title span{
+    color:#666666;
+    font-size:20px;
+    *float:left;
+}
+.login-title a{
+    color: #00a1e9;
+    float:right;
+    margin-top:6px;
+}
+.login-title a:hover{
+    text-decoration: underline;
+}
+.login-row{
+    margin-top: 20px;
+    min-height: 30px;
+    *clear:both;
+}
+.register-row{
+    margin-top: 8px;
+    min-height: 30px;
+    *clear:both;
+}
+.add-on {
+    height: 40px;
+    width: 40px;
+    float: left;
+    border: 1px solid #BEBEC0;
+    padding: 9px;
+    *width:auto;
+    *height:auto;
+}
+.login-text {
+    border: 1px solid #BEBEC0;
+    border-left: 0;
+    height: 40px;
+    *height: 39px;
+    width: 266px;
+    line-height: 35px;
+    *line-height:39px;
+    padding-left: 10px;
+    *position:relative;
+    *top:-1px;
+}
+.register-row .login-text{
+    width: 245px;
+}
+#email{
+    *height: 40px;
+}
+.checkbox #RememberMe{
+    margin-top:5px;
+    *margin-top:0;
+}
+.checkbox .forget-pwd{
+    margin-left:20px;
+}
+.checkbox .forget-pwd:hover{
+    color: #2a6496;
+    text-decoration: underline;
+}
+.login-btn{
+    margin-top:0;
+}
+.register-btn{
+    margin-top:15px;
+}
+.login-button {
+    background-color: #00a1e9;
+    color: white;
+    height: 36px;
+    width: 306px;
+    border:none;
+    margin-bottom:30px;
+}
+.error-info {
+    clear: both;
+    padding-left:12px;
+}
+.field-validation-valid {
+    color: red;
+    visibility: visible;
+}
+
+.required,.required-null{
+    float: left;
+    color: #e7200d;
+    font-weight: bold;
+    padding: 12px 5px 0 0;
+    width:14px;
+}
+#mask {
+    position: absolute;
+    left: 49%;
+    top: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

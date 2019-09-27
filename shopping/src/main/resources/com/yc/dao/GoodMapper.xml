@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--  对应接口的全路径 -->
+<mapper namespace="com.yc.dao.GoodMapper">
+	<!--  public List<GoodPO> findByItem(); -->
+	<select id="findByItem" resultType="GoodPO" parameterType="GoodPO">
+	select * from goodsinfo  
+	<where>
+	<if test="gno!=null">
+	 and gno=#{gno}
+	</if>
+	<if test="gname!=null and gname!=''">
+	 and gname=#{gname}
+	</if>
+	<if test="tino!=null">
+	 and tino=#{tino}
+	</if>
+	
+	</where>	
+	</select>
+	<!--  public List<GoodPO> findByPage(@Param("page")int page,@Param("size")int size, @Param("good")GoodPO po); -->
+		<select id="findByPage" resultType="GoodPO" >
+		<bind name="num" value="(page-1)*size"></bind>
+	select * from goodsinfo  
+	<where>
+	<if test="good.gno!=null">
+	 and gno=#{good.gno}
+	</if>
+	<if test="good.gname!=null and good.gname!=''">
+	 and gname=#{good.gname}
+	</if>
+	<if test="good.tino!=null">
+	 and tino=#{good.tino}
+	</if>
+	
+	</where>	
+	limit #{num},#{size}
+	</select>
+	
+	
+	<!-- public List<TypePO> findByTno(int tno); -->
+	<select id="findByTno" resultMap="mytype" parameterType="TypeItemPO">
+select go.*,tf.tname,tf.tno,ti.tino tio ,ti.tname name from goodsinfo go,typeinfo tf ,typeiteminfo ti  where go.tino=ti.tino and tf.tno=ti.tno
+	
+	<if test="tno!=null">
+	and tf.tno=#{tno}  
+	</if>
+	
+	 ORDER BY tf.tno asc,gno desc 
+
+	</select>
+	<resultMap type="TypePO" id="mytype">
+   <id column="tno"  property="tno" />
+ <result column="tname" property="tname"/>
+ <result column="status" property="status"/>
+   
+ 
+ <!-- collection 嵌套结果集的封装规则
+ property="users" 指定属性  ofType="UserInfoPO"
+  -->
+  
+   <collection property="glist" ofType="GoodPO">
+  <!-- 定义集合中元素的封装规则 -->
+  <id column="gno"  property="gno" />
+ <result column="gname" property="gname"/>
+ <result column="tino" property="tino"/>
+ <result column="price" property="price"/>
+ <result column="intro" property="intro"/>
+ <result column="balance" property="balance"/>
+ <result column="unit" property="unit"/>
+ <result column="place" property="place"/>
+ <result column="qualityPeriod" property="qualityPeriod"/>
+ <result column="weight" property="weight"/>
+ <result column="pics" property="pics"/>
+ <result column="descr" property="descr"/>
+   </collection>
+ <collection property="typeItem" ofType="TypeItemPO">
+  <!-- 定义集合中元素的封装规则 -->
+  <id column="tio"  property="tino" />
+ <result column="name" property="tname"/>
+ <result column="tno" property="tno"/>
+ <result column="status" property="status"/>
+ </collection>
+   </resultMap>
+   
+   
+   
+   <!-- public int addGood(GoodPO po); -->
+   <insert id="addGood" parameterType="GoodPO">
+   insert into goodsinfo values(null,#{gname},#{tino},#{price},#{intro},#{balance},#{unit},
+   #{place},#{qualityPeriod},#{weight},#{pics},#{descr},#{inprice},1)
+   
+   
+   </insert>
+</mapper>

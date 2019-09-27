@@ -1,0 +1,390 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>享购网</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link href="../css/common/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common/base.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/member.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/AboutUs.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/orderShow.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/common/pagination.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/index.css" rel="stylesheet" type="text/css"/>
+    <script src="../assets/js/createCode.js" type="text/javascript"></script>
+</head>
+<body>
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  on  09/22/19 20:31:32.<br>
+<b>Address:</b> <a class="info" href="http://www.isgo.com/userInfo/step2.html">http://www.isgo.com/userInfo/step2.html</a><br>
+<b>Title:</b> 享购网 &nbsp;&bull;&nbsp; <b>Size:</b> 15747 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Mon, 09 Sep 2019 11:21:35 GMT<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+<div class="header">
+    <div class="top">
+        <div class="top-left">
+            <a href="javascript:void(0)" style="cursor: default">您好，欢迎光临享购网！</a>
+        </div>
+        <div class="top-right fr">
+            <a href="javascript:void(0)" class="top-login">登录</a>
+            <a href="../login/register.html" class="top-register">注册</a>
+            <a href="../userInfo/user-info1.html" class="top-user"></a>
+            <a href="javascript:void(0)" class="top-exit" onclick="exit()">退出</a>
+            <a href="javascript:void(0)" class="top-order">我的订单</a>
+            <a href="javascript:void(0)" class="top-cart">购物车</a>
+            <div class="lipinka">
+                <a href="javascript:void(0)" class="top-card">我的礼品卡</a>
+            </div>
+            <div class="tuangou">
+                <a href="javascript:void(0)" class="top-together">团购
+                    <img class="together-top" src="../images/top.png">
+                    <img class="together-bottom" src="../images/bottom.png">
+                </a>
+                <div class="leibie">
+                    <a href="javascript:void(0)">享购团购</a>
+                    <a href="http://private.isgo.com/ISGOC1/Vender/Login.html">企业团购</a>
+                </div>
+            </div>
+            <a href="http://gallery.isgo.com/" target="_blank" class="top-art">艺术品</a>
+            <p>400-628-8666</p>
+        </div>
+    </div>
+</div>
+<div class="search-wrapper ofh">
+    <div class="logo-left-wrapper fl">
+        <img src="../images/logo-left.png" class="logo-left">
+    </div>
+    <div class="search" style="height: 34px;">
+        <input name="name" class="search-input" type="text" onkeydown="searchKeyDown(event);">
+        <span class="search-btn fr">搜 索</span>
+    </div>
+</div>
+<div class="csw_BoxH csw_width">
+    <div class="cswX_hyL csw_left">
+        <div class="personalDetails">
+            <img src="../assets/images/def_icon1.jpg" alt="" style="width:83px;height:83px;"/>
+            <p>177****9296</p>
+        </div>
+        <div style="width: 168px;height: 1px;margin: 0 auto;padding: 0;background-color: #f5f5f5;overflow: hidden;"></div>
+        <div class="cswX_htMbt">
+            <h5>
+                <input type="button" id="jygl1" class="csw_tb43" onclick="javascript:closeMenu('jygl')">
+                <input type="button" id="jygl2" class="csw_tb42" onclick="javascript:openMenu('jygl')"
+                       style="display:none;">
+                <img src="../assets/images/order/myGiftCard-little.png" alt=""/>
+                <span>订单和购买</span>
+            </h5>
+        </div>
+        <div class="cswX_htMList" id="jygl3">
+            <ul>
+                <li>
+                    <a href="../order/order-list.html">查看订单</a>
+                </li>
+                <li>
+                    <a href="address.html">收货地址簿</a>
+                </li>
+            </ul>
+        </div>
+        <div class="cswX_htMbt">
+            <h5>
+                <input type="button" id="hyfk1" class="csw_tb43" onclick="javascript:closeMenu('hyfk')">
+                <input type="button" id="hyfk2" class="csw_tb42" onclick="javascript:openMenu('hyfk')"
+                       style="display:none;">
+                <img src="../assets/images/order/myGiftCard-little.png" alt=""/>
+                <span>我的账户</span>
+            </h5>
+        </div>
+        <div class="cswX_htMList" id="hyfk3">
+            <ul>
+                <li>
+                    <a class='a_hover' href="account-safe.html">账号安全</a>
+                </li>
+                <li>
+                    <a href="user-info1.html">修改个人资料</a>
+                </li>
+                <li>
+                    <a href="../order/cardList.html">我的礼品卡</a>
+                </li>
+            </ul>
+        </div>
+        <div class="xg_user_ad"></div>
+    </div>
+    <div class="cswX_hyR csw_right">
+        <div class="safety1_2 safety1_1">
+            <ul>
+                <li class="safety1_on">身份验证</li>
+                <li>修改登录密码</li>
+                <li>完成</li>
+            </ul>
+        </div>
+        <form id="modifyPassSetp1Form" method="post" action="/member/checkoriginalpass">
+            <input type="hidden" name="destination" value="1"/>
+            <table cellpadding="0" cellspacing="0" border="0" class="isgo-login-table">
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td width="110" align="right">&nbsp;设置新密码<span style="color: red;">*</span>：</td>
+                    <td>
+                        <input id="newPwd" name="password" type="password" class="isgo-login-text" placeholder="请输入新密码"/>
+                        <div class="error-info">
+                            <span class="field-validation-valid pwd-error" style="color:red;"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="110" align="right">&nbsp;确认新密码<span style="color: red;">*</span>：</td>
+                    <td>
+                        <input id="confirmPwd" name="password" type="password" class="isgo-login-text" placeholder="请再次输入密码"/>
+                        <div class="error-info">
+                            <span class="field-validation-valid newpwd-error" style="color:red;"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="110" align="right">&nbsp;验证码<span style="color: red;">*</span>：</td>
+                    <td>
+                        <input id="validateCodeId" name="validateCode" type="text" maxlength="6" style="width:110px"
+                               class="isgo-login-text" placeholder="请输入验证码">
+                        <input type="button" class="input1" id="getCode" onclick="createCode()"
+                               style="margin-top: -2px;">
+                        <div class="error-info">
+                            <span class="field-validation-valid code-error" style="color:red;margin-left: -110px;"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="td_zhi">
+                        <input type="button" id="submit" class="input1 changePwd-btn" value="提 交">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+<div class="ifooter">
+    <div class="pwm serivcelist clearfix">
+        <dl>
+            <dt>新手指南
+            </dt>
+            <dd><a href="../footer/question.html">常见问题</a></dd>
+            <dd><a href="../login/register.html">用户注册</a></dd>
+            <dd><a href="../login/login.html">用户登录</a></dd>
+        </dl>
+        <dl>
+            <dt>购物指南
+            </dt>
+            <dd><a href="../footer/guide.html">购物流程</a></dd>
+            <dd class="top-order" ><a href="javascript:void(0)">订单状态</a></dd>
+            <dd><a href="http://www.kuaidi100.com/?from=openv">快递查询</a></dd>
+        </dl>
+        <dl>
+            <dt>支付方式
+            </dt>
+            <dd><a href="../footer/payment.html">在线支付</a></dd>
+            <dd class="top-card"><a href="javascript:void(0)">购物卡支付</a></dd>
+            <dd><a href="../order/cardHelp.html">购物卡说明</a></dd>
+            <!--<dd><a href="../con_x0rm43.htm~viewPage=service&view=all">货到付款</a></dd>-->
+        </dl>
+        <dl>
+            <dt>配送方式
+            </dt>
+            <dd><a href="../footer/service.html">配送方式</a></dd>
+            <dd><a href="../footer/service.html">配送政策</a></dd>
+            <!--<dd><a href="../footer/service.html">特殊说明</a></dd>-->
+        </dl>
+        <dl>
+            <dt>售后服务
+            </dt>
+            <dd><a href="../footer/aftersell.html">退/换货政策</a></dd>
+            <dd><a href="../footer/aftersell.html">退/换货流程</a></dd>
+            <!--<dd><a href="../con_18uw129.htm~viewPage=service&view=all">特殊说明</a></dd>-->
+        </dl>
+        <dl>
+            <dt>我的享购
+                <span class="icon-hot"></span>
+            </dt>
+            <dd class="top-order"><a href="javascript:void(0)">我的订单</a></dd>
+            <dd class="top-card"><a href="javascript:void(0)">我的购物卡</a></dd>
+            <!--<dd><a href="../con_tluw123.htm~viewPage=service&view=all">我的优惠券</a></dd>-->
+        </dl>
+        <div class="serivcenumber">
+            <a href="javascript:void(0)" target="_blank" style="display:block; height:27px;">
+                <img src="../assets/images/index/banner004.jpg" alt=""/>
+            </a>
+        </div>
+    </div>
+    <div class="pwm ifserivcelink clearfix">
+        <div class="if_list">
+            <a href="../footer/about.html">关于iSGO</a>
+            <span>|</span>
+            <a href="../footer/about1.html">企业文化</a>
+            <span>|</span>
+            <a href="../footer/about2.html">招商合作</a>
+            <span>|</span>
+            <a href="../footer/about3.html">联系方式</a>
+            <span>|</span>
+            <a href="../footer/about4.html">工作机会</a>
+            <span>|</span>
+            客服电话:400-628-8666
+        </div>
+        <p>&copy; 2012-2014 www.iSGO.com All Rights Reserved. 享购网 版权所有</p>
+
+        <p>京ICP证 090163号 | 食品流通许可证 SP1101081110103523 | <a
+                href="../userfiles/amber/data/img/product/112/1404372966.jpg"
+                target="_blank">营业执照</a></p>
+
+        <p class="paylogo" style="margin-top:0px;"></p>
+    </div>
+    <div style="width:300px;margin:0 auto; padding:0px 0 20px 0;">
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020501"
+           style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img
+                src="../assets/images/police.png" style="float:left;"/>
+
+            <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">京公网安备
+                11010802020501号</p></a>
+    </div>
+</div>
+<script src="../js/common/jquery-1.10.2.min.js"></script>
+<script src="../js/common/jquery-cookie.js"></script>
+<script src="../js/common/url.js"></script>
+<script src="../js/common/common.js"></script>
+<script src="../js/common/dialog.js"></script>
+<script src="../js/common/jQuery.md5.js"></script>
+<script>
+    $(function () {
+        checkLogin();
+        userInfo();
+        createCode(); //默认加载 4位数随机码
+    });
+    //提交表单
+    function submitPwdForm(){
+        window.location.href="step3.html"
+    }
+
+
+
+    //    修改密码
+    var pwd,validateCodeId,code;
+    function checkPwdForm(){
+        pwd = $.trim($("#newPwd").val());
+        confirmPwd = $.trim($("#confirmPwd").val());
+        validateCodeId = $.trim($("#validateCodeId").val()).toLowerCase();
+        code = $("#getCode").val().toLowerCase();
+        if(!pwd){
+            $(".pwd-error").text("请输入新密码").show();
+            return false;
+        }else if(pwd.length < 6 || pwd.length > 20){
+            $(".pwd-error").text("密码由6-20个字符组成").show();
+            return false;
+        } else {
+            $(".pwd-error").hide();
+        }
+        if(!confirmPwd){
+            $(".newpwd-error").text("请确认新密码").show();
+            return false;
+        }else if(confirmPwd.length < 6 || confirmPwd.length > 20){
+            $(".newpwd-error").text("密码由6-20个字符组成").show();
+            return false;
+        } else if (confirmPwd != pwd){
+            $(".newpwd-error").text("两次输入的密码不一致").show();
+            return false;
+        } else {
+            $(".pwd-error").hide();
+        }
+        if(!validateCodeId){
+            $(".code-error").text("请输入验证码").show();
+            return false;
+        }else if(validateCodeId != code){
+            $(".code-error").text("验证码错误").show();
+            return false;
+        } else {
+            $(".code-error").hide();
+        }
+        return true;
+    }
+    $("#newPwd").blur(function(){
+        pwd = $.trim($("#newPwd").val());
+        confirmPwd = $.trim($("#confirmPwd").val());
+
+        if(!pwd){
+            $(".pwd-error").text("请输入新密码").show();
+            return false;
+        }else if(pwd.length < 6 || pwd.length > 20){
+            $(".pwd-error").text("密码由6-20个字符组成").show();
+            return false;
+        } else {
+            $(".pwd-error").hide();
+        }
+
+        if (pwd && confirmPwd && pwd != confirmPwd) {
+            $(".pwd-error").text("两次输入的密码不一致").show();
+        } else {
+            $(".pwd-error").hide();
+        }
+    });
+    $("#confirmPwd").blur(function(){
+        pwd = $.trim($("#newPwd").val());
+        confirmPwd = $.trim($("#confirmPwd").val());
+
+        if(!confirmPwd){
+            $(".newpwd-error").text("请确认新密码").show();
+            return false;
+        }else if(confirmPwd.length < 6 || confirmPwd.length > 20){
+            $(".newpwd-error").text("密码由6-20个字符组成").show();
+            return false;
+        } else {
+            $(".newpwd-error").hide();
+        }
+
+        if (pwd && confirmPwd && pwd != confirmPwd) {
+            $(".newpwd-error").text("两次输入的密码不一致").show();
+        } else {
+            $(".newpwd-error").hide();
+        }
+    });
+    $("#submit").on("click",function(){
+        var flag = checkPwdForm();
+        if(flag == false){
+            return false;
+        }
+        $.ajax({
+            type:"PUT",
+            url: $.url.webUrl + "do4A/a2/MyPassword",
+            headers: {"Authorization": "Bearer " + $.cookie("accessToken")},
+            beforeSend: function(xhr) {
+                xhr.setRequestHeader("Content-Type",'application/json');
+            },
+            data:JSON.stringify({
+                Password:$.md5(pwd) //密码需要md5加密
+            }),
+            success:function (data){
+                window.location.href="step3.html"
+            }
+        });
+    });
+    $('.tuangou').hover(function(){
+        $('.together-bottom').hide();
+        $('.together-top').show();
+        $('.leibie').show();
+    },function(){
+        $('.together-top').hide();
+        $('.together-bottom').show();
+        $('.leibie').hide();
+    });
+</script>
+</body>
+</html>
